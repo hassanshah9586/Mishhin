@@ -240,7 +240,7 @@
 
                                         <tr>
                                             <td class="text-left">وتنتهي في</td>
-                                            <td class="text-left">o.date_start</td>
+                                            <td class="text-left"><span t-esc="o.date_start"/></td>
                                             <td class="text-right arabic" colspan="3">مدة هذا العقد سنة ميلادية واحدة
                                                 تبدأ في
                                             </td>
@@ -294,11 +294,11 @@
                                             <td style="text-align:right; arabic">د.ك ( فقط</td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align:left;">START</td>
+                                            <td style="text-align:left;"><span t-esc="o.date_start"/></td>
                                             <td style="text-align:left; arabic" colspan="2">:• دينار كويتي لا غير) اجرة
                                                 ثلاثة اشهر عن المدة من
                                             </td>
-                                            <td style="text-align:left;">END</td>
+                                            <td style="text-align:left;"><span t-esc="o.date"/></td>
                                             <td style="text-align:right; arabic">/ / حتى</td>
                                         </tr>
                                         <tr>
@@ -312,7 +312,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align:left;">INSURANCE AMOUNT</td>
+                                            <t t-set="ins" t-value="0"/>
+                                            <t t-set="date" t-value="datetime.date(1900,1,1)"/>
+                                            <t t-foreach="o.property_id.property_insurance_ids" t-as="line">
+                                                <t t-if="line.end_date > date">
+                                                    <t t-set="ins" t-value="line.premium"/>
+                                                    <t t-set="date" t-value="line.end_date"/>
+                                                </t>
+                                            </t>
+                                            <td style="text-align:center;"><span t-esc="ins"/></td>
                                             <td style="text-align:left; arabic">: يلتزم الطرف الثاني بسداد مبلغ</td>
                                             <td style="text-align:left;">INSURANCE IN ARABIC</td>
                                             <td style="text-align:right; arabic">د.ك (فقط</td>
