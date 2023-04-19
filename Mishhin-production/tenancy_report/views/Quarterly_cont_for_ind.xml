@@ -48,7 +48,7 @@
                                 <!--                                    <img t-att-src="'/tenancy_report/static/src/img/logo_this.png'"/>-->
                                 <!--                                </div>-->
                                 <t t-call="tenancy_report.tenancy_report_header"/>
-                                <div class="row"> hassan ka kaam
+                                <div class="row">
                                     <div id="title" class=" col-12">عقــــد ايجـــــــــار</div>
                                 </div>
                                 <table class="mt16" width="100%" style="margin-top:1%;text-align justify">
