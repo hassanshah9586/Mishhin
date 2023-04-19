@@ -10,7 +10,7 @@
                               crossorigin="anonymous"/>
 
                         <style>
-                            .conatiner{
+                            .container{
                             <!--                            background-image: url('url of bg image');-->
                             background-size: cover;
                             width: 100%;
@@ -56,9 +56,9 @@
                                         <tr>
                                             <td class="text-right">في دولة الكويت - تعاقد كل من
                                             </td>
-                                            <td class="text-center">DATE</td>
-                                            <td class="text-right">الموافق</td>
-                                            <td class="text-center">DAY</td>
+                                            <td class="text-center"><span t-esc="o.ten_date"/></td>
+                                            <td class="text-right"> الموافق </td>
+                                            <td class="text-center"><span t-esc="o.ten_date.strftime('%A')"/></td>
                                             <td class="text-right">أنه في يوم</td>
                                         </tr>
                                         <tr>
@@ -86,35 +86,35 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class='text-right' colspan="4">TENANT NAME</td>
+                                            <td class='text-right' colspan="4"><span t-esc="o.tenant_id.name"/></td>
                                             <td class="text-right arabic">ثانيا: السيد/</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left">CIVIL ID</td>
+                                            <td class="text-left"><span t-esc="o.tenant_id.civil_id"/></td>
                                             <td class="text-right arabic">:الرقم المدني</td>
-                                            <td class="text-left" colspan="2">TENANT NATIONALITY</td>
+                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.nationality.name"/></td>
                                             <td class="text-right arabic">:الجنسية</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left">STREET NO.</td>
+                                            <td class="text-left"><span t-esc="o.tenant_id.street"/></td>
                                             <td class="text-right arabic">: شارع</td>
                                             <td class="text-left">BLOCK NO.</td>
                                             <td class="text-left">:قطعة</td>
                                             <td class="text-right" dir="rtl">
                                                 <span>المقيم بمنطقة:</span>
-                                                CITY NAME (AREA)
+                                                <span t-esc="o.tenant_id.city"/>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left" colspan="2">AUTOMATED ADDRESS NO.</td>
+                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.street"/></td>
                                             <td class="text-right arabic" style="width:25%">:الرقم الآلي للعنوان</td>
                                             <td class="text-left">HOUSE NO.</td>
                                             <td class="text-right">:قسيمة</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left" colspan="2">EMAIL</td>
+                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.email"/></td>
                                             <td class="text-right arabic">:البريد الالكتروني</td>
-                                            <td class="text-left">TEL.</td>
+                                            <td class="text-left"><span t-esc="o.tenant_id.mobile"/></td>
                                             <td class="text-right">:هاتف</td>
                                         </tr>
                                         <tr>
@@ -142,13 +142,13 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-right" colspan="2">PROPERTY TYPE</td>
+                                            <td class="text-right" colspan="2"><span t-esc="o.property_id.type_id.name"/></td>
                                             <td class="text-right arabic" colspan="3">تقدم الطرف الثاني للطرف الأول
                                                 وأبدى رغبته في استئجار
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left">PROPERTY</td>
+                                            <td class="text-left"><span t-esc="o.property_id.street"/></td>
                                             <td class="text-right arabic">شارع</td>
                                             <td class="text-left">PROPERTY BLOCK NO.</td>
                                             <td class="text-left">قطعة</td>
@@ -158,15 +158,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left">AUTOMATED ADDRESS NO.</td>
+                                            <td class="text-left"><span t-esc="o.property_id.street"/></td>
                                             <td class="text-right arabic">الرقم الآلي للعنوان:</td>
-                                            <td class="text-left">BUILDING NO</td>
+                                            <td class="text-left"><span t-esc="o.property_id.building_no"/></td>
                                             <td class="text-left">قسيمة</td>
-                                            <td class="text-right">STREET NO.</td>
+                                            <td class="text-right"><span t-esc="o.property_id.street"/></td>
                                         </tr>
                                         <tr>
                                             <td class="text-right" colspan="2">، وقد وافق الطرف الأول على ذلك وعليه</td>
-                                            <td class="text-left" colspan="2">PROPERTY TYPE</td>
+                                            <td class="text-left" colspan="2"><span t-esc="o.property_id.type_id.name"/></td>
                                             <td class="text-right arabic" style="width:20%">وذلك لعمل نشاط</td>
                                         </tr>
                                         <tr>
@@ -243,7 +243,7 @@
                                         <tr>
                                             <td class="text-left">وتنتهي في
                                             </td>
-                                            <td class="text-left" colspan="2">CONTRACT START DATE
+                                            <td class="text-left" colspan="2"><span t-esc="o.date_start"/>
                                             </td>
                                             <td class="text-right" colspan="2">مدة هذا العقد سنة ميلادية واحدة تبدأ في
                                             </td>
@@ -253,7 +253,7 @@
                                                 للتجديد لمدة أو لمدد
                                                 أخرى مالم يخطر أحد
                                             </td>
-                                            <td class="text-left" colspan="2">CONTRACT END DATE
+                                            <td class="text-left" colspan="2"><span t-esc="o.date"/>
                                             </td>
                                         </tr>
                                         <tr>
@@ -276,7 +276,7 @@
                                         <tr dir="rtl">
                                             <td class="text-left">د.ك (فقط
                                             </td>
-                                            <td class="text-left">TENANCY RENT
+                                            <td class="text-left"><span t-esc="o.rent"/>
                                             </td>
                                             <td class="text-right" colspan="3">
                                                 <li>
@@ -291,18 +291,20 @@
                                             <td class="text-right" colspan="3">دينار كويتي لا غير)، ويلتزم الطرف الثاني
                                                 بسداد
                                             </td>
-                                            <td class="text-left" colspan="2">TENANCY RENT IN ARABIC LETTERS
-                                            </td>
+<!--                                            <td class="text-left" colspan="2">TENANCY RENT IN ARABIC LETTERS-->
+<!--                                            </td>-->
+                                            <td class="text-left" colspan="2"><span t-esc="o.rent_amount_in_text"/></td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left" colspan="3">TENANCY RENT AMOUNT FOR THREE
+                                            <td class="text-left" colspan="3"><span t-esc="o.rent * 3"/>
                                             </td>
                                             <td class="text-right" colspan="2">القيمة الإيجارية مجمعة كل ستة أشهر بواقع
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="text-left" colspan="3">TENANCY RENT AMOUNT FOR THREE MONTHS IN
-                                                ARABIC LETTERS
+<!--                                            <td class="text-left" colspan="3">TENANCY RENT AMOUNT FOR THREE MONTHS IN-->
+<!--                                                ARABIC LETTERS</td>-->
+                                            <td class="text-left" colspan="3"><span t-esc="o.rent_amount_in_text"/>
                                             </td>
                                             <td class="text-right">د.ك ( فقط
                                             </td>
@@ -315,11 +317,12 @@
                                             </td>
                                         </tr>
                                         <tr dir="rtl">
-                                            <td class="text-right">AMOUNT DEPOSIT IN ARABIC LETTERS</td>
+<!--                                            <td class="text-right">AMOUNT DEPOSIT IN ARABIC LETTERS</td>-->
+                                            <td class="text-right"><span t-esc="o.rent_amount_in_text"/></td>
                                             <td class="text-right">د.ك ( فقط
                                             </td>
-                                            <td class="text-right">AMOUNT DEPOSIT
-                                            </td>
+<!--                                            <td class="text-right">AMOUNT DEPOSIT</td>-->
+                                            <td class="text-right"><span t-esc="o.deposit"/></td>
                                             <td class="text-right" colspan="2">
                                                 <li>
                                                     <ul>
@@ -336,13 +339,13 @@
                                         <tr>
                                             <td class="text-right">
                                                 <span>/ /</span>
-                                                END DATE OF DEPOSIT
+                                                <span t-esc="o.date"/>
                                             </td>
                                             <td class="text-center">حتى
                                             </td>
                                             <td class="text-right">/ /
                                             </td>
-                                            <td class="text-right">START DATE OF DEPOSIT
+                                            <td class="text-right"><span t-esc="o.ten_date"/>
                                             </td>
                                             <td class="text-right">من
                                             </td>
@@ -366,12 +369,20 @@
                                             </td>
                                         </tr>
                                         <tr dir="rtl">
-                                            <td class="text-left">INSURANCE AMOUNT IN ARABIC LETTERS
-                                            </td>
+<!--                                            <td class="text-left">INSURANCE AMOUNT IN ARABIC LETTERS</td>-->
+                                            <td class="text-left"><span t-esc="o.rent_amount_in_text"/></td>
                                             <td class="text-right">د.ك (فقط
                                             </td>
-                                            <td class="text-left">INSURANCE AMOUNT
-                                            </td>
+<!--                                            <td class="text-left">Insurance Amount</td>-->
+                                           <t t-set="ins" t-value="0"/>
+                                            <t t-set="date" t-value="datetime.date(1900,1,1)"/>
+                                            <t t-foreach="o.property_id.property_insurance_ids" t-as="line">
+                                                <t t-if="line.end_date > date">
+                                                    <t t-set="ins" t-value="line.premium"/>
+                                                    <t t-set="date" t-value="line.end_date"/>
+                                                </t>
+                                            </t>
+                                            <td style="text-align:center;"><span t-esc="ins"/></td>
                                             <td class="text-right" colspan="2">
                                                 <li>
                                                     <ul>
