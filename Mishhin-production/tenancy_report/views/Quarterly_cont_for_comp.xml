@@ -104,7 +104,7 @@
                                             <td class="text-left" colspan="2"><span t-esc="o.tenant_id.email"/></td>
                                             <td class="text-right arabic">:البريد الالكتروني</td>
                                             <td class="text-left">
-                                                <span t-esc="o.tenant_id.street1"/>
+                                                <span t-esc="o.tenant_id.street"/>
                                                 <span t-esc="o.tenant_id.street2"/>
                                                 <span t-esc="o.tenant_id.city"/>
                                                 <span t-esc="o.tenant_id.state_id.name"/>
@@ -120,7 +120,7 @@
                                             <td class="text-right arabic">:ويمثلها السيد</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-right" colspan="2"><span t-esc="o.tenant_id.position"/></td>
+                                            <td class="text-right" colspan="2"><span t-esc="o.tenant_id.function"/></td>
                                             <td class="text-right">: بصفته/</td>
                                             <td class="text-right"><span t-esc="o.tenant_id.civil_id"/></td>
                                             <td class="text-right">:الرقم المدني</td>
@@ -154,7 +154,7 @@
 
                                         </tr>
                                         <tr>
-                                            <td class='text-right' colspan="4"><span t-esc="o.propert_id.type_id.name"/></td>
+                                            <td class='text-right' colspan="4"><span t-esc="o.property_id.type_id.name"/></td>
                                             <td class="text-right arabic">تقدم الطرف الثاني للطرف الأول وأبدى رغبته في
                                                 استئجار
                                             </td>
@@ -179,7 +179,7 @@
                                             <td colspan="3">
                                                 ، وقد وافق الطرف الأول على ذلك وعليه فقد اتفقا على الاتي:
                                             </td>
-                                            <td class="text-right" colspan="1"><span t-esc="o.property_id.type"/></td>
+                                            <td class="text-right" colspan="1"><span t-esc="o.property_id.type_id.name"/></td>
                                             <td class="text-right arabic">وذلك لعمل نشاط</td>
                                         </tr>
                                         <tr>
