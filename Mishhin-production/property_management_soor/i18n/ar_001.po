@@ -1,0 +1,1453 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* property_management_soor
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-07 11:19+0000\n"
+"PO-Revision-Date: 2022-04-07 11:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: property_management_soor
+#: model:mail.template,body_html:property_management_soor.send_token_genrated_email
+msgid ""
+"\n"
+"                <!doctype html>\n"
+"                <body>\n"
+"                    Dear ${object.contact_name},<br/>\n"
+"                    Your unique token are genrated you can use to upload document.<br/><br/>\n"
+"                    UNIQUE TOKEN: ${ctx.get('token_key')} <br/>\n"
+"                    General Manager<br/>\n"
+"                    Mishhin Real Estate Kuwaiti Company\n"
+"                </body>\n"
+"            </html>\n"
+"            \n"
+"        "
+msgstr ""
+
+#. module: property_management_soor
+#: model:mail.template,body_html:property_management_soor.send_one_month_warning_email
+msgid ""
+"\n"
+"                <table style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td align=\"center\">\n"
+"                                <table style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\" width=\"590\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n"
+"                                    <tbody>\n"
+"                                        <!-- HEADER -->\n"
+"                                        <tr>\n"
+"                                            <td style=\"min-width:590px;\" align=\"center\">\n"
+"                                                <table style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\" width=\"590\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n"
+"                                                    <tbody>\n"
+"                                                        <tr>\n"
+"                                                            <td valign=\"middle\">\n"
+"                                                                <span style=\"font-size:10px;\">Tenancy Name</span>\n"
+"                                                                <br>\n"
+"                                                                    <span style=\"font-size:20px;font-weight: bold;\">\n"
+"                                                            ${object.tenancy_id.name}\n"
+"                                                                    </span>\n"
+"                                                                </td>\n"
+"                                                               <td style=\"text-align:right;\" valign=\"middle\">\n"
+"                                                                    <img src=\"/logo.png?company=${object.tenancy_id.company_id.id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${object.company_id.name}\">\n"
+"                                                                </tr>\n"
+"                                                                <tr>\n"
+"                                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                                        <hr style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\" width=\"100%\">\n"
+"                                                                        </td>\n"
+"                                                                    </tr>\n"
+"                                                                </tbody>\n"
+"                                                            </table>\n"
+"                                                        </td>\n"
+"                                                    </tr>\n"
+"                                                    <!-- CONTENT -->\n"
+"                                                    <tr>\n"
+"                                                        <td style=\"min-width:590px;\" align=\"center\">\n"
+"                                                            <table style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\" width=\"590\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n"
+"                                                                <tbody>\n"
+"                                                                    <tr>\n"
+"                                                                        <td style=\"font-size:13px;\" valign=\"top\">\n"
+"                                                                            <div style=\"direction:rtl;float:right;margin-top:1%\">\n"
+"                                                            الكويت في : ${format_date(ctx.get('email_current_date'))}\n"
+"                                                                              <br>\n"
+"                                                                                    <br>\n"
+"                                                            ${object.tenancy_id.tenant_id.name}<br>\n"
+"                                                                                        <br>\n"
+"\n"
+"                                                            مستأجر الشقة رقم (${object.tenancy_id.property_id.name}) بناية رقم (${object.tenancy_id.property_id.building_no})<br>\n"
+"                                                                                            <br>\n"
+"                                                                                                <u>\n"
+"\n"
+"                                                                                                    <span class=\"text-center\">إنذار نهائي  بسبب التأخير في دفع القيمة الايجارية</span>\n"
+"                                                                                                </u>\n"
+"                                                                                                <br>\n"
+"                                                                                                    <br>\n"
+"                                                            برجــــاء تســديد القيــــمة الايجــــارية المستحقة\n"
+"                                                                                                        <br>\n"
+"                                                            عليكــــم خلال يومين من تاريخه مع الالتزام بسـداد\n"
+"                                                                                                            <br>\n"
+"                                                            القيمة الايجـارية في الأســبوع الأول من كل شهر وإلا\n"
+"                                                                                                                <br>\n"
+"                                                                سنضطر آسفين إلى اتخاذ الإجراءات القانونية ضدكم .\n"
+"                                                                                                                    <br>\n"
+"                                                                                                                        <br>\n"
+"                                                            آملين حسن تعاونكم معنا ،،،،                                                                                                                            <br>\n"
+"                                                                                                                                <br>\n"
+"                                                            المالك\n"
+"                                                                                                                                    <br>\n"
+"                                                                                                                                    </div>\n"
+"                                                                                                                                </td>\n"
+"                                                                                                                            </tr>\n"
+"                                                                                                                            <tr>\n"
+"                                                                                                                                <td style=\"min-width:590px;\" align=\"center\">\n"
+"                                                                                                                                    <table style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\" width=\"590\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n"
+"                                                                                                                                        <tbody>\n"
+"                                                                                                                                            <tr>\n"
+"                                                                                                                                                <td style=\"font-size:13px;\" valign=\"top\">\n"
+"                                                                                                                                                    <div>\n"
+"                                                                                                                                                        <br>\n"
+"                                                                                                                                                            <br>\n"
+"                                                                                                                                                        Date: ${format_date(ctx.get('email_current_date'))}<br><br>\n"
+"                                                                                                                                                        ${object.tenancy_id.tenant_id.name}<br><br> Renting Apartment No. (${object.property_id.name}) in Building No. (${object.property_id.building_no})<br>\n"
+"                                                                                                                                                                <br>\n"
+"                                                                                                                                                                    <u>Final Warning for Late Payment</u>\n"
+"                                                                                                                                                                    <br>\n"
+"                                                                                                                                                                        <br>Please pay the rent that you are due within two days,<br>\n"
+"                                                                                                                                                        with a commitment to pay in the first week of every month,<br>\n"
+"                                                                                                                                                        otherwise we will be forced to take legal measures against you.<br>\n"
+"                                                                                                                                                        Hoping for your cooperation, thank you.<br>\n"
+"\n"
+"                                                                                                                                                                            <br>\n"
+"                                                                                                                                                        General Manager<br>\n"
+"                                                                                                                                                        ${object.tenancy_id.company_id.name}\n"
+"                                                                                                                                                                                </div>\n"
+"\n"
+"                                                                                                                                                                            </td>\n"
+"                                                                                                                                                                        </tr>\n"
+"                                                                                                                                                                    </tbody>\n"
+"                                                                                                                                                                </table>\n"
+"                                                                                                                                                            </td>\n"
+"                                                                                                                                                        </tr>\n"
+"\n"
+"                                                                                                                                                        <tr>\n"
+"                                                                                                                                                            <td style=\"text-align:center;\">\n"
+"                                                                                                                                                                <hr style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\" width=\"100%\">\n"
+"                                                                                                                                                                </td>\n"
+"                                                                                                                                                            </tr>\n"
+"                                                                                                                                                            <tr>\n"
+"                                                                                                                                                                <td style=\"text-align:center;\">&nbsp;</td>\n"
+"                                                                                                                                                            </tr>\n"
+"                                                                                                                                                        </tbody>\n"
+"                                                                                                                                                    </table>\n"
+"                                                                                                                                                </td>\n"
+"                                                                                                                                            </tr>\n"
+"                                                                                                                                            <tr>\n"
+"                                                                                                                                                <td style=\"min-width:590px;\" align=\"center\">\n"
+"                                                                                                                                                    <table style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\" width=\"590\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\n"
+"                                                                                                                                                        <tbody>\n"
+"                                                                                                                                                            <tr>\n"
+"                                                                                                                                                                <td style=\"opacity:0.7;text-align: left;\" valign=\"middle\">&nbsp;</td>\n"
+"                                                                                                                                                            </tr>\n"
+"                                                                                                                                                        </tbody>\n"
+"                                                                                                                                                    </table>\n"
+"                                                                                                                                                </td>\n"
+"                                                                                                                                            </tr>\n"
+"                                                                                                                                        </tbody>\n"
+"                                                                                                                                    </table>\n"
+"                                                                                                                                </td>\n"
+"                                                                                                                            </tr>\n"
+"                                                                                                                        </tbody>\n"
+"                                                                                                                    </table>\n"
+"            \n"
+"        "
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "&amp;nbsp;&amp;nbsp;&amp;nbsp;<span>:&amp;nbsp; تاريخ الإصدار</span>"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "(طرف ثان / مستأجر )"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ") ومكونة من ("
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "1) - أستأجر الطرف الثاني من الطرف الأول القابل لذلك"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"10) - لا يحق للطرف الثاني ( المستأجر ) التنازل عن العين المؤجرة أو تأجيرها "
+"من الباطن سواء كلياً أو جزئياً كما لا يحق له أشراك أي شخص أخر معه في العين "
+"موضوع هذا العقد ، إلا بموافقة كتابيه مسبقة من الطرف الأول ( المؤجر ) ، "
+"ويترتب علي مخالفة ذلك حق المؤجر في طلب فسخ العقد ، وإلزام الطرف الثاني ( "
+"المستأجر ) بدفع أجرة المدة المتبقية منه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"10) - لا يضمن المؤجر التعرض الحاصل من الغير للمستأجر ، ولا يضمن بصفة خاصة ولا يكون\n"
+"                                مسئولا عن امتناع الجهات المختصة إصدار التراخيص اللازمة لمزاوله المستأجر نشاطه في\n"
+"                                    العين المستأجرة ، ولا يحق للمستأجر الرجوع علي المؤجر بأية طلبات تتعلق أو تترتب علي\n"
+"                                    ذلك مهما كان الوضع ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"11) - للطرف الأول ( المؤجر ) أو من يمثله الحق في دخول العين المؤجرة ، لإجراء"
+" الكشف ، ويكون ذلك باستئذان الطرف الثاني (المستأجر ) ، وليس للأخير الحق في "
+"رفض ذلك ، كما يتوجب علي المستأجر تسهيل مهمة المكلفين بصيانة العين المؤجرة ، "
+"وفي حالة رفضه يحق للمؤجر الاستعانة بالسلطات المختصة ويتحمل المستأجر كافة "
+"الأضرار التي تلحق بالعين المؤجرة للأشخاص نتيجة لامتناعه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"11) - محظور علي الطرف الثاني ( المستأجر ) أن يضع في العين المؤجرة ، مواد "
+"ملتهبة أو مضرة بالصحة العامة ، أو من شأنها تهديد سلامة العقار ، ويكون الطرف "
+"الثاني مسئول مسؤولية كاملة قبل الطرف الأول ( المؤجر ) والغير في حالة حدوث "
+"حريق ، أو أي أضرار نتيجة لإهماله أو تعديه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"12) - إذا انتقلت ملكية العين المؤجرة اختيار أو جبراً إلي شخص أخر فإن الإيجار"
+" ينفذ في حق المالك الجديد ، ولو لم يكن له تاريخ ثابت سابق علي التصرف الذي "
+"نقل الملكية وتستمر أحكامه من حيث أثاره والمدة اللازمة لتعديل الأجرة من وقت "
+"علمه بانتقالها ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"12) - يتعهد الطرف الثاني ( المستأجر ) بالمحافظة علي علاقة حسن الجوار وعن "
+"تصرفات تابعيه ومن يكون قاطنا معه لتحقيق ذلك وإذا أصبح وجوده مصدر إزعاج مستمر"
+" لسائر المستأجرين وتكرار شكواهم ، يحق للطرف الأول ( المؤجر ) أن يطلب منه "
+"إخلاء العين المؤجرة ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"13) - إذا أجري الطرف الثاني ( المستأجر ) أي تحسين أو عمل في العين المؤجرة "
+"فليس له الحق بالمطالبة بقيمته أو إتلافه أو إزالته ويكون ملك خالص تابعاً "
+"للعين المؤجرة ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"13) لا يضمن الطرف الأول ( المؤجر ) التعرض الحاصل من الغير للطرف الثاني ( "
+"المستأجر ) ولا يضمن بصفة خاصة ولا يكون مسئولا عن امتناع الجهات الإدارية "
+"المختصة إصدار التراخيص اللازمة لمزاولة الطرف الثاني ( المستأجر ) نشاطه في "
+"العين المؤجرة ولا يحق للطرف الثاني ( المستأجر ) الرجوع علي الطرف الأول ( "
+"المؤجر ) بأي طلبات تتعلق أو تترتب علي ذلك مهما كان الوضع ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"14) - يقر المستأجر بأن يتخذ المكان المؤجر موطناً مختاراً وكل إعلان يرسل إليه"
+" فيه يعتبر قانونياً ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"14) – يتعهد الطرف الثاني بأن لا يجري أي تغييرات للعين المؤجرة عليه ما لم "
+"يحصل علي موافقة من الطرف الأول مقدمة وخطية وإلا كان ملزما بالتعويض وإعادة "
+"الحالة إلي ما كانت عليها حين الاستئجار ، كذلك لا يحق له استعمال الممرات "
+"لتخزين البضاعة أو عرضها من شأنها عرقلة المارة ، وعند مخالفة ذلك يوافق الطرف "
+"الثاني علي فسخ العقد من جانب الطرف الأول ولا يحق له الاعتراض وذلك من جراء "
+"مخالفته لبنود العقد ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"15) - كل ما لم يرد ذكره في هذا العقد يخضع لأحكام قانون الإيجار الكويتي ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"15) - يلتزم الطرف الثاني ( المستأجر ) بدفع تأمين واستهلاك التيار الكهربائي "
+"لوزارة الكهرباء والماء ، ويكون ملتزم وحده بأي مخالفة بخصوص ذلك ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"16) - اتفق الطرفان علي انه في حالة رغبة الطرف الثاني ( المستأجر ) في أخلاء "
+"الشقة المؤجرة ، وجب عليه أخلاء الشقة وتسليمها للطرف الأول ( المؤجر ) في "
+"اليوم الخامس والعشرون من الشهر كحد أقصي ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"16) - حرر هذا العقد من نسختين ، بيد كل طرف نسخه للعمل بموجبها وقت اللزوم ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"17) - لا يحق للطرف الثاني ( المستأجر ) تأجير العين المؤجرة من الباطن ، كما "
+"ليس له الحق في تحويل عقد الإيجار إلي غيره ، أو التنازل عن كل أو جزء من العين"
+" المستأجرة ، كما لا يحق له أشراك أو إسكان أي شخص أخر معه بخلاف أفراد عائلته "
+"في العين موضوع هذا العقد ، إلا بموافقة كتابيه مسبقة من الطرف الأول ( المؤجر "
+") ، ويترتب علي مخالفة ذلك حق المؤجر في طلب فسخ العقد ، وإلزام الطرف الثاني ("
+" المستأجر ) بدفع أجرة المدة المتبقية منه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"18) - تم استئجار العين للاستعمال كسكن عائلي ، ولا يحق تغير الاستعمال لأي غرض"
+" أخر ، إلا بموافقة خطيه من الطرف الأول"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"19) - يلتزم الطرف الثاني ( المستأجر ) في استخدامه للأجزاء المشتركة للعقار "
+"كالسلم والمصعد ومواقف السيارات إن وجد أي منهما بالتعليمات التي يضعها الطرف "
+"الأول ( المؤجر ) ويمتنع عليه مزاحمة جيرانه في هذا الشأن"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"2) - يقر المستأجر بأنه قام بمعاينة العين المؤجرة بنفسه ، ووجدها علي أحسن حال"
+" ، ومستوفيه لجميع لوازمه وصالحه للانتفاع بما أجره من أجلها ، ويتعهد بأن "
+"يراعيها وأن لا يحدث فيها أي تغيير أو هدم أو بناء إلا بعد موافقة خطيه من "
+"المؤجر ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"20) - يلتزم الطرف الثاني ( المستأجر ) بأن لا يضع في العين المؤجرة ، مواد "
+"ملتهبة أو مضرة بالصحة العامة ، أو من شأنها تهديد سلامة العقار ، ويكون الطرف "
+"الثاني مسئول مسؤولية كاملة قبل الطرف الأول ( المؤجر ) والغير في حالة حدوث "
+"حريق ، أو أي أضرار نتيجة لإهماله أو تعديه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"21) - يحظر علي الطرف الثاني ( المستأجر ) اقتناء الحيوانات والدواجن في أي قسم"
+" من العين المؤجرة"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"22) - يحظر علي الطرف الثاني ( المستأجر ) استغلال الممرات المتواجدة بساحات "
+"العمارة أو السلم أو أمام الشقق السكنية ، بوضع أي شيء كان ، حيث أن الممرات "
+"طريق خاص للمرور فقط ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"23) - إذا انتقلت ملكية العين المؤجرة اختيار أو جبراً إلي شخص أخر فإن الإيجار"
+" ينفذ في حق المالك الجديد ، ولو لم يكن له تاريخ ثابت سابق علي التصرف الذي "
+"نقل الملكية وتستمر أحكامه من حيث أثاره والمدة اللازمة لتعديل الأجرة من وقت "
+"علمه بانتقالها ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"24) - يقر المستأجر بأن يتخذ المكان المؤجر موطناً مختاراً وكل إعلان يرسل إليه"
+" فيه يعتبر قانونياً ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"25) - كل ما لم يرد ذكره في هذا العقد يخضع لأحكام قانون الإيجار الكويتي ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"26) - حرر هذا العقد من نسختين ، بيد كل طرف نسخه للعمل بموجبها وقت اللزوم ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "3) - الإيجار الشهري للعين المؤجرة هو("
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "4) - مدة هذا العقد (سنة واحدة) تبدأ من"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"5)  - يتحمل الطرف الثاني (المستأجر) مصروفات وتعويضات الأضرار التي تحدث "
+"بالعين المؤجرة ، أو في البناية ذاتها سواء كانت من المستأجر بنفسه أو أحد "
+"المسئولين منه أو التابعين له أو أي من زواره ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"5) - يتحمل الطرف الثاني (المستأجر) مصروفات وتعويضات الأضرار التي تحدث بالعين\n"
+"                                    المؤجرة ، أو في البناية ذاتها سواء كانت من المستأجر بنفسه أو أحد المسئولين منه أو التابعين\n"
+"                                    له أو أي من زواره ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"6) - لا يضمن المؤجر التعرض الحاصل من الغير للمستأجر ، ولا يضمن بصفة خاصة ولا"
+" يكون مسئولا عن امتناع الجهات المختصة إصدار التراخيص اللازمة لمزاوله "
+"المستأجر نشاطه في العين المستأجرة ، ولا يحق للمستأجر الرجوع علي المؤجر بأية "
+"طلبات تتعلق أو تترتب علي ذلك مهما كان الوضع ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid "6) - يدفع المستأجر عند التوقيع علي هذا العقد تأميناً وقدرة ("
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"7) - الطرف الأول ( المؤجر ) غير مسئول عن أي تلف أو سرقه قد تحدث لمنقولات "
+"الطرف الثاني ( المستأجر ) سواء كانت تلك المنقولات المسروقة أو التالفة داخل "
+"العين المؤجرة أو خارجها ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"7) - جميع الترميمات اللازمة للعين المؤجرة ، و التي ترجع إلي الاستعمال العادي والمألوف\n"
+"                                    يتحملها الطرف الثاني ( المستأجر ) ، وهي كالإصلاحات الداخلية من توصيلات لكهرباء ، أو\n"
+"                                الأبواب أو النوافذ أو الصبغ ، أما الترميمات الجسيمة مثل ( صيانة الأسطح والدرج والمصاعد )\n"
+"                                فيلتزم بها المؤجر ، وللمؤجر أن يشرع في بناء أدوار عليا أو إضافة بناء ملاصق للعقار الأصلي ،\n"
+"                                أو أجراء أي تعديلات أو إضافات يراها مناسبة في المساحات والفراغات العامة ، سواء كان ذلك\n"
+"                                بالبناء أو الهدم أو الغلق أو فتح نوافذ أو إغلاقها وما إلي ذلك ، دون اعتراض من المستأجر ، ولا\n"
+"                                    يحق للمستأجر الاعتراض أو المطالبة بأي تعويض بسبب هذه الأعمال ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"8) - في حالة انتهاء مدة العقد بدون تجديد ، وفي حالة تأخير المستأجر في تسليمه العين\n"
+"                                المؤجرة ، يتعهد المستأجر بأن يدفع للمؤجر التعويض المنصوص عليه في المادة 23 من قانون\n"
+"                                    الإيجارات والذي يعادل ضعف مبلغ الإيجار المتفق عليه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"8) - للطرف الأول ( المؤجر ) أو من يمثله الحق في دخول العين المؤجرة ، لإجراء "
+"الكشف ، ويكون ذلك باستئذان الطرف الثاني (المستأجر ) وليس للأخير الحق في رفض "
+"ذلك ، كما يتوجب علي المستأجر تسهيل مهمة المكلفين بصيانة العين المؤجرة ، وفي "
+"حالة رفضه يحق للمؤجر الاستعانة بالسلطات المختصة ويتحمل المستأجر كافة الأضرار"
+" التي تلحق بالعين المؤجرة للأشخاص نتيجة لامتناعه ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"9) - الطرف الأول ( المؤجر ) غير مسئول عن أي تلف أو سرقه قد تحدث لمنقولات الطرف\n"
+"                                الثاني ( المستأجر ) سواء كانت تلك المنقولات المسروقة أو التالفة داخل العين المؤجرة أو\n"
+"                                    خارجها ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"9) - يتعهد الطرف الثاني ( المستأجر ) بالمحافظة علي علاقة حسن الجوار وعن "
+"تصرفات تابعيه وإذا أصبح وجوده مصدر إزعاج مستمر لسائر المستأجرين وتكرار "
+"شكواهم ، يحق للطرف الأول ( المؤجر ) أن يطلب منه إخلاء العين المؤجرة ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "<b>    وبموجب هذا العقد فقد تم الاتفاق بين الطرفين علي الأتي :-</b>"
+msgstr ""
+
+#. module: property_management_soor
+#: model:mail.template,body_html:property_management_soor.send_wrong_document_upload_warning_email
+msgid ""
+"<div>\n"
+"                <tbody>\n"
+"                    Hello ${object.contact_name},<br/><br/>\n"
+"                    Your document are rejected please upload bellow rejected document.<br/><br/>\n"
+"                    <ol>\n"
+"                        % for lead in ctx['document_list']:\n"
+"                            <li> ${lead}</li><br/>\n"
+"                        % endfor\n"
+"                    </ol>\n"
+"                    General Manager<br/>\n"
+"                    Mishhin Real Estate Kuwaiti Company</tbody>\n"
+"            </div>\n"
+"        "
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid ""
+"<span>\n"
+"                        <b>Receipt Voucher</b>\n"
+"                    </span>"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "<span>Issue Date&amp;nbsp;&amp;nbsp;</span>"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "<span>عقد إيجار</span>"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__annual_company_income
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__annual_company_income
+msgid "Annual Company Income"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__annual_income
+msgid "Annual Income – Required by Law"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.crm_lead_form_inherit_property_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.tenant_legal_partner_form
+msgid "Applicant Document"
+msgstr "وثيقة مقدم الطلب"
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__state__approved
+msgid "Approved"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__articale_of_asociation
+msgid "Articles of Association"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__contract_attachment
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Bank"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment__bank_reference_id
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register__bank_reference_id
+msgid "Bank Refrence"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Building No."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "C.R.:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_crm_stage
+msgid "CRM Stages"
+msgstr "مراحل العلاقات العامة"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__case_information_id
+msgid "Case"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.actions.act_window,name:property_management_soor.case_information_action
+#: model:ir.model,name:property_management_soor.model_case_information
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__case_information_ids
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner__case_information_ids
+#: model:ir.ui.menu,name:property_management_soor.case_information_menu
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_form
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_search
+msgid "Case Information"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_case_information_line
+msgid "Case Information Line"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.account_analytic_account_legal_form
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_tree
+#: model_terms:ir.ui.view,arch_db:property_management_soor.tenant_legal_partner_form
+msgid "Case Information Tree"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__line_ids
+#: model_terms:ir.ui.view,arch_db:property_management_soor.account_analytic_account_legal_form
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_form
+#: model_terms:ir.ui.view,arch_db:property_management_soor.tenant_legal_partner_form
+msgid "Case Line"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__case_number
+msgid "Case Number"
+msgstr "رقم القضية"
+
+#. module: property_management_soor
+#: model:ir.actions.act_window,name:property_management_soor.action_case_type_view
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__case_type_id
+#: model:ir.ui.menu,name:property_management_soor.menu_case_type
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_search
+msgid "Case Type"
+msgstr "نوع القضية"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Cash"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment__check_reference
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register__check_reference
+msgid "Check Reference"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Cheque No:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__civil_id
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner__civil_id
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__civil_id
+msgid "Civil ID"
+msgstr "البطاقة المدنية"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__commercial_record
+msgid "Commercial Record"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_res_company
+msgid "Companies"
+msgstr "شركات"
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__company_licence
+msgid "Company License"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__company_registration
+msgid "Company registration"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__copyright_dev
+msgid "Copyright"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__create_uid
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__create_uid
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__create_uid
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__create_date
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__create_date
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__create_date
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__crm_id
+msgid "Crm"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__date
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__date_of_lawsuit
+msgid "Date oflawsuit"
+msgstr "تاريخ الدعوى"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__deposite_amount_in_text
+msgid "Deosite In Words"
+msgstr "ديوسيت في الكلمات"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__name
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__description
+msgid "Description"
+msgstr "وصف"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_make_contract__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_stage__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_report_property_management_soor_report_receipt_voucher_details__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_tenancy_rent_schedule__display_name
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__document_type
+msgid "Document Type"
+msgstr "نوع الوثيقة"
+
+#. module: property_management_soor
+#: model:ir.actions.server,name:property_management_soor.ir_cron_document_upload_reminder_ir_actions_server
+#: model:ir.cron,cron_name:property_management_soor.ir_cron_document_upload_reminder
+#: model:ir.cron,name:property_management_soor.ir_cron_document_upload_reminder
+msgid "Document Upload Reminder"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.crm_lead_form_inherit_property_soor
+msgid "Document Upload Token"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__state
+msgid "Document approvel"
+msgstr "الموافقة على الوثيقة"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.tenant_legal_partner_form
+msgid "Documents"
+msgstr "وثائق"
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment__effective_date
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register__effective_date
+msgid "Effective Date"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,help:property_management_soor.field_account_payment__effective_date
+#: model:ir.model.fields,help:property_management_soor.field_account_payment_register__effective_date
+msgid "Effective date of Check"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__expiry_date
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__expiry_date
+msgid "Expiry Date"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__fax
+msgid "Fax"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Fax.:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__doc_name
+msgid "Filename"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Flat No."
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.actions.report,name:property_management_soor.property_basemanet_contract
+msgid "General Rent Contract"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_search
+msgid "Group By..."
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__id
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment__id
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register__id
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__id
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__id
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__id
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__id
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_make_contract__id
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_stage__id
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__id
+#: model:ir.model.fields,field_description:property_management_soor.field_report_property_management_soor_report_receipt_voucher_details__id
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__id
+#: model:ir.model.fields,field_description:property_management_soor.field_tenancy_rent_schedule__id
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "In Payment of"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__in_varification
+msgid "In Varification"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__rent_amount_in_text
+msgid "In Words"
+msgstr "بكلمات"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_stage__is_varification
+msgid "Is Varification Stage ?"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__judgement_details
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__judgement_details
+msgid "Judgement"
+msgstr "الحكم"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__judgement_date
+msgid "Judgement Date"
+msgstr "تاريخ الحكم"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_make_contract____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_stage____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_report_property_management_soor_report_receipt_voucher_details____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_tenancy_rent_schedule____last_update
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__write_uid
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__write_uid
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__write_uid
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__write_date
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__write_date
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__write_date
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_lead_attachment
+msgid "Lead Attachment"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__lead_expired_day
+msgid "Lead Expiry Date' Days(From Varification)"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__lead_token
+msgid "Lead Token"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_crm_lead__lead_attachment_ids
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner__lead_attachment_ids
+msgid "Lead attachment"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "ترشيح/فرصة"
+
+#. module: property_management_soor
+#: model:ir.ui.menu,name:property_management_soor.menu_tenant_case_sub
+msgid "Legal Details"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.account_analytic_account_legal_form
+#: model_terms:ir.ui.view,arch_db:property_management_soor.tenant_legal_partner_form
+msgid "Legal Information"
+msgstr "المعلومات القانونية"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.account_analytic_account_legal_form
+msgid "Legal Judgement"
+msgstr "الحكم القانوني"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Logo"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_crm_make_contract
+msgid "Make sales"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__mandoob_id
+msgid "Mandoob’s"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__marriage_certificate
+msgid "Marriage Certificate"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_type__name
+msgid "Name"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_tenant_partner__nationality
+msgid "Nationality"
+msgstr "جنسية"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information_line__next_session_date
+msgid "Next Session Date"
+msgstr "تاريخ الجلسة التالية"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "No."
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.actions.server,name:property_management_soor.ir_cron_inward_late_email_scheduler_ir_actions_server
+#: model:ir.cron,cron_name:property_management_soor.ir_cron_inward_late_email_scheduler
+#: model:ir.cron,name:property_management_soor.ir_cron_inward_late_email_scheduler
+msgid "Non-Payment Rent Warning Mail"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "OWNER"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__operations_manager_id
+msgid "Operations Manager"
+msgstr "مدير العمليات"
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "P.O.Box:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__tenant_id
+msgid "Partner"
+msgstr "شريك"
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__passport_copy
+msgid "Passport Copy"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_account_payment
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_res_company__pending_attachment_reminder
+msgid "Pending Attachment Reminder(Day's)"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_report_property_management_soor_report_receipt_voucher_details
+msgid "Property Rent Report"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__type_id
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_type_form
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_type_tree
+msgid "Property Type"
+msgstr "نوع الملكية"
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__state__re_review
+msgid "RE-Review"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Rec. Date"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Received from"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Receiver"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_account_payment_register
+msgid "Register Payment"
+msgstr "تسجيل دفعة"
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__state__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Rent For Date:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.actions.report,name:property_management_soor.property_rent_voucher_report
+msgid "Rent Receipt"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__salary_certificate
+msgid "Salary Certificate"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_type_view_search
+msgid "Search Property"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,help:property_management_soor.field_account_payment__journal_type
+#: model:ir.model.fields,help:property_management_soor.field_account_payment_register__journal_type
+msgid ""
+"Select 'Sale' for customer invoices journals.\n"
+"Select 'Purchase' for vendor bills journals.\n"
+"Select 'Cash' or 'Bank' for journals that are used in customer or vendor payments.\n"
+"Select 'General' for miscellaneous operations journals."
+msgstr ""
+
+#. module: property_management_soor
+#: code:addons/property_management_soor/models/crm_lead.py:0
+#: code:addons/property_management_soor/models/crm_lead.py:0
+#, python-format
+msgid "Some of document are not in approved in Applicant Document!"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Tel. Office:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__tenancy_id
+msgid "Tenancy"
+msgstr "الإيجار"
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_tenancy_rent_schedule
+msgid "Tenancy Rent Schedule"
+msgstr "جدول إيجار الإيجار"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_lead_attachment__tenant_id
+#: model_terms:ir.ui.view,arch_db:property_management_soor.case_information_search
+msgid "Tenant"
+msgstr "مستأجر"
+
+#. module: property_management_soor
+#: model:ir.model.fields,help:property_management_soor.field_case_information__tenant_id
+msgid "Tenant Name of Tenancy."
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_tenant_partner
+msgid "Tenant Partner"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_account_analytic_account
+msgid "Tenant Tenancy"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "The Sum of K.D."
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,help:property_management_soor.field_account_analytic_account__deposite_amount_in_text
+#: model:ir.model.fields,help:property_management_soor.field_account_analytic_account__rent_amount_in_text
+msgid "The amount in words"
+msgstr ""
+
+#. module: property_management_soor
+#: model:mail.template,subject:property_management_soor.send_token_genrated_email
+msgid "Token Numeber"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields,help:property_management_soor.field_account_analytic_account__type_id
+msgid "Types of property."
+msgstr ""
+
+#. module: property_management_soor
+#: model:crm.stage,name:property_management_soor.stage_lead_new
+msgid "Varification"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.actions.report,name:property_management_soor.property_warehouse_contract
+msgid "Warehouse Contract"
+msgstr ""
+
+#. module: property_management_soor
+#: model:mail.template,subject:property_management_soor.send_one_month_warning_email
+msgid "Warning For Late Payment"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "Website:"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model.fields.selection,name:property_management_soor.selection__lead_attachment__document_type__work_permit
+msgid "Work Permit"
+msgstr ""
+
+#. module: property_management_soor
+#: model:mail.template,subject:property_management_soor.send_wrong_document_upload_warning_email
+msgid "Wrong and Remaining Document Upload Reminder."
+msgstr ""
+
+#. module: property_management_soor
+#: code:addons/property_management_soor/models/crm_lead.py:0
+#, python-format
+msgid "You can not have more than one Varification stage!"
+msgstr ""
+
+#. module: property_management_soor
+#: model:ir.model,name:property_management_soor.model_case_type
+msgid "case Type"
+msgstr "نوع القضية"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_analytic_account__judgement_date
+msgid "judgement Date"
+msgstr "تاريخ الحكم"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_case_information__lawyer_office
+msgid "lawyer Office"
+msgstr "مكتب المحامي"
+
+#. module: property_management_soor
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment__journal_type
+#: model:ir.model.fields,field_description:property_management_soor.field_account_payment_register__journal_type
+msgid "type"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "أولاً : شركة"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "الجنسية /"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"الطرف الأول \n"
+"                                <br/>\n"
+"                                (المؤجر)"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"الطرف الثاني\n"
+"                                <br/>\n"
+"                                (المستأجر)"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "الكــائن في"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "المالك"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "المستلم"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "الموقع"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "الموقع الالكتروني:"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"بقصد استخدامها لغرض مزاولة نشاط\n"
+"                                    ("
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "بناية &amp;nbsp; Location"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "تاريخ الاستلام"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "تحرر هذا العقد بين كلا من"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "تلفون المكتب:"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "ثانياً: السيد/"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"د.ك ) ،\n"
+"                                    (فقط"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "د.ك) ، ( فقط"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+msgid ""
+"دينار كويتي لا غير) يعاد له عند انتهاء العقد ، وتسليه العين بالحالة التي\n"
+"                                    كانت عليها عند بدء عقد الإيجار ، ومن حق المؤجر أن يقتطع من مبلغ التأمين تكاليف\n"
+"                                    الإصلاحات التي يلتزم بها المستأجر وكذلك ثمن استهلاك الكهرباء التي لم يسددها المستأجر ،\n"
+"                                وفي حالة زيادة المبالغ المطلوب استقطاعها عن قيمة التأمين ، يلتزم المستأجر بسدادها\n"
+"                                للمؤجر ، كما يحق للمؤجر أن يعود علي المستأجر في المطالبة بها ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"دينار كويتي لا غير ) تدفع كل أول شهر ، مقدماً للمؤجر أو من ينوب عنه وذلك "
+"خلال خمسة أيام من أول كل شهر في مقر عمله ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "رقم"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "رقم مدني /"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "سجل تجاري:"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "شركة مشهن العقارية"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "شقة رقم"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "ص.ب:"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "على بنك &amp;nbsp;Cash/Cheque No."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "عنوان عمل /"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "فاكس:"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "م ، وتنتهي في"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid ""
+"م ،\n"
+"                                    قابله للتجديد لمدة مماثله ما لم يخطر أحد الطرفين الطرف الأخر ، بكتاب مسجل بعلم الوصول\n"
+"                                    قبل انتهاء مدة العقد بمدة شهر علي الأقل برغبته في عدم التجديد ، ويلتزم المستأجر عند\n"
+"                                    الأخلاء بتسليم العين المؤجرة والمفاتيح بالحالة التي كانت عليها عند بدء الإيجار مع إصلاح ما\n"
+"                                    يكون قد لحق بها من عطب علي حسابه الخاص ، وفي حاله أخلاء الطرف الثاني العين\n"
+"                                    المؤجرة قبل انتهاء مدة العقد الأصلية أو المجددة يلتزم بتعويض الطرف الأول بأجرة المدة\n"
+"                                    المتبقية من العقد ، كتعويض متفق عليه من الآن ."
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "مبلغ وقدره د.ك"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "نقدا/ شيك رقم"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "وذلك عن"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.template_common_rent_receipt
+msgid "وصلنا من"
+msgstr ""
+
+#. module: property_management_soor
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_basement_contract
+#: model_terms:ir.ui.view,arch_db:property_management_soor.report_warehouse_contract
+msgid "ويمثلها في هذا العقد السيد /"
+msgstr ""

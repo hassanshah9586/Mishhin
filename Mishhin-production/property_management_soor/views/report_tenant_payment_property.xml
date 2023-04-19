@@ -1,0 +1,62 @@
+<odoo>
+    <template id="tenant_payment_property_id">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div style="text-align: center;">
+                        <h5>
+                            <span class="ml-2">Detailed Invoice List</span>
+                        </h5>
+                    </div>
+                     <t t-set="f" t-value="get_details"/>
+                    <table class="table" border="1">
+                        <thead>
+                            <tr style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                <td style="border-top: 1px solid black;">Flat No.</td>
+                                <td style="border-top: 1px solid black;">Tenant Name</td>
+                                <td style="border-top: 1px solid black;">Amount Due</td>
+                                <td style="border-top: 1px solid black;">Receipt No</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <t t-foreach="f[0].keys()" t-as="property">
+                            <!-- <t t-foreach="docs" t-as="o"> -->
+                                <t t-set="amount_due" t-value="0"/> 
+                                    <tr>
+                                        <td style="border-top: 1px solid black;">Building No.</td>
+                                        <td style="border-top: 1px solid black;" colspan="3"><span t-esc='property.name'/></td>
+                                    </tr>
+                                    <t t-foreach="f[0].get(property)" t-as="tenancy">
+                                    <tr>
+                                        <td><span t-esc="tenancy.get('flat_no')"/></td>
+                                        <td><span t-esc="tenancy.get('tenant_name')"/></td>
+                                        <td><span t-esc="tenancy.get('amount_due')"/></td>
+                                        <td><span t-esc="tenancy.get('receipt_no')"/></td>
+                                    </tr>
+                                    <t t-set="amount_due" t-value="amount_due + tenancy.get('amount_due')"/>
+                                </t>
+                                <tr>
+                                    <td style="text-align: right" colspan="3">
+                                        <span t-esc="amount_due" t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                    </td>
+                                    <td>Total Building</td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <!-- Payment Receipt -->
+    <!-- Model Name  account.analytic.account -->
+    <!-- property_rent_report_ee.report_rent_voucher_details -->
+    <record id="action_tenant_payment_property_id" model="ir.actions.report">
+        <field name="name">Tenant Payment Property</field>
+        <field name="model">account.asset</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">property_management_soor.tenant_payment_property_id</field>
+        <field name="report_file">property_management_soor.tenant_payment_property_id</field>
+    </record>
+</odoo>

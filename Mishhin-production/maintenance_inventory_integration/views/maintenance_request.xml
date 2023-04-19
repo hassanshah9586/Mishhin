@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="maintenance_request_inherit_is_product" model="ir.ui.view">
+        <field name="name">maintenance.request.product</field>
+        <field name="model">maintenance.request</field>
+        <field name="inherit_id" ref="hr_maintenance.maintenance_request_view_form_inherit_hr"/>
+        <field name="arch" type="xml">
+            <field name="employee_id" position="after">
+                <field name="is_property"/>
+                <field name="is_product"/>
+                <field name="product_id" attrs="{'invisible':[('is_product', '=', False)]}"/>
+                <field name="quantity" attrs="{'invisible':[('is_product', '=', False)]}"/>
+                <field name="scrap_id" invisible="1"/>
+                <field name="is_scrap" invisible="1"/>
+            </field>
+        </field>
+    </record>
+    <record id="maintenance_request_inherit_is_property" model="ir.ui.view">
+        <field name="name">maintenance.request.property</field>
+        <field name="model">maintenance.request</field>
+        <field name="inherit_id" ref="property_maintenance_ee.maintenance_request_form_view_Inherit"/>
+        <field name="arch" type="xml">
+            <field name="property_id" position="attributes">
+                <attribute name="attrs">{'invisible': [('is_property', '=', False)]}</attribute>
+            </field>
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+<!--                <div class="oe_button_box" name="button_box">-->
+                    <button name="get_scrap_orders" string="Scrap Order" class="oe_stat_button" icon="fa-arrows-v" type="object" attrs="{'invisible':[('is_scrap', '=', False)]}"/>
+<!--                </div>-->
+            </xpath>
+        </field>
+    </record>
+</odoo>

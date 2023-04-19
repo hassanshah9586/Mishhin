@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_employee_form_inherit_form_company" model="ir.ui.view">
+        <field name="name">view.employee.from.inherit.form.company</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <field name="coach_id" position="after">
+                <field name="company"/>
+            </field>
+        </field>
+    </record>
+</odoo>

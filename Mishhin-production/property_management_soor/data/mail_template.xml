@@ -1,0 +1,218 @@
+<odoo>
+
+    <!-- Mail template for 02 month Late Payment -->
+    <record id="send_one_month_warning_email" model="mail.template">
+        <field name="name">Non-Payment Rent Month</field>
+        <field name="email_from">${(user.env.company.email
+            or 'noreply@localhost')|safe}</field>
+        <field name="subject">Warning For Late Payment</field>
+        <field name="model_id" ref="model_tenancy_rent_schedule"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html"><![CDATA[
+                <table style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;" cellspacing="0" cellpadding="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <table style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;" width="590" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                        <!-- HEADER -->
+                                        <tr>
+                                            <td style="min-width:590px;" align="center">
+                                                <table style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;" width="590" cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="middle">
+                                                                <span style="font-size:10px;">Tenancy Name</span>
+                                                                <br>
+                                                                    <span style="font-size:20px;font-weight: bold;">
+                                                            ${object.tenancy_id.name}
+                                                                    </span>
+                                                                </td>
+                                                               <td style="text-align:right;" valign="middle">
+                                                                    <img src="/logo.png?company=${object.tenancy_id.company_id.id}" style="padding: 0px; margin: 0px; height: auto; width: 80px;" alt="${object.company_id.name}">
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" style="text-align:center;">
+                                                                        <hr style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;" width="100%">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- CONTENT -->
+                                                    <tr>
+                                                        <td style="min-width:590px;" align="center">
+                                                            <table style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;" width="590" cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="font-size:13px;" valign="top">
+                                                                            <div style="direction:rtl;float:right;margin-top:1%">
+                                                            الكويت في : ${format_date(ctx.get('email_current_date'))}
+                                                                              <br>
+                                                                                    <br>
+                                                            ${object.tenancy_id.tenant_id.name}<br>
+                                                                                        <br>
+
+                                                            مستأجر الشقة رقم (${object.tenancy_id.property_id.name}) بناية رقم (${object.tenancy_id.property_id.building_no})<br>
+                                                                                            <br>
+                                                                                                <u>
+
+                                                                                                    <span class="text-center">إنذار نهائي  بسبب التأخير في دفع القيمة الايجارية</span>
+                                                                                                </u>
+                                                                                                <br>
+                                                                                                    <br>
+                                                            برجــــاء تســديد القيــــمة الايجــــارية المستحقة
+                                                                                                        <br>
+                                                            عليكــــم خلال يومين من تاريخه مع الالتزام بسـداد
+                                                                                                            <br>
+                                                            القيمة الايجـارية في الأســبوع الأول من كل شهر وإلا
+                                                                                                                <br>
+                                                                سنضطر آسفين إلى اتخاذ الإجراءات القانونية ضدكم .
+                                                                                                                    <br>
+                                                                                                                        <br>
+                                                            آملين حسن تعاونكم معنا ،،،،                                                                                                                            <br>
+                                                                                                                                <br>
+                                                            المالك
+                                                                                                                                    <br>
+                                                                                                                                    </div>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                            <tr>
+                                                                                                                                <td style="min-width:590px;" align="center">
+                                                                                                                                    <table style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;" width="590" cellspacing="0" cellpadding="0" border="0">
+                                                                                                                                        <tbody>
+                                                                                                                                            <tr>
+                                                                                                                                                <td style="font-size:13px;" valign="top">
+                                                                                                                                                    <div>
+                                                                                                                                                        <br>
+                                                                                                                                                            <br>
+                                                                                                                                                        Date: ${format_date(ctx.get('email_current_date'))}<br><br>
+                                                                                                                                                        ${object.tenancy_id.tenant_id.name}<br><br> Renting Apartment No. (${object.property_id.name}) in Building No. (${object.property_id.building_no})<br>
+                                                                                                                                                                <br>
+                                                                                                                                                                    <u>Final Warning for Late Payment</u>
+                                                                                                                                                                    <br>
+                                                                                                                                                                        <br>Please pay the rent that you are due within two days,<br>
+                                                                                                                                                        with a commitment to pay in the first week of every month,<br>
+                                                                                                                                                        otherwise we will be forced to take legal measures against you.<br>
+                                                                                                                                                        Hoping for your cooperation, thank you.<br>
+
+                                                                                                                                                                            <br>
+                                                                                                                                                        General Manager<br>
+                                                                                                                                                        ${object.tenancy_id.company_id.name}
+                                                                                                                                                                                </div>
+
+                                                                                                                                                                            </td>
+                                                                                                                                                                        </tr>
+                                                                                                                                                                    </tbody>
+                                                                                                                                                                </table>
+                                                                                                                                                            </td>
+                                                                                                                                                        </tr>
+
+                                                                                                                                                        <tr>
+                                                                                                                                                            <td style="text-align:center;">
+                                                                                                                                                                <hr style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;" width="100%">
+                                                                                                                                                                </td>
+                                                                                                                                                            </tr>
+                                                                                                                                                            <tr>
+                                                                                                                                                                <td style="text-align:center;">&nbsp;</td>
+                                                                                                                                                            </tr>
+                                                                                                                                                        </tbody>
+                                                                                                                                                    </table>
+                                                                                                                                                </td>
+                                                                                                                                            </tr>
+                                                                                                                                            <tr>
+                                                                                                                                                <td style="min-width:590px;" align="center">
+                                                                                                                                                    <table style="min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;" width="590" cellspacing="0" cellpadding="0" border="0">
+                                                                                                                                                        <tbody>
+                                                                                                                                                            <tr>
+                                                                                                                                                                <td style="opacity:0.7;text-align: left;" valign="middle">&nbsp;</td>
+                                                                                                                                                            </tr>
+                                                                                                                                                        </tbody>
+                                                                                                                                                    </table>
+                                                                                                                                                </td>
+                                                                                                                                            </tr>
+                                                                                                                                        </tbody>
+                                                                                                                                    </table>
+                                                                                                                                </td>
+                                                                                                                            </tr>
+                                                                                                                        </tbody>
+                                                                                                                    </table>
+            ]]>
+        </field>
+    </record>
+
+    <!-- Mail template for 03 month Late Payment -->
+    <record id="send_wrong_document_upload_warning_email" model="mail.template">
+        <field name="name">Document Upload Reminder</field>
+        <field name="email_from">${(user.env.company.email
+            or 'noreply@localhost')|safe}</field>
+        <field name="subject">Wrong and Remaining Document Upload Reminder.</field>
+        <field name="model_id" ref="model_crm_lead"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html" type='html'>
+            <div>
+                <tbody>
+                    Hello ${object.contact_name},<br/><br/>
+                    Your document are rejected please upload bellow rejected document.<br/><br/>
+                    <ol>
+                        % for lead in ctx['document_list']:
+                            <li> ${lead}</li><br/>
+                        % endfor
+                    </ol>
+                    General Manager<br/>
+                    Mishhin Real Estate Kuwaiti Company</tbody>
+            </div>
+        </field>
+    </record>
+
+     <!-- Scheduler for warning on Late Payment -->
+    <record id="ir_cron_inward_late_email_scheduler" model="ir.cron">
+        <field name="name">Non-Payment Rent Warning Mail</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False" />
+        <field name="model_id" ref="model_tenancy_rent_schedule" ></field>
+        <field eval="True" name="active"/>
+        <field name="code">model.send_non_payment_rent_email()</field>
+        <field name="state">code</field>
+    </record>
+
+    <!-- Scheduler for warning on Late Payment -->
+    <record id="ir_cron_document_upload_reminder" model="ir.cron">
+        <field name="name">Document Upload Reminder</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False" />
+        <field name="model_id" ref="model_crm_lead"></field>
+        <field eval="True" name="active"/>
+        <field name="code">model.send_rejected_mail_upload_email()</field>
+        <field name="state">code</field>
+    </record>
+
+    <!-- Mail template for 03 month Late Payment -->
+    <record id="send_token_genrated_email" model="mail.template">
+        <field name="name">Token Number Genrattion</field>
+        <field name="email_from">${(user.env.company.email
+            or 'noreply@localhost')|safe}</field>
+        <field name="subject">Token Numeber</field>
+        <field name="model_id" ref="model_crm_lead"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html"><![CDATA[
+                <!doctype html>
+                <body>
+                    Dear ${object.contact_name},<br/>
+                    Your unique token are genrated you can use to upload document.<br/><br/>
+                    UNIQUE TOKEN: ${ctx.get('token_key')} <br/>
+                    General Manager<br/>
+                    Mishhin Real Estate Kuwaiti Company
+                </body>
+            </html>
+            ]]>
+        </field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_salary_grade,access_salary_grade,model_salary_grade,base.group_user,1,1,1,1
+access_kuwait_basic_salary,access_kuwait_basic_salary,model_kuwait_basic_salary,base.group_user,1,1,1,1
+access_kuwait_basic_salary_line,access_kuwait_basic_salary_line,model_kuwait_basic_salary_line,base.group_user,1,1,1,1
+access_kuwait_housing_allowance,access_kuwait_housing_allowance,model_kuwait_housing_allowance,base.group_user,1,1,1,1
+access_kuwait_housing_allowance_line,access_kuwait_housing_allowance_line,model_kuwait_housing_allowance_line,base.group_user,1,1,1,1
+access_kuwait_academic_allowance,access_kuwait_academic_allowance,model_kuwait_academic_allowance,base.group_user,1,1,1,1
+access_kuwait_academic_allowance_line,access_kuwait_academic_allowance_line,model_kuwait_academic_allowance_line,base.group_user,1,1,1,1

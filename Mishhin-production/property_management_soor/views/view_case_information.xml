@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="case_information_form" model="ir.ui.view">
+        <field name="name">case.information.form</field>
+        <field name="model">case.information</field>
+        <field name="arch" type="xml">
+            <form string="Case Information">
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                    <group col='4' colspan='4'>
+                        <field name='tenancy_id' required='1' domain="[('is_property','=',True)]"/>
+                        <field name='tenant_id' required='1' />
+                        <field name='case_type_id' required='1'/>
+                        <field name="lawyer_office" />
+                        <field name='case_number' required='1'/>
+                        <field name='electronic_case_number'/>
+                        <field name='date_of_lawsuit'/>
+                        <field name='judgement_details'/>
+                        <field name='judgement_date'/>
+                        <field name="active" invisible="1"/>
+                    </group>
+                <notebook>
+                    <page name="case_line" string="Case Line">
+                        <field name='line_ids'>
+                            <tree string='Case Line' editable='bottom'>
+                                <field name='date'/>
+                                <field name='next_session_date'/>
+                                <field name='name'/>
+                                <field name="doc_name" readonly="0" invisible="1"/>
+                                <field name="id_attachment" filename="doc_name" string='Attachment'/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page name="case_attachment" string="Case Attachments">
+                        <field name="attachment_ids" nolabel="1" colspan="4">
+                            <tree string="Documents">
+                                <field name="name"/>
+                                <field name="doc_name" readonly="0" invisible="1"/>
+                                <field name="contract_attachment" filename="doc_name"/>
+                                <field name="case_information_id" invisible="1"/>
+                            </tree>
+                            <form string="Documents">
+                                <group colspan="4" col="4">
+                                    <field name="name" colspan="2"/>
+                                    <newline/>
+                                    <field name="contract_attachment" filename="doc_name" required="1"/>
+                                    <field name="doc_name" readonly="0" invisible="1"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="case_information_tree" model="ir.ui.view">
+        <field name="name">case.information.tree</field>
+        <field name="model">case.information</field>
+        <field name="arch" type="xml">
+            <tree string="Case Information Tree">
+                <field name="tenancy_id" />
+                <field name="tenant_id" />
+                <field name='case_type_id'/>
+                <field name="lawyer_office" />
+                <field name='case_number'/>
+                 <field name='electronic_case_number'/>
+                <field name='date_of_lawsuit'/>
+            </tree>
+        </field>
+    </record>
+    <record id="case_information_search" model="ir.ui.view">
+        <field name="name">case.information.search</field>
+        <field name="model">case.information</field>
+        <field name="arch" type="xml">
+            <search string="Case Information">
+                <field name="tenancy_id" />
+                <field name="tenant_id" />
+                <field name='case_type_id'/>
+                <field name="lawyer_office" />
+                <field name='case_number'/>
+                 <field name='electronic_case_number'/>
+                <newline/>
+                <group expand="0" string="Group By..." colspan="4" col="10">
+                    <filter string="Tenant" name="tenant" icon="terp-personal" domain="[]" context="{'group_by':'tenant_id'}"/>
+                    <filter string="Case Type" name="case_type" icon="terp-personal" domain="[]" context="{'group_by':'case_type_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="case_information_action" model="ir.actions.act_window">
+        <field name="name">Case Information</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">case.information</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_tenant_case_sub"
+        name="Legal Details"
+        parent="property_management_ee.menu_property_main"
+        sequence="6"/>
+
+    <menuitem
+        id="case_information_menu"
+        name="Case Information"
+        action="case_information_action"
+        parent="menu_tenant_case_sub"
+        sequence="1"/>
+</odoo>

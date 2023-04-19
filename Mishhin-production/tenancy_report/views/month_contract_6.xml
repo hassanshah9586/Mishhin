@@ -1,0 +1,1006 @@
+<odoo>
+    <data>
+        <!--        <template id="month_contract_6">-->
+        <!--            <t t-call="web.html_container">-->
+        <!--                <t t-foreach="docs" t-as="o">-->
+        <!--                    <t t-call="web.basic_layout">-->
+        <!--                        <div style="{-->
+        <!--                              position: relative;-->
+        <!--                              text-align: center;-->
+        <!--                              color: white;-->
+        <!--                            }">-->
+        <!--                            <img t-att-src="'/tenancy_report/static/src/img/second_rep1.jpeg'" alt="Snow"-->
+        <!--                                 style="-->
+        <!--                            width:100%;-->
+        <!--                            object-fit:cover;-->
+        <!--                            margin:0 auto !important;-->
+        <!--                            postion:relative;-->
+        <!--                            padding:0;-->
+        <!--                                    "/>-->
+        <!--                            <div-->
+        <!--                                    style="position: absolute;-->
+        <!--                                      top:200px;-->
+        <!--                                      left:785px;-->
+        <!--                                      "-->
+        <!--                            >-->
+        <!--                                <span t-esc="o.penalty_day"/>-->
+        <!--                            </div>-->
+        <!--                            <div-->
+        <!--                                    style="position: absolute;-->
+        <!--                                                              top:200px;-->
+        <!--                                                              left:630px;-->
+        <!--                                                              "-->
+        <!--                            >-->
+        <!--                                <span t-esc="o.date"/>-->
+        <!--                            </div>-->
+        <!--                            <div-->
+        <!--                                    style="position: absolute;-->
+        <!--                                                              top:315px;-->
+        <!--                                                              left:650px;-->
+        <!--                                                              "-->
+        <!--                            >-->
+        <!--                                <span>Tenant Name</span>-->
+        <!--                            </div>-->
+        <!--                            <div-->
+        <!--                                    style="position: absolute;-->
+        <!--                                                              top:340px;-->
+        <!--                                                              left:470px;-->
+        <!--                                                              "-->
+        <!--                                                        >-->
+        <!--                                <span>Tenant Nationality</span>-->
+        <!--                            </div>-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:345px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:650px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                &lt;!&ndash;                                <span t-esc="o.tenant_id.street"/>&ndash;&gt;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                &lt;!&ndash;                                <span t-esc="o.tenant_id.city"/>&ndash;&gt;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span t-esc="o.tenant_id.country_id.name"/>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:345px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:350px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Email</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:365px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:550px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Company Representer</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:365px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:250px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Nationality</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:388px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:700px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Civil ID</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:388px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:500px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Job Title</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:508px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:400px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Property Type</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:528px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:650px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Property CIty</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:528px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:430px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Property Block No</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:528px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:200px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Property Street No</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:548px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:700px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Building No</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:548px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:250px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Automated Address Number</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:568px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:600px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Property Type</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:860px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:430px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Contract Start Date</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:860px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:180px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Contract End Date</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:975px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:400px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Tenancy Rent</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:975px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:180px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Arabic Rent</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:1115px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:500px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Isurance Amount</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            <div&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                    style="position: absolute;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  top:1115px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  left:200px;&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                  "&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            >&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                                <span>Arabic insurance</span>&ndash;&gt;-->
+        <!--                            &lt;!&ndash;                            </div>&ndash;&gt;-->
+
+
+        <!--                        </div>-->
+        <!--                        <div style="{-->
+        <!--                              position: relative;-->
+        <!--                              text-align: center;-->
+        <!--                              color: white;-->
+        <!--                            }">-->
+        <!--                            <img t-att-src="'/tenancy_report/static/src/img/second_rep2.jpeg'" alt="Snow"-->
+        <!--                                 style="-->
+        <!--                            width:100%;-->
+        <!--                            object-fit:cover;-->
+        <!--                            margin:0 auto !important;-->
+        <!--                            postion:relative;-->
+        <!--                            padding:0;-->
+        <!--                                    "/>-->
+        <!--                        </div>-->
+        <!--                        <div style="{-->
+        <!--                              position: relative;-->
+        <!--                              text-align: center;-->
+        <!--                              color: white;-->
+        <!--                            }">-->
+        <!--                            <img t-att-src="'/tenancy_report/static/src/img/second_rep3.jpeg'" alt="Snow"-->
+        <!--                                 style="-->
+        <!--                            width:100%;-->
+        <!--                            object-fit:cover;-->
+        <!--                            margin:0 auto !important;-->
+        <!--                            postion:relative;-->
+        <!--                            padding:0;-->
+        <!--                                    "/>-->
+        <!--                        </div>-->
+
+
+        <!--                    </t>-->
+        <!--                </t>-->
+        <!--            </t>-->
+        <!--        </template>-->
+
+
+        <template id="month_contract_6">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.basic_layout">
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+                              rel="stylesheet"
+                              integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+                              crossorigin="anonymous"/>
+                        <style>
+                            .conatiner{
+                            <!--                            background-image: url('url of bg image');-->
+                            background-size: cover;
+                            width: 100%;
+                            }
+                            .content{
+                            padding-rigth: 40px;
+                            }
+                            .logo{
+                            text-align: center;
+                            margin: 0 auto;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            }
+                            .row{
+                            width:100%;
+                            }
+                            #title{
+                            text-align: center;
+                            font-size: 2rem;
+                            }
+                            .arabic{
+                            word-spacing: 5px;
+                            }
+
+                            td{
+                            font-size:1.25rem;
+                            border: 1px dashed black;
+                            }
+                        </style>
+
+                        <div class="container">
+                            <t t-call="tenancy_report.tenancy_report_header"/>
+                            <div class="content">
+                                <div class="row">
+                                    <div id="title" class=" col-12">عقــــد ايجـــــــــار</div>
+                                </div>
+                                <table class="mt16" width="100%" style="margin-top:1%;text-align justify">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-right arabic" style="padding-right:10px">في دولة الكويت -
+                                                تعاقد كل من:
+                                            </td>
+                                            <td><span t-esc="o.ten_date"/></td>
+                                            <td class="text-right arabic">الموافق</td>
+                                            <td><span t-esc="o.penalty_day"/></td>
+                                            <td class="text-right arabic">أنه في يوم</td>
+                                        </tr>
+
+                                        <!--                                        <tr>-->
+                                        <!--                                            <td class="text-right arabic" style="padding-right:10px">في دولة الكويت - -->
+                                        <!--                                                تعاقد كل من:-->
+                                        <!--                                            </td>-->
+                                        <!--                                            <td>DATE</td>-->
+                                        <!--                                            <td class="text-right arabic">الموافق</td>-->
+                                        <!--                                            <td>DAY</td>-->
+                                        <!--                                            <td class="text-right arabic">أنه في يوم</td>-->
+                                        <!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td class="text-right"-->
+<!--                                                style="border-bottom: 1px dashed black; font-size: 100%;"-->
+<!--                                                width='auto' colspan="4">-->
+<!--                                                <span t-field='o.company_id.name'/>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                <b>
+                                                    أولا: السادة / شركة مشهن الكويتية العقارية
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right">برج أنور – الدور12</td>
+                                            <td class="text-right">- 20</td>
+                                            <td class="text-right">شارع السور – قسيمة–</td>
+                                            <td class="text-right">13</td>
+                                            <td class="text-right">مقر الشركة: العاصمة – منطقة القبلة – قطعة</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">ويمثلها بالتوقيع السيد / ثنيان
+                                                أنور
+                                                مصطفى
+                                                ثنيان الغانم
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-left' colspan="5">
+                                                <b>
+                                                    (طرف أول – مؤجر)
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-right' colspan="4"><span t-esc="o.company_id.partner_id.name"/></td>
+                                            <td class="text-right arabic">ثانيا: السادة شركة/</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left" colspan="4">Commercial record no</td>
+                                            <td class="text-right arabic">:سجل تجاري رقم</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.email"/></td>
+                                            <td class="text-right arabic">:البريد الالكتروني</td>
+                                            <td class="text-left"><span t-esc="o.tenant_id.street"/></td>
+                                            <td class="text-right arabic">: العنوان</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><span t-esc="o.tenant_id.nationality.name"/></td>
+                                            <td class="text-left">الجنسية:</td>
+                                            <td class="text-right" colspan="2">COMPANY REPRESENTER</td>
+                                            <td class="text-right arabic">:ويمثلها السيد</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" colspan="2"><span t-esc="o.mandoob_id.function"/></td>
+                                            <td class="text-right">: بصفته/</td>
+                                            <td class="text-right"><span t-esc="o.tenant_id.civil_id"/></td>
+                                            <td class="text-right">:الرقم المدني</td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-left' colspan="5">
+                                                <b>
+                                                    (طرف ثاني – مستأجر)
+                                                </b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                <b>
+                                                    وبعد أن أقر أطراف العقد بأهليتهم القانونية لإبرام هذا العقد، فقد
+                                                    تلاقت
+                                                    إرادتهما في الاتفاق على البنود الاتية:
+                                                </b>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            التمهيد
+                                                        </b>
+
+                                                    </u>
+                                                </center>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class='text-right' colspan="4"><span t-esc="o.type_id.name"/></td>
+                                            <td class="text-right arabic">تقدم الطرف الثاني للطرف الأول وأبدى رغبته في
+                                                استئجار
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">PROPERTY STREET NO.</td>
+                                            <td class="text-right arabic">: شارع</td>
+                                            <td class="text-left">PROPERTY BLOCK NO.</td>
+                                            <td class="text-left">:قطعة</td>
+                                            <td class="text-right" dir="rtl">
+                                                <span>المقيم بمنطقة:</span>
+                                                PROPERTY'S CITY
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left" colspan="2">AUTOMATED ADDRESS NO</td>
+                                            <td class="text-right arabic">: الرقم الآلي للعنوان</td>
+                                            <td class="text-left">BUILDING NO.</td>
+                                            <td class="text-left">: قسيمة</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                ، وقد وافق الطرف الأول على ذلك وعليه فقد اتفقا على الاتي:
+                                            </td>
+                                            <td class="text-right" colspan="1"><span t-esc="o.type_id.name"/></td>
+                                            <td class="text-right arabic">وذلك لعمل نشاط</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الاول
+                                                        </b>
+
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                التمهيد السابق جزء لا يتجزأ من هذا العقد، بل هو شارح له مفسر لما غمض من
+                                                بنوده.
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الثاني
+                                                        </b>
+
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                أجر الطرف الأول للطرف الثاني - القابل لذلك – العين المثبت عنوانها في
+                                                تمهيد
+                                                هذا
+                                                العقد وذلك لعمل النشاط المشار اليه في التمهيد للطرف الثاني.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الثالث
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                يقر الطرف الثاني أنه عاين محل عقد الايجار معاينة نافية للجهالة، وقد تأكد
+                                                من
+                                                جاهزيتها واستيفائها لجميع المرافق الخدمية التي تجعلها مهيئة للغرض الذي
+                                                استأجرها
+                                                له، ويقر أنه استلمها واستلم مفاتيحها قبل التوقيع على هذا العقد، وأنه
+                                                أصبح
+                                                مسؤولا
+                                                مسؤولية تامة عنها وعما يجري فيها أو يلحق بها.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الرابع
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="text-align: left;"><span t-esc="o.date"/></td>
+                                            <td style="text-align:left; arabic">: وتنتهي في</td>
+                                            <td style="text-align:left;" colspan="2"><span t-esc="o.date_start"/></td>
+                                            <td style="text-align:right; arabic">مدة هذا العقد سنة ميلادية واحدة تبدأ في
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                وهذه المدة قابلة للتجديد لمدة أو لمدد أخرى مالم يخطر أحد الطرفين الاخر
+                                                برغبته في
+                                                إنهاء هذا العقد، ويلتزم الطرف الراغب في إنهاء هذا العقد بإخطار الطرف
+                                                الأخر
+                                                كتابيا قبل شهر من تاريخ انتهاء مدة العقد.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الخامس
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left;">TENANCY RENT IN ARABIC LETTERS</td>
+                                            <td style="text-align:left; arabic" colspan="2">: د.ك (فقط</td>
+                                            <td style="text-align:left;"><span t-esc="o.rent"/></td>
+                                            <td style="text-align:right; arabic">اتفق الطرفان على أن القيمة الايجارية
+                                                لمحل
+                                                هذا
+                                                العقد
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>TENANCY FOR THREE MONTHS</td>
+                                            <td style="text-align:right;" colspan="2">
+                                                دينار كويتي لا غير)، ويلتزم الطرف الثاني بسداد القيمة الإيجارية مجمعة كل
+                                                ستة
+                                                اشهر بواقع
+                                            </td>
+                                            <td>TENANCY IN ARABIC</td>
+                                            <td style="text-align:right">
+                                                د.ك ( فقط
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;"><span t-esc="o.deposit"/></td>
+                                            <td style="text-align:left; arabic" colspan="2">: • دينار كويتي لا غير) وذلك
+                                                بأدائها
+                                                للطرف الأول في أول الشهر الميلادي.
+                                                • سدد الطرف الثاني مبلغ
+                                            </td>
+                                            <td style="text-align:left;">AMOUNT IN ARABIC</td>
+                                            <td style="text-align:right; arabic">د.ك ( فقط</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">START</td>
+                                            <td style="text-align:left; arabic" colspan="2">:• دينار كويتي لا غير) اجرة
+                                                ثلاثة
+                                                اشهر عن المدة
+                                                من
+                                            </td>
+                                            <td style="text-align:left;">END</td>
+                                            <td style="text-align:right; arabic">/ / حتى</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                إذا تخلف الطرف الثاني عن سداد القيمة الإيجارية في الموعد المحدد، فإن هذا
+                                                العقد
+                                                يكون مفسوخا من تلقاء نفسه دون حاجة إلى إنذار أو إخطار أو حكم قضائي، ويحق
+                                                للطرف
+                                                الأول في هذه الحالة توقيع الحجز التحفظي على منقولات الطرف الثاني
+                                                الموجودة
+                                                بالعين
+                                                محل هذا العقد وذلك اقتضاء للأجرة المتأخرة، ويحق للطرف الأول مطالبته
+                                                بكافة
+                                                المبالغ التي لم يتم سدادها وذلك بكافة الطرق القانونية.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:left;">INSURANCE AMOUNT</td>
+                                            <td style="text-align:left; arabic">: يلتزم الطرف الثاني بسداد مبلغ</td>
+                                            <td style="text-align:left;">INSURANCE IN ARABIC</td>
+                                            <td style="text-align:right; arabic">د.ك (فقط</td>
+                                            <td>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا
+                                                بعد
+                                                انتهاء مدة هذا العقد وتسليم العين محل العقد للطرف الأول بالحالة التي
+                                                استلمها
+                                                بها، ويجوز للطرف الثاني خصم قيمة إصلاح أي تلفيات وجدت بالعين محل العقد
+                                                بعد
+                                                انتهاء مدته، كما يحق للطرف الأول سداد أية رسوم مستحقة لوزارة الكهرباء
+                                                والماء
+                                                والبلدية تنتج عن استغلال الطرف الثاني للعين محل العقد.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند السادس
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                يلتزم الطرف الثاني باستخدام العين محل هذا العقد في الغرض والنشاط المحدد
+                                                بهذا
+                                                العقد، ولا يجوز له مخالفة ذلك بأي حال من الأحوال ويلتزم بمراعاة القوانين
+                                                الكويتية وتعليمات الجهات الرسمية وآداب حسن الجوار أثناء استغلاله للعين
+                                                المؤجرة،
+                                                وفي حال عدم التزام الطرف الثاني بما تقدم فإن هذا العقد يعتبر مفسوخا من
+                                                تلقاء
+                                                نفسه دون حاجة إلى إنذار أو إخطار أو حكم قضائي.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند السابع
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                يلتزم الطرف الثاني بسداد التأمين اللازم لوزارة الكهرباء والماء فور
+                                                التوقيع
+                                                على
+                                                هذا العقد ويلتزم بسداد قيمة استهلاكه للكهرباء والماء بشكل دوري عن فترة
+                                                انتفاعه
+                                                بالعين محل عقد الإيجار.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+
+                                                يحق للطرف الأول قطع خدمات الكهرباء والماء عن الطرف الثاني بالعين محل
+                                                العقد
+                                                في
+                                                حال عدم التزام الطرف الثاني بسداد قيمة استهلاكه للكهرباء والماء.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الثامن
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                يلتزم الطرف الثاني ببذل العناية الفائقة في الحفاظ على العين محل عقد
+                                                الايجار.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                يلتزم الطرف الثاني بعدم القيام بأي عمل من شأنه التعديل أو التغيير في
+                                                العين
+                                                محل
+                                                العقد إلا بموافقة كتابية من الطرف الأول، وفي حالة مخالفته ذلك فإنه يكون
+                                                ملزما
+                                                بإعادة الحال إلى ما كان عليه وتعويض الطرف الأول عن الأضرار التي نشأت
+                                                جراء
+                                                مخالفته.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                يلتزم الطرف الثاني بعمل كافة الاصلاحات اللازمة للعين محل عقد الايجار
+                                                وملحقاتها
+                                                وذلك للأعطال التي تنشأ بسبب الاستخدام أو الناشئة بطبيعتها عن مرور الزمن
+                                                ولا
+                                                يجوز
+                                                له مطالبة الطرف الأول بقيمة هذه الاصلاحات.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                يلتزم الطرف الثاني بتمكين الطرف الأول من القيام بكافة أعمال الاصلاح
+                                                للأضرار
+                                                الجسيمة التي تهدد العين محل العقد أو المبنى أو أية أضرار من شأنها أن
+                                                تنقص من
+                                                قيمة العين أو تقلل من الانتفاع بها وللطرف الأول حق الرجوع على الطرف
+                                                الثاني
+                                                ومطالبته بقيمة الاصلاحات التي قام بها متى كان الضرر ناشئ عن فعل الطرف
+                                                الثاني.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                لا يحق للطرف الثاني مطالبة الطرف الأول بقيمة أي أعمال ديكور أو ما شابهها
+                                                من
+                                                أعمال أجراها بنفسه في العين محل العقد.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند التاسع
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                لا يجوز للطرف الثاني تخزين أية مواد أو منقولات من شأنها أن تشكل خطرا على
+                                                حياته
+                                                أو على حياة الغير أو ممنوع تخزينها من الجهات الرسمية - إلا بالضوابط التي
+                                                أقرتها
+                                                تلك الجهات - أو المواد التي تؤثر سلبا على سلامة العين والمبنى ويعتبر
+                                                مسؤولا
+                                                قبل
+                                                الطرف الأول والغير عن أي ضرر ينتج عن مخالفته لهذا الشرط.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                لا يجوز للطرف الثاني استغلال مرافق المبنى (الممرات، السلالم) في غير
+                                                الاغراض
+                                                المعدة لهم ولا يجوز له تخزين أي شيء فيها ويكون الطرف الثاني مسؤولا عن
+                                                ذلك
+                                                وحده
+                                                أمام الجهات الرسمية والطرف الأول والغير.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند العاشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                تنحصر مسؤولية الطرف الأول في تسليم العين محل هذا العقد إلى الطرف الثاني
+                                                وتسليمه
+                                                صورة المخطط الصادر من بلدية الكويت وصورة من ترخيص الإطفاء للمبنى ولا
+                                                يكون
+                                                الطرف
+                                                الأول مسؤولا عن امتناع الجهات الرسمية من إصدار أية تراخيص أو شهادات أو
+                                                أوراق
+                                                لازمة للطرف الثاني، ولا يجوز للطرف الثاني الرجوع على الطرف الأول بأي
+                                                طلبات
+                                                او
+                                                مطالبات مهما كان الحال.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الحادي العاشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                لا يجوز للطرف الثاني تأجير العين محل هذا العقد من الباطن للغير ويقع
+                                                باطلا كل
+                                                تصرف يقوم به من شأنه أن يرتب حقوقا قانونية أو مادية على العين محل هذا
+                                                العقد
+                                                للغير، وفي حال مخالفة الطرف الثاني لذلك فإن هذا العقد يكون مفسوخا من
+                                                تلقاء
+                                                نفسه
+                                                دون حاجة إلى إنذار أو إخطار أو حكم قضائي.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الثاني عشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                يقر الطرف الثاني بأن الطرف الأول غير مسؤول عن أي تلف أو سرقة تحدث
+                                                لممتلكاته
+                                                الموجودة بداخل العين محل العقد أو خارجها ولا يضمن الطرف الأول التعرض
+                                                الحاصل
+                                                من
+                                                الغير للطرف الثاني.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الثالث عشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                يقر الطرف الثاني بأنه إتخذ من عنوان العين محل هذا العقد موطنا تتم
+                                                مخاطبته
+                                                فيه بكافة
+                                                الكتب، والاخطارات، والانذارات، والاعلانات.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الرابع عشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                إذا رغب الطرف الثاني في إنهاء عقد الايجار قبل انتهاء مدة العقد أو إخلاء
+                                                العين
+                                                المؤجرة فأنه يكون ملزما بالآتي:
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                <ul dir="rtl">
+                                                    <li>
+                                                        إخطار الطرف الأول قبل شهر من الاخلاء.
+                                                    </li>
+                                                    <li>
+                                                        إخلاء العين محل العقد في اليوم الخامس وعشرين من الشهر الميلادي
+                                                        وتسليم العين
+                                                        محل العقد بالحالة التي استلمها بها ويكون مسؤولا أمام الطرف الأول
+                                                        عن
+                                                        اي
+                                                        تلفيات بها
+                                                    </li>
+                                                    <li>
+                                                        يلتزم الطرف الثاني بسداد باقي الاجرة عن باقي مدة العقد ويحق
+                                                        للطرف
+                                                        الأول
+                                                        مطالبته بها بكافة الوسائل القانونية.
+                                                    </li>
+                                                    <li>
+                                                        يلتزم الطرف الثاني بتسليم الطرف الأول براءة ذمة من وزارة
+                                                        الكهرباء
+                                                        والماء عن
+                                                        مدة انتفاعه بالعين محل العقد.
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند الخامس عشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                كل ما لم يرد ذكره بهذا العقد يخضع لنصوص قانون الايجار الكويتي وتختص
+                                                محاكم
+                                                دولة
+                                                الكويت (دائرة الإيجارات) بالفصل في أي نزاع يقوم بين طرفيه.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <center>
+                                                    <u>
+                                                        <b>
+                                                            البند السادس عشر
+                                                        </b>
+                                                    </u>
+                                                </center>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right" colspan="5">
+                                                حرر هذا العقد من نسختين ووقع الطرفين على كافة أوراقه وسلمت نسخة من النسخ
+                                                لكل
+                                                طرف
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:right;" colspan="5">
+                                                الشروط الخاصة:
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <br/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center;" colspan="3">
+                                                الطرف الثاني
+                                            </td>
+                                            <td style="text-align:center;" colspan="2">
+                                                الطرف الاول
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="text-align:center;" colspan="3">
+
+                                            </td>
+                                            <td style="text-align:center;" colspan="5">
+                                                شركة مشهن الكويتية العقارية
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <t t-call="tenancy_report.tenancy_report_footer"/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+        <record id="tenancy_report_contract" model="ir.actions.report">
+            <field name="name">6 Month Contract</field>
+            <field name="model">account.analytic.account</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">tenancy_report.month_contract_6</field>
+            <field name="report_file">tenancy_report.month_contract_6</field>
+            <field name="binding_model_id" ref="account.model_account_analytic_account"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="paperformat_tenancy_report"/>
+        </record>
+
+    </data>
+</odoo>

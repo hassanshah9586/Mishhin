@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_receipt_voucher_details">
+        <t t-call="web.basic_layout">
+<!--            <div class="page" style="background-image:url('/property_management_soor/static/description/background_image.png');-->
+<!--            background-size:273mm 470mm; width:270mm; height:448mm; border: 5px solid green;">-->
+            <div class="page" style="background-image:url('/property_management_soor/static/description/background_image.png');
+            background-size:1500px 2000px; width:1600px; height:1800px;">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set='reciver_name' t-value=''/>
+                    <t t-if="o.tenancy_id.tenant_id">
+                        <t t-set='reciver_name'/>
+                            <t t-call="property_management_soor.template_common_rent_receipt"/>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <template id="template_common_rent_receipt" name="Rent Receipt">
+<!--        <div style="border: 5px solid red;" >-->
+
+        <div class="row" style='margin-top: 2%;"'>
+            <div class="col-4 mt32 tex-center" style="text-align: left; padding-top: 10px; padding-left:500px;">
+                <img t-att-src="image_data_uri(o.company_id.logo)" style="max-height:200px; max-width:20cm;" alt="Logo"/>
+
+            </div>
+        </div>
+        <div class="text-center" style="border-top: 2px solid black; padding-top:10px;" >
+        </div>
+        <!-- Main Box -->
+        <div class="mt32" >
+            <div class="">
+
+                <div style="/*! margin-top: 10px; */ ">
+                    <div style="/*! padding: 15px; */margin-left: 3pc;margin-right: 8pc; margin-bottom: 5%; ">
+
+                        <table class="mt16" >
+                            <tbody>
+                                <tr>
+                                    <td style="color: #4169E1; padding-top: 70px;">
+                                        <strong style="font-size: 40px;">Receipt# <span t-field='o.id'/></strong>
+                                        <br/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+
+                        <table  class="col-4 mt32;" style="font-size:25px; border-collapse: separate; border-spacing: 0 15px;" >
+                            <tr>
+                                <td>Receipt ID:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:رقم الوصل </td>
+                            </tr>
+                            <tr>
+                                <td>Receipt Reference:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:مرجع الوصل</td>
+                            </tr>
+                            <tr>
+                                <td>Receipt Date:</td>
+                                <td> <t t-esc="o.date"/></td>
+                                <td style="text-align:right;">:تاريخ الوصل</td>
+                            </tr>
+                            <tr>
+                                <td>Tenant Name:</td>
+                                <td> <t t-esc="o.partner_id.name"/></td>
+                                <td style="text-align:right;">:اسم المستأجر</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile:</td>
+                                <td> <t t-esc="o.partner_id.mobile"/></td>
+                                <td style="text-align:right;">:الهاتف</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td> <t t-esc="o.partner_id.email"/></td>
+                                <td style="text-align:right;">:البريد الالكتروني</td>
+                            </tr>
+                            <tr>
+                                <td>Tenant Contract Reference:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:مرجع عقد المستأجر</td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <br/>
+
+                        <table class="table" style="font-size:25px;">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <strong>Property Address</strong>
+                                        <strong>عنوان العقار</strong>
+                                    </th>
+                                    <th>
+                                        <strong>Number</strong>
+                                        <strong>الرقم</strong>
+                                    </th>
+                                    <th>
+                                        <strong>Period</strong>
+                                        <strong>الفترة</strong>
+                                    </th>
+                                    <th>
+                                        <strong>Amount</strong>
+                                        <strong>المبلغ</strong>
+                                    </th>
+                                    <th>
+                                        <strong>Total</strong>
+                                        <strong>المجموع</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <t t-esc="o.tenancy_id.property_id.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="o.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-set="month" t-value="['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']"/>
+                                        <t t-if="str(o.date)[5:7]=='01'">
+                                            <t t-esc="month[0]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='02'">
+                                            <t t-esc="month[1]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='03'">
+                                            <t t-esc="month[2]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='04'">
+                                            <t t-esc="month[3]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='05'">
+                                            <t t-esc="month[4]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='06'">
+                                            <t t-esc="month[5]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='07'">
+                                            <t t-esc="month[6]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='08'">
+                                            <t t-esc="month[7]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='09'">
+                                            <t t-esc="month[8]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='10'">
+                                            <t t-esc="month[9]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='11'">
+                                            <t t-esc="month[10]"/>
+                                        </t>
+                                        <t t-if="str(o.date)[5:7]=='12'">
+                                            <t t-esc="month[11]"/>
+                                        </t>
+                                    </td>
+                                    <td>
+                                        <t t-esc="o.amount"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="o.amount"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+
+                        <table class="mt16" >
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong style="font-size: 30px;">Transaction Details</strong>
+                                        <strong style="font-size: 30px;">تفاصيل التحويل</strong>
+                                        <br/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br/>
+                        <br/>
+
+
+                        <table  class="col-4 mt32;" style="font-size:25px; border-collapse: separate; border-spacing: 0 15px;">
+                            <tr>
+                                <td>Paid Currency Value:</td>
+                                <td> <t t-esc="o.partner_id.name"/></td>
+                                <td style="text-align:right;">:قيمة العملة المدفوعة</td>
+                            </tr>
+                            <tr>
+                                <td>Payment ID:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:رقم الدفع</td>
+                            </tr>
+                            <tr>
+                                <td>Transaction ID:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:رقم التحويل</td>
+                            </tr>
+                            <tr>
+                                <td>Authorization ID:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:رقم التفويض</td>
+                            </tr>
+                            <tr>
+                                <td>Track ID:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:رقم المسار</td>
+                            </tr>
+                            <tr>
+                                <td>Reference ID:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:رقم المرجع</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Gateway:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:بوابة الدفع</td>
+                            </tr>
+                            <tr>
+                                <td>Transaction Date:</td>
+                                <td> <t t-esc="o.name"/></td>
+                                <td style="text-align:right;">:تاريخ التحويل</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        </div>-->
+        <br/>
+        <br/>
+        <t t-if="o.state== 'posted'">
+            <div style="margin-top: 300px; background-color: #2ecc71;width: 1500px;height: 50px; font-size: 30px; text-align: center;">
+                <strong>Paid</strong>
+            </div>
+
+        <div style="padding-top: 10px;">
+            <div class="text-center" style="border-top: 2px solid black; font-size:22px;" >
+                <ul>
+                    <i class="fa fa-phone-square"></i><span t-field="o.company_id.phone"/>
+                    <i class="fa fa-envelope"></i><span t-field="o.company_id.email"/>
+                    <i class="fa fa-globe"></i><span t-field="o.company_id.website"/>
+                    <i class="fa fa-map-marker"></i><span t-field="o.company_id.street"/>
+                </ul>
+            </div>
+        </div>
+        </t>
+        <t t-if="o.state!= 'posted'">
+        <div style="padding-top: 200px;">
+            <div class="text-center" style="border-top: 2px solid black; font-size:22px;" >
+                <ul>
+                    <i class="fa fa-phone-square"></i><span t-field="o.company_id.phone"/>
+                    <i class="fa fa-envelope"></i><span t-field="o.company_id.email"/>
+                    <i class="fa fa-globe"></i><span t-field="o.company_id.website"/>
+                    <i class="fa fa-map-marker"></i><span t-field="o.company_id.street"/>
+                </ul>
+            </div>
+        </div>
+        </t>
+    </template>
+</odoo>
+

@@ -1,0 +1,119 @@
+<odoo>
+    <template id="report_tenant_payment_details">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+            <!-- <t t-call="property_management     _soor.external_layout_nrq"> -->
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <!-- <div> -->
+                            <h2>
+                                <span>
+                                    <center>Monthly Rents Report</center>
+                                </span>
+                            </h2>
+                            <br/>
+                        <!-- </div> -->
+                        <h4>
+                            <span>
+                                <center>
+                                    <strong>From:</strong>
+                                    <span t-esc="data['start_date']"/>
+                                    <strong>To:</strong>
+                                    <span t-esc="data['end_date']"/>
+                                </center>
+                            </span>
+                        </h4>
+                        <br/>
+                        <table width="100%">
+                            <tr>
+                                <td width="33%"><strong>Date :</strong></td>
+                                <td><span t-field="o.name"/></td>
+                            </tr>
+                            <tr>
+                                <td width="33%"><strong>Building No.:</strong></td>
+                                <td><span t-field="o.building_no"/></td>
+                            </tr>
+                            <tr>
+                                <td width="33%"><strong>Address:</strong></td>
+                                <td><span t-esc="' - '.join([item for item in [
+                        ', '.join([item for item in [o.street, o.street2] if item]),
+                        o.city,
+                        o.state_id and o.state_id.name,
+                        o.zip,
+                        o.country_id and o.country_id.name] if item])"/></td>
+                            </tr>
+                            <tr>
+                                <td width="33%"><strong>Receipt’s Date:</strong></td>
+                                <td><span t-esc="datetime.datetime.now().date()"/></td>
+                            </tr>
+                            <tr>
+                                <td width="33%"><strong>Recipient's Name:</strong></td>
+                                <td><span t-field="o.env.user.name"/></td>
+                            </tr>
+                        </table>
+                        <br/>
+                            <table style="border: 1px solid black;" width="100%">
+                                <tr style="background-color:#f9f9f9;">
+                                    <td style="border: 1px solid black;padding:5px">Tenant Name</td>
+                                    <td style="border: 1px solid black;padding:5px">Flat No.</td>
+                                    <td style="border: 1px solid black;padding:5px">Amount Due</td>
+                                    <td style="border: 1px solid black;padding:5px">Unpaid Balance</td>
+                                    <td style="border: 1px solid black;padding:5px">No:Of Unpaid Months</td>
+                                    <td style="border: 1px solid black;padding:5px">Last Payment Date</td>
+                                </tr>
+                                <t t-set="amount_due" t-value="0"/>
+                                <t t-foreach="get_details" t-as="tenancy">
+                                    <tr>
+                                        <td style="border: 1px solid black;padding:5px"><span t-field="tenancy.tenancy_id.tenant_id.name"/></td>
+                                        <td style="border: 1px solid black;padding:5px"><span t-field='tenancy.tenancy_id.property_id.flat_no'/></td>
+                                        <td style="border: 1px solid black;padding:5px"><span t-field="tenancy.amount"/></td>
+                                        <td style="border: 1px solid black;padding:5px"><span t-field="tenancy.note"/></td>
+                                        <td style="border: 1px solid black;padding:5px"><span t-field="tenancy.tenancy_id.name"/></td>
+                                        <td style="border: 1px solid black;padding:5px"><span t-field="tenancy.invc_id.name"/></td>
+                                    </tr>
+                                    <t t-set="amount_due" t-value="amount_due + tenancy.amount"/>
+                                </t>
+                                <tr>
+                                    <td style="border: 1px solid black;padding:5px" colspan="2">
+                                        <strong>Total :</strong>
+                                    </td>
+                                    <td style="border: 1px solid black;padding:5px" class="text-right">
+                                        <span t-esc="amount_due" t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                    </td>
+<!--                                    <td style="border: 1px solid black;padding:5px" colspan="2">-->
+<!--                                    </td>-->
+                                </tr>
+                        </table>
+                        <br/>
+                        <br/>
+                        <table width="50%">
+                            <tr>
+                                <td width="18%" style="padding:10px">
+                                    Name:
+                                </td>
+                                <td>
+                                    _______________________________________
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="18%" style="padding:10px">
+                                    Signature:
+                                </td>
+                                <td >
+                                    _______________________________________
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+    <record id="action_report_tenant_payment_details" model="ir.actions.report">
+        <field name="name">Tenant Payment Details</field>
+        <field name="model">account.asset</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">property_management_soor.report_tenant_payment_details</field>
+        <field name="report_file">property_management_soor.report_tenant_payment_details</field>
+    </record>
+</odoo>

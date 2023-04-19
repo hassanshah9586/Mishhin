@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="property_management_ee.menu_rent_type"
+              name="Rent Type"
+              parent="property_management_ee.menu_types_main"
+              groups="base.group_no_one"
+              action="property_management_ee.action_rent_type_view"/>
+</odoo>

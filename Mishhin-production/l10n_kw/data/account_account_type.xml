@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- account.account.type -->
+    <record model="account.account.type" id="data_account_type_cash_in_hand">
+      <field name="name">Current Assets / Cash In Hand</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_cash_at_bank">
+      <field name="name">Current Assets / Cash At Bank</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_others_receivables">
+      <field name="name">Current Assets / Others Receivables</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_sundry_debtors">
+      <field name="name">Current Assets / Sundry Debtors</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_staff_receivables">
+      <field name="name">Current Assets / Staff Receivables</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_stock_in_hand">
+      <field name="name">Current Assets / Stock In Hand</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_liability_capital">
+      <field name="name">Capital</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_opening_balance">
+      <field name="name">Capital / Opening Balance</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_capital_partner_capital_ac">
+      <field name="name">Capital / Partner’s Capital A/C</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_capital_partner_current_ac">
+      <field name="name">Capital / Partner’s Current A/C</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_capital_retained_earnings">
+      <field name="name">Capital / Retained Earnings</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_investment">
+      <field name="name">Investment</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_investment_in_share_market">
+      <field name="name">Investment / Investment In Share Market</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_current_liabilities_accrued_expenses">
+      <field name="name">Current Liabilities / Accrued Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_non_current_liabilities_share_ac_reduction">
+      <field name="name">Non-current Liabilities / Share A/C Reduction</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_non_current_liabilities_provisions">
+      <field name="name">Non-current Liabilities / Provisions</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_liability_reserves">
+      <field name="name">Non-current Liabilities / Liability Reserves</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_fixed_assets_fa_vehicles">
+      <field name="name">Fixed Assets / Fa-vehicles</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_fixed_assets_fa_computer_and_hardware">
+      <field name="name">Fixed Assets / Fa-computer And Hardware</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_fixed_assets_fa_furniture_and_fixtures">
+      <field name="name">Fixed Assets / Fa-furniture And Fixtures</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_fixed_assets_fa_office_equipments">
+      <field name="name">Fixed Assets / Fa-office Equipments</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_fixed_assets_fa_tools_ac">
+      <field name="name">Fixed Assets / Fa-tools A/C</field>
+      <field name="type">other</field>
+      <field name="internal_group">asset</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_current_liabilities_sundry_creditors">
+      <field name="name">Current Liabilities / Sundry Creditors</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_current_liabilities_account_payables">
+      <field name="name">Current Liabilities / Account Payables</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_liability_loans">
+      <field name="name">Loans</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_loans_unsecured_loans">
+      <field name="name">Loans / Unsecured Loans</field>
+      <field name="type">other</field>
+      <field name="internal_group">liability</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_direct_expenses">
+      <field name="name">Direct Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_salary_paid">
+      <field name="name">Direct Expenses / Salary Paid</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_expenses">
+      <field name="name">Indirect Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_employee_benefits">
+      <field name="name">Indirect Expenses / Employee Benefits (Leave And Service)</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_staff_accommodation_expenses">
+      <field name="name">Indirect Expenses / Staff Accommodation Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_expenses_misclleneous_expenses">
+      <field name="name">Indirect Expenses / Misclleneous Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_expenses_depreciation">
+      <field name="name">Indirect Expenses / Depreciation</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_rent_paid">
+      <field name="name">Indirect Expenses / Rent Paid</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_repairs_and_maintanance">
+      <field name="name">Indirect Expenses / Repairs And Maintanance</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_fuel_expenses">
+      <field name="name">Indirect Expenses / Fuel Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_vehicle_maintenance_charge">
+      <field name="name">Indirect Expenses / Vehicle Maintenance Charge</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_sundry_expenses">
+      <field name="name">Indirect Expenses / Sundry Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_office_expenses">
+      <field name="name">Indirect Expenses / Office Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_software_service_charges">
+      <field name="name">Indirect Expenses / Software Service Charges</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_printing_and_stationary">
+      <field name="name">Indirect Expenses / Printing And Stationary</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_loose_tools_expenses">
+      <field name="name">Indirect Expenses / Loose Tools Expenses</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_telephone_and_internet">
+      <field name="name">Indirect Expenses / Telephone And Internet Charges</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_bank_charges">
+      <field name="name">Indirect Expenses / Bank Charges</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_pfofessional_fees_paid">
+      <field name="name">Indirect Expenses / Pfofessional Fees Paid</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_share_value_loss">
+      <field name="name">Indirect Expenses / Share Value-loss</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_stock_write_off_adjustments">
+      <field name="name">Indirect Expenses / Stock Write Off/adjustments</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_net_profit_loss_transfer">
+      <field name="name">Indirect Expenses / Net Profit or Loss Transfer</field>
+      <field name="type">other</field>
+      <field name="internal_group">expense</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_income">
+      <field name="name">Indirect Income</field>
+      <field name="type">other</field>
+      <field name="internal_group">income</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_income_interest_received">
+      <field name="name">Indirect Income / Interest Received From Bank</field>
+      <field name="type">other</field>
+      <field name="internal_group">income</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+    <record model="account.account.type" id="data_account_type_indirect_income_maintenance_income">
+      <field name="name">Indirect Income / Maintenance Income</field>
+      <field name="type">other</field>
+      <field name="internal_group">income</field>
+      <field name="include_initial_balance" eval="False"/>
+    </record>
+
+</odoo>

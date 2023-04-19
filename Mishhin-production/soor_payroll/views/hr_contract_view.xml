@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_contract_inherit_soor_payroll" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <group name="main_info" position="after">
+                <group col="4" colspan="4" name="basic_salary_configration" string="Basic salary Configration">
+                    <field name="grade" options='{"no_create": True}'/>
+                    <field name="basic_salary" options='{"no_create": True}'/>
+                    <field name="housing_allowance" options='{"no_create": True}'/>
+                    <field name="academic_allowance" options='{"no_create": True}'/>
+                </group>
+                <group col="4" colspan="4" name='other_allowance' string="Other Allowance">
+                    <field name="car_allowance"/>
+                    <field name="petrol_allowance"/>
+                    <field name="transportation_allowance"/>
+                    <field name="phone_allowance"/>
+                    <field name="bussiness_allowance"/>
+                    <field name="other_allowance"/>
+                </group>
+                    <group col="4" colspan="4" name='based_on_timesheet' string='Based on Timesheet'>
+                        <field name="timesheet_payroll"/>
+                        <!-- <field name="per_hour"/> -->
+                    </group>
+            </group>
+        </field>
+    </record>
+    <record id="view_hr_payslip_form_extend" model="ir.ui.view">
+        <field name="name">Timesheet View on Payroll</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="timesheet_payroll" invisible="1"/>
+                <field name="timesheet_hours"
+                        attrs="{'invisible': [('timesheet_payroll', '=', False)]}"/>
+                <field name="total_hours"
+                        attrs="{'invisible': [('timesheet_payroll', '=', False)]}"/>
+            </field>
+      </field>
+    </record>
+    <record id="view_hr_employee_grade_form_extend" model="ir.ui.view">
+        <field name="name">Timesheet Based Structure</field>
+        <field name="model">hr.payroll.structure</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form"/>
+        <field name="arch" type="xml">
+            <field name="schedule_pay" position="after">
+            <field name="timesheet_structure"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
+

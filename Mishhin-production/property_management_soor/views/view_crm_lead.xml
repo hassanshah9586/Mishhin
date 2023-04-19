@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="crm_stage_inherit_form_soor" model="ir.ui.view">
+        <field name="name">crm.stage.inherit.form</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_stage_form" />
+        <field name="arch" type="xml">
+            <field name="team_id" position="after">
+                <field name="is_varification"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="crm_lead_form_inherit_property_soor" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.property.soor</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='lead']" position="after">
+                <page name='applicant_documets' string='Applicant Document'>
+                    <group colspan='4' col='4'>
+                        <field name='lead_token' string='Document Upload Token'/>
+                        <field name='expiry_date' attrs="{'readonly':[('in_varification','=',False)]}"/>
+                        <field name='in_varification'/>
+                    </group>
+                    <group col='4' colspan='4'>
+                        <field name='civil_id' attrs="{'readonly':[('in_varification','=',False)]}"/>
+                        <field name='annual_company_income' attrs="{'readonly':[('in_varification','=',False)]}"/>
+                    </group>
+                    <separator string="Applicant Document" colspan="4" />
+                        <field name="lead_attachment_ids" nolabel="1" attrs="{'readonly':[('in_varification','=',False)]}">
+                            <tree>
+                                <field name="document_type" />
+                                <field name="expiry_date" invisible='1'/>
+                                <!-- <field name="name" /> -->
+                                <field name='doc_name' invisible='1'/>
+                                <field name="contract_attachment" filename="doc_name"/>
+                                <field name='state'/>
+                                <field name="crm_id" invisible='1'/>
+                            </tree>
+                            <form>
+                                <header>
+                                    <field name="state" widget="statusbar" statusbar_visible="draft,approved,re_review,rejected" clickable="true"/>
+                                </header>
+                                <group colspan="4" col="4">
+                                    <field name="document_type" />
+                                    <field name="expiry_date" invisible='1'/>
+                                    <!-- <field name="name" /> -->
+                                    <field name='doc_name' invisible='1'/>
+                                    <field name="contract_attachment" filename="doc_name"/>
+                                    <field name="crm_id" invisible='1'/>
+                                    <!-- <field name='document_approved'/> -->
+                                </group>
+                            </form>
+                        </field>
+
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

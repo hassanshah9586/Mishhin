@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="tenant_legal_partner_form" model="ir.ui.view">
+        <field name="name">tenant.partner.form</field>
+        <field name="model">tenant.partner</field>
+        <field name="inherit_id" ref="property_management_ee.property_tenant_view_form" />
+        <field name="arch" type="xml">
+            <field name="email" position="after">
+                <field name="civil_id"/>
+                <field name='nationality'/>
+            </field>
+            <page name="tenancy_details" position="after">
+                <page name='legal_information' string='Legal Information'>
+                    <group string='Legal Information' col='4' colspan='4'/>
+                    <field name='case_information_ids'>
+                        <tree string='Case Information Tree'>
+                            <field name='tenancy_id'/>
+                            <field name='case_type_id'/>
+                            <field name="lawyer_office" />
+                            <field name='case_number'/>
+                             <field name='electronic_case_number'/>
+                            <field name='date_of_lawsuit'/>
+                        </tree>
+                        <form>
+                            <group col='4' colspan='4'>
+                                <field name='tenancy_id' required='1' domain="[('is_property','=', True)]"/>
+                                <field name="lawyer_office" />
+                                <field name='case_number'/>
+                                <field name='case_type_id'/>
+                                <field name='date_of_lawsuit'/>
+                                <field name='judgement_details'/>
+                                <field name='judgement_date'/>
+                            </group>
+                           <field name='line_ids'>
+                                <tree string='Case Line' editable="bottom">
+                                    <field name='date'/>
+                                    <field name='next_session_date'/>
+                                    <field name='name'/>
+                                    <field name="doc_name" readonly="0" invisible="1"/>
+                                    <field name="id_attachment" filename="doc_name" string='Attachment'/>
+                                </tree>
+                            </field>
+                        </form>
+                    </field>
+                </page>
+                <page string='Documents'>
+                    <separator string="Applicant Document" colspan="4" />
+                        <field name="lead_attachment_ids" nolabel="1">
+                            <tree>
+                                <field name="document_type" />
+                                <field name="expiry_date" invisible='1'/>
+                                <!-- <field name="name" /> -->
+                                <field name='doc_name' invisible='1'/>
+                                <field name="contract_attachment" filename="doc_name"/>
+                                <field name='state'/>
+                                <field name="crm_id" invisible='1'/>
+                                <field name='tenant_id'/>
+                            </tree>
+                            <form>
+                                <header>
+                                    <field name="state" widget="statusbar" statusbar_visible="draft,approved,re_review,rejected" clickable="true"/>
+                                </header>
+                                <group colspan="4" col="4">
+                                    <field name="document_type" />
+                                    <field name="expiry_date" invisible='1'/>
+                                    <!-- <field name="name" /> -->
+                                    <field name='doc_name' invisible='1'/>
+                                    <field name="contract_attachment" filename="doc_name"/>
+                                    <field name="crm_id" invisible='1'/>
+                                    <field name='tenant_id' invisible='1'/>
+                                    <!-- <field name='document_approved'/> -->
+                                </group>
+                            </form>
+                        </field>
+                </page>
+            </page>
+        </field>
+    </record>
+
+</odoo>

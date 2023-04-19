@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="crm.stage" id="stage_lead_new">
+        <field name="name">Varification</field>
+        <field name="sequence">2</field>
+        <field name="is_varification">True</field>
+    </record>
+</odoo>

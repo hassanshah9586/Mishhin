@@ -1,0 +1,272 @@
+<odoo>
+    <menuitem
+        id="menu_basic_salary_main"
+        name="Basic Salary"
+        parent="hr_work_entry_contract.menu_hr_payroll_configuration"/>
+
+    <record id="salary_grade_form" model="ir.ui.view">
+		<field name="name">salary.grade.form</field>
+		<field name="model">salary.grade</field>
+		<field name="arch" type="xml">
+			<form string="Salary Grade">
+				<sheet>
+					<group>
+						<field name="name"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<!--Salary Grade Tree View-->
+	<record id="salary_grade_tree" model="ir.ui.view">
+		<field name="name">salary.grade.tree</field>
+		<field name="model">salary.grade</field>
+		<field name="arch" type="xml">
+			<tree string="Salary Grade">
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+
+	<!--Salary Grade Search View-->
+	<record id="salary_grade_view_search" model="ir.ui.view">
+		<field name="name">salary.grade.search</field>
+		<field name="model">salary.grade</field>
+		<field name="arch" type="xml">
+			<search string="Search Property">
+				<field name="name"/>
+			</search>
+		</field>
+	</record>
+
+	<!-- Action for Property Tenancy Views -->
+	<record id="action_salary_grade_view" model="ir.actions.act_window">
+		<field name="name">Salary Grade</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">salary.grade</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+    
+    
+    <menuitem
+        id="menu_salary_grade"
+        name="Salary Grade"
+        parent="menu_basic_salary_main"
+        action="action_salary_grade_view"/>
+
+
+    <!-- Kuwait Basic Salary -->
+    <record id="salary_basic_salary_form" model="ir.ui.view">
+		<field name="name">kuwait.basic.salary.form</field>
+		<field name="model">kuwait.basic.salary</field>
+		<field name="arch" type="xml">
+			<form string="Salary Grade">
+				<sheet>
+					<group>
+						<field name="name" required="1"/>
+                        <field name="display_name" invisible='1'/>
+					</group>
+                    <notebook>
+                        <page name="basic_information" string="Basic Information">
+                            <field name="line_ids" required='1'>
+                                <tree string='Line' editable="bottom">
+                                    <field name="grade_id"/>
+                                    <field name="value"/>
+                                    <field name="basic_salary_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<!--Salary Grade Tree View-->
+	<record id="kuwait_basic_salary_tree" model="ir.ui.view">
+		<field name="name">kuwait.basic.salary.tree</field>
+		<field name="model">kuwait.basic.salary</field>
+		<field name="arch" type="xml">
+			<tree string="Salary Grade">
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+
+	<!--Salary Grade Search View-->
+	<record id="kuwait_basic_salary_view_search" model="ir.ui.view">
+		<field name="name">kuwait.basic.salary.search</field>
+		<field name="model">kuwait.basic.salary</field>
+		<field name="arch" type="xml">
+			<search string="Search Property">
+				<field name="name"/>
+			</search>
+		</field>
+	</record>
+
+	<!-- Action for Property Tenancy Views -->
+	<record id="action_kuwait_basic_salary_view" model="ir.actions.act_window">
+		<field name="name">Basic Salary</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">kuwait.basic.salary</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+    <menuitem
+        id="menu_kuwait_basic_salary"
+        name="Basic Salary"
+        parent="menu_basic_salary_main"
+        action="action_kuwait_basic_salary_view"/>
+
+    <!-- Kuwait Basic Salary -->
+    <record id="salary_ha_form" model="ir.ui.view">
+		<field name="name">kuwait.housing.allowance.form</field>
+		<field name="model">kuwait.housing.allowance</field>
+		<field name="arch" type="xml">
+			<form string="Salary HA">
+				<sheet>
+					<group>
+						<field name="name" required="1"/>
+                        <field name="display_name" invisible='1'/>
+					</group>
+                    <notebook>
+                        <page name="basic_information" string="Basic Information">
+                            <field name="line_ids" required='1'>
+                                <tree string='Line' editable="bottom">
+                                    <field name="grade_id"/>
+                                    <field name="value"/>
+                                    <field name="basic_salary_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<!--Salary Grade Tree View-->
+	<record id="kuwait_ha_tree" model="ir.ui.view">
+		<field name="name">kuwait.housing.allowance.tree</field>
+		<field name="model">kuwait.housing.allowance</field>
+		<field name="arch" type="xml">
+			<tree string="HA">
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+
+	<!--Salary Grade Search View-->
+	<record id="kuwait_ha_view_search" model="ir.ui.view">
+		<field name="name">kuwait.housing.allowance.search</field>
+		<field name="model">kuwait.housing.allowance</field>
+		<field name="arch" type="xml">
+			<search string="HA">
+				<field name="name"/>
+			</search>
+		</field>
+	</record>
+
+	<!-- Action for Property Tenancy Views -->
+	<record id="action_kuwait_ha_view" model="ir.actions.act_window">
+		<field name="name">Basic Salary</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">kuwait.housing.allowance</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+    
+    <menuitem
+        id="menu_kuwait_ha"
+        name="Housing Allowance"
+        parent="menu_basic_salary_main"
+        action="action_kuwait_ha_view"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Kuwait Basic Salary -->
+    <record id="salary_academic_allowance_form" model="ir.ui.view">
+		<field name="name">kuwait.academic.allowance.form</field>
+		<field name="model">kuwait.academic.allowance</field>
+		<field name="arch" type="xml">
+			<form string="Salary Academic Allowance">
+				<sheet>
+					<group>
+						<field name="name" required="1"/>
+                        <field name="display_name" invisible='1'/>
+					</group>
+                    <notebook>
+                        <page name="basic_information" string="Basic Information">
+                            <field name="line_ids" required='1'>
+                                <tree string='Line' editable="bottom">
+                                    <field name="grade_id"/>
+                                    <field name="value"/>
+                                    <field name="basic_salary_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<!--Salary Grade Tree View-->
+	<record id="kuwait_academic_allowance_tree" model="ir.ui.view">
+		<field name="name">kuwait.academic.allowance.tree</field>
+		<field name="model">kuwait.academic.allowance</field>
+		<field name="arch" type="xml">
+			<tree string="Academic Allowance">
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+
+	<!--Salary Grade Search View-->
+	<record id="kuwait_academic_allowance_view_search" model="ir.ui.view">
+		<field name="name">kuwait.academic.allowance.search</field>
+		<field name="model">kuwait.academic.allowance</field>
+		<field name="arch" type="xml">
+			<search string="Academic Allowance">
+				<field name="name"/>
+			</search>
+		</field>
+	</record>
+
+	<!-- Action for Property Tenancy Views -->
+	<record id="action_kuwait_academic_allowance_view" model="ir.actions.act_window">
+		<field name="name">Basic Salary</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">kuwait.academic.allowance</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+    
+    <menuitem
+        id="menu_kuwait_academic_allowance"
+        name="Academic Allowance"
+        parent="menu_basic_salary_main"
+        action="action_kuwait_academic_allowance_view"/>
+
+</odoo>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_analytic_account_legal_form" model="ir.ui.view">
+        <field name="name">account_analytic_account.form</field>
+        <field name="model">account.analytic.account</field>
+        <field name="inherit_id" ref="property_management_ee.property_analytic_view_form" />
+        <field name="arch" type="xml">
+            <field name="manager_id" position="after">
+                <field name='mandoob_id'/>
+                <field name='operations_manager_id' />
+                <field name="legal_advisor_id" />
+            </field>
+            <field name='contract_attachment' position="after">
+                <field name='type_id'/>
+                <field name="rent_amount_in_text"/>
+                <field name="deposite_amount_in_text"/>
+            </field>
+            <!-- <field name='contract_attachment' position="after">
+            </field> -->
+            <page name='rent_schedule' position="after">
+                <page name='legal_information' string='Legal Information'>
+                    <group string='Legal Information' col='4' colspan='4'/>
+                    <field name='case_information_ids'>
+                        <tree string='Case Information Tree'>
+                            <field name='case_type_id' required='1'/>
+                            <field name="lawyer_office" />
+                            <field name='case_number' required='1'/>
+                             <field name='electronic_case_number'/>
+                            <field name='date_of_lawsuit'/>
+                        </tree>
+                        <form>
+                            <group col='4' colspan='4'>
+                                <field name='case_type_id'/>
+                                <field name="lawyer_office" />
+                                <field name='case_number'/>
+                                <field name='date_of_lawsuit'/>
+                                <field name='judgement_details'/>
+                                <field name='judgement_date'/>
+                            </group>
+                            <field name='line_ids'>
+                                <tree string='Case Line' editable="bottom">
+                                    <field name='date'/>
+                                    <field name='next_session_date'/>
+                                    <field name='name'/>
+                                    <field name="doc_name" readonly="0" invisible="1"/>
+                                    <field name="id_attachment" filename="doc_name" string='Attachment'/>
+                                </tree>
+                            </field>
+                        </form>
+                    </field>
+                </page>
+                <page name="legal_judgement" string="Legal Judgement">
+                    <group string='Legal Judgement' col='2' colspan='2'>
+                        <field name='judgement_details'/>
+                        <field name='judgement_date'/>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+</odoo>
