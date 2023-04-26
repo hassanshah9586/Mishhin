@@ -1,0 +1,127 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+
+        <template id="report_delivery_document_inherit" inherit_id="stock.report_delivery_document">
+            <xpath expr="//t/t/div/table[@name='stock_move_table']/thead/tr/th[@name='th_sm_product']" position="after">
+                <th name="source">
+                    <strong>Source</strong>
+                </th>
+                <th name="dest">
+                    <strong>Destination</strong>
+                </th>
+            </xpath>
+            <xpath expr="//t/t/div/table[@name='stock_move_table']/tbody/tr/td[1]" position="after">
+                <td>
+                    <span t-field="o.location_id"/>
+                </td>
+                <td>
+                    <span t-field="o.location_dest_id"/>
+                </td>
+            </xpath>
+
+
+            <xpath expr="//t/t/div/table[@name='stock_move_line_table']/thead/tr/th[@name='th_sml_quantity']"
+                   position="after">
+                <th name="source_sml">
+                    <strong>Source</strong>
+                </th>
+                <th name="dest_sml">
+                    <strong>Destination</strong>
+                </th>
+            </xpath>
+            <xpath expr="//t/t/div/table[@name='stock_move_line_table']/tbody/t/t[@t-foreach='packages']/t/tr"
+                   position="inside">
+                <td>
+                    <span t-field="o.location_id"/>
+                </td>
+                <td>
+                    <span t-field="o.location_dest_id"/>
+                </td>
+            </xpath>
+            <xpath expr="//t/t/div/table[@name='stock_move_line_table']/tbody/t/t[@name='no_package_move_lines']/t/tr"
+                   position="inside">
+                <td>
+                    <span t-field="o.location_id"/>
+                </td>
+                <td>
+                    <span t-field="o.location_dest_id"/>
+                </td>
+            </xpath>
+
+            <xpath expr="//t/t/div/table[@name='stock_move_line_table']/tbody/t/t/tr"
+                   position="inside">
+                <td>
+                    <span t-field="o.location_id"/>
+                </td>
+                <td>
+                    <span t-field="o.location_dest_id"/>
+                </td>
+            </xpath>
+
+            <xpath expr="//t/t/div/t/table[@name='stock_backorder_table']/thead/tr/th[@name='th_sb_product']"
+                   position="after">
+                <th name="source_sb">
+                    <strong>Source</strong>
+                </th>
+                <th name="dest_sb">
+                    <strong>Destination</strong>
+                </th>
+            </xpath>
+
+            <xpath expr="//t/t/div/t/table[@name='stock_backorder_table']/tbody/t/tr/td[1]" position="after">
+                <td>
+                    <span t-field="o.location_id"/>
+                </td>
+                <td>
+                    <span t-field="o.location_dest_id"/>
+                </td>
+            </xpath>
+
+
+        </template>
+
+
+        <!-- actions opening views on models -->
+        <!--
+            <record model="ir.actions.act_window" id="delivery_slip_custom.action_window">
+              <field name="name">delivery_slip_custom window</field>
+              <field name="res_model">delivery_slip_custom.delivery_slip_custom</field>
+              <field name="view_mode">tree,form</field>
+            </record>
+        -->
+
+        <!-- server action to the one above -->
+        <!--
+            <record model="ir.actions.server" id="delivery_slip_custom.action_server">
+              <field name="name">delivery_slip_custom server</field>
+              <field name="model_id" ref="model_delivery_slip_custom_delivery_slip_custom"/>
+              <field name="state">code</field>
+              <field name="code">
+                action = {
+                  "type": "ir.actions.act_window",
+                  "view_mode": "tree,form",
+                  "res_model": model._name,
+                }
+              </field>
+            </record>
+        -->
+
+        <!-- Top menu item -->
+        <!--
+            <menuitem name="delivery_slip_custom" id="delivery_slip_custom.menu_root"/>
+        -->
+        <!-- menu categories -->
+        <!--
+            <menuitem name="Menu 1" id="delivery_slip_custom.menu_1" parent="delivery_slip_custom.menu_root"/>
+            <menuitem name="Menu 2" id="delivery_slip_custom.menu_2" parent="delivery_slip_custom.menu_root"/>
+        -->
+        <!-- actions -->
+        <!--
+            <menuitem name="List" id="delivery_slip_custom.menu_1_list" parent="delivery_slip_custom.menu_1"
+                      action="delivery_slip_custom.action_window"/>
+            <menuitem name="Server to list" id="delivery_slip_custom" parent="delivery_slip_custom.menu_2"
+                      action="delivery_slip_custom.action_server"/>
+        -->
+    </data>
+</odoo>
