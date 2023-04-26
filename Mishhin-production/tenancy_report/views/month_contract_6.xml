@@ -279,7 +279,7 @@
 
                             td{
                             font-size:1.25rem;
-                            border: 1px dashed black;
+<!--                            border: 1px dashed black;-->
                             }
                         </style>
 
