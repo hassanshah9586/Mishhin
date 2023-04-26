@@ -17,6 +17,9 @@
                             .content{
                             padding-rigth: 40px;
                             }
+                            .req{
+                            color:red
+                            }
                             .logo{
                             text-align: center;
                             margin: 0 auto;
@@ -45,183 +48,213 @@
                             <t t-call="tenancy_report.tenancy_report_header"/>
                             <div class="content">
                                 <div dir="rtl" class="text-right my-font">
-                                    <h1>عقــــد ايجـــــــــار</h1>
-                                    <span>أنه في يوم</span>
-                                    <span class="req">DAY</span>
-                                    <span>الموافق</span>
-                                    <span class="req">DATE</span>
-                                    <span>في دولة الكويت - تعاقد كل من:</span>
-                                    <br/>
-                                    <span>أولا: السادة / شركة مشهن الكويتية العقارية</span>
-                                    <br/>
-                                    <span>مقر الشركة: العاصمة – منطقة القبلة – قطعة 13 – شارع السور – قسيمة 20 – برج
-                                        أنور –
-                                        الدور 12
-                                    </span>
-                                    <br/>
-                                    <span>ويمثلها بالتوقيع السيد / ثنيان أنور مصطفى ثنيان الغانم</span>
-                                    <br/>
-                                    <span class="bold">(طرف أول – مؤجر)</span>
-                                    <br/>
-                                    <span>ثانيا: السادة شركة /</span>
-                                    <span class="req">COMPANY NAME</span>
-                                    <br/>
-                                    <span>سجل تجاري رقم:</span>
-                                    <span class="req">.Commercial record no</span>
-                                    <br/>
-                                    <span>العنوان:</span>
-                                    <span class="req">ADDRESS</span>
-                                    <span>البريد الالكتروني:</span>
-                                    <span class="req">EMAIL</span>
-                                    <br/>
-                                    <span>ويمثلها السيد /</span>
-                                    <span class="req">COMPANY REPRESENTER</span>
-                                    <span>الجنسية:</span>
-                                    <span class="req">NATIONALITY</span>
-                                    <span>الرقم</span>
-                                    <br/>
-                                    <span>المدني:</span>
-                                    <span class="req">CIVIL ID</span>
-                                    <span>بصفته/</span>
-                                    <span class="req">JOB TITLE</span>
-                                    <br/>
-                                    <span class="bold">(طرف ثاني – مستأجر)</span>
-                                    <br/>
-                                    <span>وبعد أن أقر أطراف العقد بأهليتهم القانونية لإبرام هذا العقد، فقد تلاقت
-                                        إرادتهما في
-                                        الاتفاق على البنود
-                                        الاتية:
-                                    </span>
-                                    <h3>التمهيد</h3>
-                                    <span>تقدم الطرف الثاني للطرف الأول وأبدى رغبته في استئجار</span>
-                                    <span class="req">PROPERTY TYPE</span>
-                                    <br/>
-                                    <span>الكائنة بمنطقة</span>
-                                    <span class="req">PROPERTY’S CITY</span>
-                                    <span>قطعة</span>
-                                    <span class="req">.PROPERTY BLOCK NO</span>
-                                    <span>شارع</span>
-                                    <span class="req">PROPERTY STREET</span>
-                                    <br/>
-                                    <span class="req">.NO</span>
-                                    <span>قسيمة</span>
-                                    <span class="req">.BUILDING NO</span>
-                                    <span>الرقم الآلي للعنوان:</span>
-                                    <span class="req">.AUTOMATED ADDRESS NO</span>
-                                    <br/>
-                                    <span>وذلك لعمل نشاط</span>
-                                    <span class="req">PROPERTY TYPE</span>
-                                    <span>، وقد وافق الطرف الأول على ذلك وعليه فقد اتفقا على الاتي:</span>
-                                    <h3>البند الاول</h3>
-                                    <span>التمهيد السابق جزء لا يتجزأ من هذا العقد، بل هو شارح له مفسر لما غمض من بنوده.
-                                    </span>
-                                    <h3>البند الثاني</h3>
-                                    <span>أجر الطرف الأول للطرف الثاني - القابل لذلك – العين المثبت عنوانها في تمهيد هذا
-                                        العقد وذلك لعمل
-                                    </span>
-                                    <br/>
-                                    <span>للطرف الثاني.</span>
-                                    <h3>البند الثالث</h3>
-                                    <span>يقر الطرف الثاني أنه عاين محل عقد الايجار معاينة نافية للجهالة، وقد تأكد من
-                                        جاهزيتها واستيفائها لجميع المرافق
-                                        الخدمية
-                                        التي تجعلها مهيئة للغرض الذي استأجرها له، ويقر أنه استلمها واستلم مفاتيحها قبل
-                                        التوقيع على هذا العقد، وأنه أصبح
-                                        مسؤولا
-                                        مسؤولية تامة عنها وعما يجري فيها أو يلحق بها.
-                                    </span>
-                                    <br/>
-                                    <div class="row">
-                                        <center>
-                                            <b>
-                                                <u>
-                                                    البند الرابع
-                                                </u>
-                                            </b>
-                                        </center>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        عقــــد ايجـــــــــار
+                                                    </u>
+                                                </b>
+                                            </center>
 
-                                    </div>
+                                        </div>
+                                        <span>أنه في يوم</span>
+                                        <span class="req">DAY</span>
+                                        <span>الموافق</span>
+                                        <span class="req">DATE</span>
+                                        <span>في دولة الكويت - تعاقد كل من:</span>
+                                        <br/>
+                                        <span>أولا: السادة / شركة مشهن الكويتية العقارية</span>
+                                        <br/>
+                                        <span>مقر الشركة: العاصمة – منطقة القبلة – قطعة 13 – شارع السور – قسيمة 20 – برج
+                                            أنور – الدور 12
+                                        </span>
+                                        <br/>
+                                        <span>ويمثلها بالتوقيع السيد / ثنيان أنور مصطفى ثنيان الغانم</span>
+                                        <br/>
+                                        <span class="bold">(طرف أول – مؤجر)</span>
+                                        <br/>
+                                        <span>ثانيا: السادة شركة /</span>
+                                        <span class="req">COMPANY NAME</span>
+                                        <br/>
+                                        <span>سجل تجاري رقم:</span>
+                                        <span class="req">.Commercial record no</span>
+                                        <br/>
+                                        <span>العنوان:</span>
+                                        <span class="req">ADDRESS</span>
+                                        <span>البريد الالكتروني:</span>
+                                        <span class="req">EMAIL</span>
+                                        <br/>
+                                        <span>ويمثلها السيد /</span>
+                                        <span class="req">COMPANY REPRESENTER</span>
+                                        <span>الجنسية:</span>
+                                        <span class="req">NATIONALITY</span>
+                                        <span>الرقم</span>
+                                        <span>المدني:</span>
+                                        <span class="req">CIVIL ID</span>
+                                        <span>بصفته/</span>
+                                        <span class="req">JOB TITLE</span>
+                                        <br/>
+                                        <span class="bold">(طرف ثاني – مستأجر)</span>
+                                        <br/>
+                                        <span>وبعد أن أقر أطراف العقد بأهليتهم القانونية لإبرام هذا العقد، فقد تلاقت
+                                            إرادتهما في الاتفاق على البنود
+                                            الاتية:
+                                        </span>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        التمهيد
+                                                    </u>
+                                                </b>
+                                            </center>
 
-                                    <br/>
+                                        </div>
+                                        <span>تقدم الطرف الثاني للطرف الأول وأبدى رغبته في استئجار</span>
+                                        <span class="req">PROPERTY TYPE</span>
+                                        <br/>
+                                        <span>الكائنة بمنطقة</span>
+                                        <span class="req">PROPERTY’S CITY</span>
+                                        <span>قطعة</span>
+                                        <span class="req">.PROPERTY BLOCK NO</span>
+                                        <span>شارع</span>
+                                        <span class="req">.PROPERTY STREET NO</span>
+                                        <span>قسيمة</span>
+                                        <span class="req">.BUILDING NO</span>
+                                        <span>الرقم الآلي للعنوان:</span>
+                                        <span class="req">.AUTOMATED ADDRESS NO</span>
+                                        <br/>
+                                        <span>وذلك لعمل نشاط</span>
+                                        <span class="req">PROPERTY TYPE</span>
+                                        <span>، وقد وافق الطرف الأول على ذلك وعليه فقد اتفقا على الاتي:</span>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        البند الاول
+                                                    </u>
+                                                </b>
+                                            </center>
 
-                                    <span>مدة هذا العقد سنة ميلادية واحدة تبدأ في</span>
-                                    <span class="req">CONTRACT START DATE</span>
-                                    <span>وتنتهي في</span>
-                                    <span class="req">CONTRACT END DATE</span>
-                                    <span>وهذه المدة قابلة للتجديد لمدة أو لمدد أخرى مالم يخطر أحد الطرفين الاخر برغبته
-                                        في
-                                        إنهاء هذا العقد، ويلتزم الطرف
-                                        الراغب في إنهاء هذا العقد بإخطار الطرف الأخر كتابيا قبل شهر من تاريخ انتهاء مدة
-                                        العقد.
-                                    </span>
-                                    <br/>
-                                    <div class="row">
-                                        <center>
-                                            <b>
-                                                <u>
-                                                    البند الخامس
-                                                </u>
-                                            </b>
-                                        </center>
+                                        </div>
+                                        <span>التمهيد السابق جزء لا يتجزأ من هذا العقد، بل هو شارح له مفسر لما غمض من
+                                            بنوده.
+                                        </span>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        البند الثاني
+                                                    </u>
+                                                </b>
+                                            </center>
 
-                                    </div>
+                                        </div>
+                                        <span>أجر الطرف الأول للطرف الثاني - القابل لذلك – العين المثبت عنوانها في تمهيد
+                                            هذا العقد وذلك لعمل
+                                        </span>
+                                        <br/>
+                                        <span>للطرف الثاني.</span>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        البند الثالث
+                                                    </u>
+                                                </b>
+                                            </center>
 
-                                    <br/>
-                                    <span>- اتفق الطرفان على أن القيمة الايجارية لمحل هذا العقد</span>
-                                    <span class="req">TENANCY RENT</span>
-                                    <span>د.ك (فقط</span>
-                                    <span class="req">TENANCY RENT IN ARABIC LETTERS</span>
-                                    <span>دينار كويتي لا غير)، ويلتزم الطرف الثاني بسداد القيمة الإيجارية مجمعة كل اثنى
-                                        عشر
-                                        شهر
-                                    </span>
-                                    <span class="req">TENANCY RENT AMOUNT FOR THREE MONTHS</span>
-                                    <span>د.ك ( فقط</span>
-                                    <span class="req">TENANCY RENT AMOUNT FOR THREE MONTHS IN ARABIC LETTERS</span>
-                                    <span>دينار كويتي لا غير) وذلك بأدائها للطرف الأول في أول الشهر الميلادي.</span>
-                                    <br/>
-                                    <span>سدد الطرف الثاني مبلغ</span>
-                                    <span class="req">AMOUNT DEPOSIT</span>
-                                    <span>د.ك ( فقط</span>
-                                    <span class="req">AMOUNT DEPOSIT IN ARABIC LETTERS</span>
-                                    <span>دينار كويتي لا غير) اجرة ثلاثة اشهر عن المدة</span>
-                                    <br/>
-                                    <span>من</span>
-                                    <span class="req">START DATE OF DEPOSIT</span>
-                                    <span>حتى / /</span>
-                                    <span class="req">END DATE OF DEPOSIT</span>
-                                    <span>/ / .</span>
-                                    <br/>
-                                    <span>- إذا تخلف الطرف الثاني عن سداد القيمة الايجارية في الموعد المحدد، فإن هذا
-                                        العقد
-                                        يكون مفسوخا من تلقاء نفسه دون
-                                        حاجة إلى
-                                        إنذار أو إخطار أو حكم قضائي، ويحق للطرف الأول في هذه الحالة توقيع الحجز التحفظي
-                                        على
-                                        منقولات الطرف الثاني
-                                        الموجودة بالعين
-                                        محل هذا العقد وذلك اقتضاء للأجرة المتأخرة، ويحق للطرف الأول مطالبته بكافة
-                                        المبالغ
-                                        التي لم يتم سدادها وذلك بكافة
-                                        الطرق
-                                        القانونية.
-                                    </span>
-                                    <br/>
-                                    <span>يلتزم الطرف الثاني بسداد مبلغ</span>
-                                    <span class="req">INSURANCE AMOUNT</span>
-                                    <span>د.ك (فقط</span>
-                                    <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>
-                                    <span>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا بعد
-                                        انتهاء مدة هذا العقد وتسليم العين
-                                        محل العقد
-                                        للطرف الأول بالحالة التي استلمها بها، ويجوز للطرف الثاني خصم قيمة إصلاح أي
-                                        تلفيات
-                                        وجدت بالعين محل العقد بعد
-                                        انتهاء مدته،
-                                        كما يحق للطرف الأول سداد أية رسوم مستحقة لوزارة الكهرباء والماء والبلدية تنتج عن
-                                        استغلال الطرف الثاني للعين محل
-                                        العقد.
-                                    </span>
+                                        </div>
+                                        <span>يقر الطرف الثاني أنه عاين محل عقد الايجار معاينة نافية للجهالة، وقد تأكد
+                                            من جاهزيتها واستيفائها لجميع المرافق
+                                            الخدمية
+                                            التي تجعلها مهيئة للغرض الذي استأجرها له، ويقر أنه استلمها واستلم مفاتيحها
+                                            قبل التوقيع على هذا العقد، وأنه أصبح
+                                            مسؤولا
+                                            مسؤولية تامة عنها وعما يجري فيها أو يلحق بها.
+                                        </span>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        البند الرابع
+                                                    </u>
+                                                </b>
+                                            </center>
+
+                                        </div>
+                                        <span>مدة هذا العقد سنة ميلادية واحدة تبدأ في</span>
+                                        <span class="req">CONTRACT START DATE</span>
+                                        <span>وتنتهي في</span>
+                                        <span class="req">CONTRACT END DATE</span>
+                                        <span>وهذه المدة قابلة للتجديد لمدة أو لمدد أخرى مالم يخطر أحد الطرفين الاخر
+                                            برغبته في إنهاء هذا العقد، ويلتزم الطرف
+                                            الراغب في إنهاء هذا العقد بإخطار الطرف الأخر كتابيا قبل شهر من تاريخ انتهاء
+                                            مدة العقد.
+                                        </span>
+                                        <div class="row">
+                                            <center>
+                                                <b>
+                                                    <u>
+                                                        البند الخامس
+                                                    </u>
+                                                </b>
+                                            </center>
+
+                                        </div>
+                                        <span>- اتفق الطرفان على أن القيمة الايجارية لمحل هذا العقد</span>
+                                        <span class="req">TENANCY RENT</span>
+                                        <span>د.ك (فقط</span>
+                                        <span class="req">TENANCY RENT IN ARABIC LETTERS</span>
+                                        <span>دينار كويتي لا غير)، ويلتزم الطرف الثاني بسداد القيمة الإيجارية مجمعة كل
+                                            اثنى عشر شهر
+                                        </span>
+                                        <span class="req">TENANCY RENT AMOUNT FOR THREE MONTHS</span>
+                                        <span>د.ك ( فقط</span>
+                                        <span class="req">TENANCY RENT AMOUNT FOR THREE MONTHS IN ARABIC LETTERS</span>
+                                        <span>دينار كويتي لا غير) وذلك بأدائها للطرف الأول في أول الشهر الميلادي.</span>
+                                        <br/>
+                                        <span>سدد الطرف الثاني مبلغ</span>
+                                        <span class="req">AMOUNT DEPOSIT</span>
+                                        <span>د.ك ( فقط</span>
+                                        <span class="req">AMOUNT DEPOSIT IN ARABIC LETTERS</span>
+                                        <span>دينار كويتي لا غير) اجرة ثلاثة اشهر عن المدة</span>
+                                        <br/>
+                                        <span>من</span>
+                                        <span class="req">START DATE OF DEPOSIT</span>
+                                        <span>/ / حتى</span>
+                                        <span class="req">END DATE OF DEPOSIT</span>
+                                        <span>/ / .</span>
+                                        <br/>
+                                        <span>- إذا تخلف الطرف الثاني عن سداد القيمة الايجارية في الموعد المحدد، فإن هذا
+                                            العقد يكون مفسوخا من تلقاء نفسه دون
+                                            حاجة إلى
+                                            إنذار أو إخطار أو حكم قضائي، ويحق للطرف الأول في هذه الحالة توقيع الحجز
+                                            التحفظي على منقولات الطرف الثاني
+                                            الموجودة بالعين
+                                            محل هذا العقد وذلك اقتضاء للأجرة المتأخرة، ويحق للطرف الأول مطالبته بكافة
+                                            المبالغ التي لم يتم سدادها وذلك بكافة
+                                            الطرق
+                                            القانونية.
+                                        </span>
+                                        <br/>
+                                        <span>يلتزم الطرف الثاني بسداد مبلغ</span>
+                                        <span class="req">INSURANCE AMOUNT</span>
+                                        <span>د.ك (فقط</span>
+                                        <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>
+                                        <span>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا
+                                            بعد انتهاء مدة هذا العقد وتسليم العين
+                                            محل العقد
+                                            للطرف الأول بالحالة التي استلمها بها، ويجوز للطرف الثاني خصم قيمة إصلاح أي
+                                            تلفيات وجدت بالعين محل العقد بعد
+                                            انتهاء مدته،
+                                            كما يحق للطرف الأول سداد أية رسوم مستحقة لوزارة الكهرباء والماء والبلدية
+                                            تنتج عن استغلال الطرف الثاني للعين محل
+                                            العقد.
+                                        </span>
+
+                                    
                                 </div>
 
 

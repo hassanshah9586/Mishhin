@@ -25,6 +25,9 @@
                             margin-left: auto;
                             margin-right: auto;
                             }
+                            .req{
+                            color:red
+                            }
                             .row{
                             width:100%;
                             }
@@ -38,7 +41,7 @@
 
                             td{
                             font-size:1.25rem;
-<!--                            border: 1px dashed black;-->
+                            <!--                            border: 1px dashed black;-->
                             }
                         </style>
                         <div class="container">
@@ -48,745 +51,1038 @@
                                 <!--                                    <img t-att-src="'/tenancy_report/static/src/img/logo_this.png'"/>-->
                                 <!--                                </div>-->
                                 <t t-call="tenancy_report.tenancy_report_header"/>
-                                <div class="row">
-                                    <div id="title" class=" col-12">عقــــد ايجـــــــــار</div>
+                                <div dir="rtl" class="text-right my-font">
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    عقــــد ايجـــــــــار
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>أنه في يوم</span>
+                                    <span class="req">DAY</span>
+                                    <span>الموافق</span>
+                                    <span class="req">DATE</span>
+                                    <span>في دولة الكويت - تعاقد كل من:</span>
+                                    <br/>
+                                    <span>أولا: السادة / شركة مشهن الكويتية العقارية</span>
+                                    <br/>
+                                    <span>مقر الشركة: العاصمة – منطقة القبلة – قطعة 13 – شارع السور – قسيمة 20 – برج
+                                        أنور – الدور 12
+                                        ويمثلها بالتوقيع السيد / ثنيان أنور مصطفى ثنيان الغانم
+                                    </span>
+                                    <br/>
+                                    <span class="bold">(طرف أول – مؤجر)</span>
+                                    <br/>
+                                    <span>ثانيا: السيد/</span>
+                                    <span class="req">TENANT NAME</span>
+                                    <br/>
+                                    <span>الجنسية:</span>
+                                    <span class="req">TENANT NATIONALITY</span>
+                                    <span>الرقم المدني:</span>
+                                    <span class="req">CIVIL ID</span>
+                                    <br/>
+                                    <span>المقيم بمنطقة:</span>
+                                    <span class="req">CITY NAME (AREA)</span>
+                                    <span>قطعة:</span>
+                                    <span class="req">.BLOCK NO</span>
+                                    <span>شارع:</span>
+                                    <span class="req">.STREET NO</span>
+                                    <span>قسيمة:</span>
+                                    <span class="req">.HOUSE NO</span>
+                                    <span>الرقم الآلي للعنوان:</span>
+                                    <span class="req">.AUTOMATED ADDRESS NO</span>
+                                    <br/>
+                                    <span>هاتف:</span>
+                                    <span class="req">.TEL</span>
+                                    <span>البريد الالكتروني:</span>
+                                    <span class="req">EMAIL</span>
+                                    <br/>
+                                    <span class="bold">(طرف ثاني – مستأجر)</span>
+                                    <br/>
+                                    <span>وبعد أن أقر أطراف العقد بأهليتهم القانونية لإبرام هذا العقد، فقد تلاقت
+                                        إرادتهما في الاتفاق على البنود
+                                        الاتية:
+                                    </span>
+                                    <br/>
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    التمهيد
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>تقدم الطرف الثاني للطرف الأول وأبدى رغبته في استئجار</span>
+                                    <span class="req">PROPERTY TYPE</span>
+                                    <br/>
+                                    <span>الكائنة بمنطقة</span>
+                                    <span class="req">PROPERTY’S CITY</span>
+                                    <span>قطعة</span>
+                                    <span class="req">.PROPERTY BLOCK NO</span>
+                                    <span>شارع</span>
+                                    <span class="req">.PROPERTY STREET NO</span>
+                                    <span>قسيمة</span>
+                                    <span class="req">.BUILDING NO</span>
+                                    <span>الرقم الآلي للعنوان:</span>
+                                    <span class="req">.AUTOMATED ADDRESS NO</span>
+                                    <span>وذلك لعمل نشاط</span>
+                                    <span class="req">PROPERTY TYPE</span>
+                                    <span>، وقد وافق الطرف الأول على ذلك وعليه فقد اتفقا على الاتي:</span>
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    البند الاول
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>التمهيد السابق جزء لا يتجزأ من هذا العقد، بل هو شارح له مفسر لما غمض من بنوده
+                                        ومكمل لما نقص منه.
+                                    </span>
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    البند الثاني
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>أجر الطرف الأول للطرف الثاني - القابل لذلك – العين المثبت عنوانها في تمهيد هذا
+                                        العقد وذلك لعمل النشاط المشار
+                                        اليه في
+                                        التمهيد للطرف الثاني.
+                                    </span>
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    البند الثالث
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>يقر الطرف الثاني أنه عاين محل عقد الايجار معاينة نافية للجهالة، وقد تأكد من
+                                        جاهزيتها واستيفائها لجميع المرافق
+                                        الخدمية
+                                        التي تجعلها مهيئة للغرض الذي استأجرها له، ويقر أنه استلمها واستلم مفاتيحها قبل
+                                        التوقيع على هذا العقد، وأنه أصبح
+                                        مسؤولا
+                                        مسؤولية تامة عنها وعما يجري فيها أو يلحق بها.
+                                    </span>
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    البند الرابع
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>مدة هذا العقد سنة ميلادية واحدة تبدأ في</span>
+                                    <span class="req">CONTRACT START DATE</span>
+                                    <span>وتنتهي في</span>
+                                    <span class="req">CONTRACT END DATE</span>
+                                    <span>وهذه المدة قابلة للتجديد لمدة أو لمدد أخرى مالم يخطر أحد الطرفين الاخر برغبته
+                                        في إنهاء هذا العقد، ويلتزم الطرف
+                                        الراغب في
+                                        إنهاء هذا العقد بإخطار الطرف الأخر كتابيا قبل شهر من تاريخ انتهاء مدة العقد.
+                                    </span>
+                                    <div class="row">
+                                        <center>
+                                            <b>
+                                                <u>
+                                                    البند الخامس
+                                                </u>
+                                            </b>
+                                        </center>
+
+                                    </div>
+                                    <span>اتفق الطرفان على أن القيمة الايجارية لمحل هذا العقد</span>
+                                    <span class="req">TENANCY RENT</span>
+                                    <span>د.ك (فقط</span>
+                                    <span class="req">TENANCY RENT IN ARABIC LETTERS</span>
+                                    <span>دينار كويتي لا غير)، ويلتزم الطرف الثاني بسداد القيمة الإيجارية مجمعة كل ثلاثة
+                                        اشهر بواقع
+                                    </span>
+                                    <span class="req">TENANCY RENT AMOUNT FOR THREE MONTHS</span>
+                                    <span>د.ك ( فقط</span>
+                                    <span class="req">TENANCY RENT AMOUNT FOR THREE MONTHS IN ARABIC LETTERS</span>
+                                    <span>دينار كويتي لا غير) وذلك بأدائها للطرف الأول في أول الشهر الميلادي.</span>
+                                    <br/>
+                                    <span>سدد الطرف الثاني مبلغ</span>
+                                    <span class="req">AMOUNT DEPOSIT</span>
+                                    <span>د.ك ( فقط</span>
+                                    <span class="req">AMOUNT DEPOSIT IN ARABIC LETTERS</span>
+                                    <span>دينار كويتي لا غير) اجرة ثلاثة اشهر عن المدة</span>
+                                    <br/>
+                                    <span>من</span>
+                                    <span class="req">START DATE OF DEPOSIT</span>
+                                    <span>/ / حتى</span>
+                                    <span class="req">END DATE OF DEPOSIT</span>
+                                    <span>/ / .</span>
+                                    <br/>
+                                    <span>إذا تخلف الطرف الثاني عن سداد القيمة الايجارية في الموعد المحدد، فإن هذا العقد
+                                        يكون مفسوخا من
+                                        تلقاء نفسه دون حاجة إلى
+                                        إنذار أو إخطار أو حكم قضائي، ويحق للطرف الأول في هذه الحالة توقيع الحجز التحفظي
+                                        على منقولات الطرف الثاني
+                                        الموجودة بالعين
+                                        محل هذا العقد وذلك اقتضاء للأجرة المتأخرة، ويحق للطرف الأول مطالبته بكافة
+                                        المبالغ التي لم يتم سدادها وذلك بكافة
+                                        الطرق
+                                        القانونية.
+                                    </span>
+                                    <div>
+                                        <span>يلتزم الطرف الثاني بسداد مبلغ</span>
+                                        <span class="req">INSURANCE AMOUNT</span>
+                                        <span>د.ك (فقط</span>
+                                        <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>
+                                        <span>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا
+                                            بعد
+                                            انتهاء مدة هذا العقد وتسليم العين
+                                            محل العقد
+                                            للطرف الأول بالحالة التي استلمها بها، ويجوز للطرف الثاني خصم قيمة إصلاح أي
+                                            تلفيات وجدت بالعين محل العقد بعد
+                                            انتهاء مدته،
+                                            كما يحق للطرف الأول سداد أية رسوم مستحقة لوزارة الكهرباء والماء والبلدية
+                                            تنتج عن
+                                            استغلال الطرف الثاني للعين محل
+                                            العقد.
+                                        </span>
+
+                                    </div>
+
+                                    <!--                                <div class="row">-->
+                                    <!--                                    <div id="title" class=" col-12">عقــــد ايجـــــــــار</div>-->
+                                    <!--                                </div>-->
+                                    <!--                                <table class="mt16" width="100%" style="margin-top:1%;text-align justify">-->
+                                    <!--                                <tbody>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right">في دولة الكويت - تعاقد كل من-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-center">-->
+                                    <!--                                        <span t-esc="o.ten_date"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">الموافق</td>-->
+                                    <!--                                    <td class="text-center">-->
+                                    <!--                                        <span t-esc="o.ten_date.strftime('%A')"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">أنه في يوم</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">-->
+                                    <!--                                        <b>أولا: السادة / شركة مشهن الكويتية العقارية</b>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right">برج أنور – الدور 12</td>-->
+                                    <!--                                    <td class="text-right">- 20</td>-->
+                                    <!--                                    <td class="text-right">شارع السور – قسيمة–</td>-->
+                                    <!--                                    <td class="text-right">13</td>-->
+                                    <!--                                    <td class="text-right">مقر الشركة: العاصمة – منطقة القبلة – قطعة</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right arabic" colspan="5">ويمثلها بالتوقيع السيد / ثنيان-->
+                                    <!--                                        أنور مصطفى ثنيان الغانم-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class='text-left' colspan="5">-->
+                                    <!--                                        <b>-->
+                                    <!--                                            (طرف أول – مؤجر)-->
+                                    <!--                                        </b>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class='text-right' colspan="4">-->
+                                    <!--                                        <span t-esc="o.tenant_id.name"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">ثانيا: السيد/</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.tenant_id.civil_id"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">:الرقم المدني</td>-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.tenant_id.nationality.name"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">:الجنسية</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.tenant_id.street"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">: شارع</td>-->
+                                    <!--                                    <td class="text-left">BLOCK NO.</td>-->
+                                    <!--                                    <td class="text-left">:قطعة</td>-->
+                                    <!--                                    <td class="text-right" dir="rtl">-->
+                                    <!--                                        <span>المقيم بمنطقة:</span>-->
+                                    <!--                                        <span t-esc="o.tenant_id.city"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.tenant_id.street"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic" style="width:25%">:الرقم الآلي للعنوان</td>-->
+                                    <!--                                    <td class="text-left">HOUSE NO.</td>-->
+                                    <!--                                    <td class="text-right">:قسيمة</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.tenant_id.email"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">:البريد الالكتروني</td>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.tenant_id.mobile"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">:هاتف</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class='text-left' colspan="5">-->
+                                    <!--                                        <b>-->
+                                    <!--                                            (طرف ثاني – مستأجر)-->
+                                    <!--                                        </b>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class='text-right' colspan="5">-->
+                                    <!--                                        :وبعد أن أقر أطراف العقد بأهليتهم القانونية لإبرام هذا العقد، فقد تلاقت-->
+                                    <!--                                        إرادتهما في الاتفاق على البنود الاتية-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td colspan="5">-->
+                                    <!--                                        <center>-->
+                                    <!--                                            <b>-->
+                                    <!--                                                <u>-->
+                                    <!--                                                    التمهيد-->
+                                    <!--                                                </u>-->
+                                    <!--                                            </b>-->
+                                    <!--                                        </center>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="2">-->
+                                    <!--                                        <span t-esc="o.property_id.type_id.name"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic" colspan="3">تقدم الطرف الثاني للطرف الأول-->
+                                    <!--                                        وأبدى رغبته في استئجار-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.property_id.street"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">شارع</td>-->
+                                    <!--                                    <td class="text-left">PROPERTY BLOCK NO.</td>-->
+                                    <!--                                    <td class="text-left">قطعة</td>-->
+                                    <!--                                    <td class="text-right">-->
+                                    <!--                                        PROPERTY’S CITY-->
+                                    <!--                                        <span>الكائنة بمنطقة</span>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.property_id.street"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic">الرقم الآلي للعنوان:</td>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.property_id.building_no"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-left">قسيمة</td>-->
+                                    <!--                                    <td class="text-right">-->
+                                    <!--                                        <span t-esc="o.property_id.street"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="2">، وقد وافق الطرف الأول على ذلك وعليه</td>-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.property_id.type_id.name"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right arabic" style="width:20%">وذلك لعمل نشاط</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">:فقد اتفقا على الاتي</td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td colspan="5">-->
+                                    <!--                                        <center>-->
+                                    <!--                                            <b>-->
+                                    <!--                                                <u>-->
+                                    <!--                                                    البند الاول-->
+                                    <!--                                                </u>-->
+                                    <!--                                            </b>-->
+                                    <!--                                        </center>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">.التمهيد السابق جزء لا يتجزأ من هذا-->
+                                    <!--                                        العقد، بل هو شارح له مفسر لما غمض من بنوده ومكمل لما نقص منه-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td colspan="5">-->
+                                    <!--                                        <center>-->
+                                    <!--                                            <b>-->
+                                    <!--                                                <u>-->
+                                    <!--                                                    البند الثاني-->
+                                    <!--                                                </u>-->
+                                    <!--                                            </b>-->
+                                    <!--                                        </center>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">أجر الطرف الأول للطرف الثاني - القابل-->
+                                    <!--                                        لذلك – العين المثبت عنوانها في تمهيد هذا العقد وذلك-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="3">للطرف الثاني.</td>-->
+                                    <!--                                    <td class="text-right" colspan="2" style="width:40%">لعمل النشاط المشار اليه-->
+                                    <!--                                        في التمهيد-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td colspan="5">-->
+                                    <!--                                        <center>-->
+                                    <!--                                            <b>-->
+                                    <!--                                                <u>-->
+                                    <!--                                                    البند الثالث-->
+                                    <!--                                                </u>-->
+                                    <!--                                            </b>-->
+                                    <!--                                        </center>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">.يقر الطرف الثاني أنه عاين محل عقد-->
+                                    <!--                                        الايجار معاينة نافية للجهالة، وقد تأكد من جاهزيتها واستيفائها لجميع-->
+                                    <!--                                        المرافق الخدمية التي تجعلها مهيئة للغرض الذي استأجرها له، ويقر أنه-->
+                                    <!--                                        استلمها واستلم مفاتيحها قبل التوقيع على هذا العقد، وأنه أصبح مسؤولا-->
+                                    <!--                                        مسؤولية تامة عنها وعما يجري فيها أو يلحق بها-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td colspan="5">-->
+                                    <!--                                        <center>-->
+                                    <!--                                            <b>-->
+                                    <!--                                                <u>-->
+                                    <!--                                                    البند الرابع-->
+                                    <!--                                                </u>-->
+                                    <!--                                            </b>-->
+                                    <!--                                        </center>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left">وتنتهي في-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.date_start"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right" colspan="2">مدة هذا العقد سنة ميلادية واحدة تبدأ في-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="3" style="width:55%">وهذه المدة قابلة-->
+                                    <!--                                        للتجديد لمدة أو لمدد-->
+                                    <!--                                        أخرى مالم يخطر أحد-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.date"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">الطرفين الاخر برغبته في إنهاء هذا العقد،-->
+                                    <!--                                        ويلتزم الطرف الراغب في إنهاء هذا العقد بإخطار الطرف الأخر كتابيا قبل شهر-->
+                                    <!--                                        من تاريخ انتهاء مدة العقد-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td colspan="5">-->
+                                    <!--                                        <center>-->
+                                    <!--                                            <b>-->
+                                    <!--                                                <u>-->
+                                    <!--                                                    البند الخامس-->
+                                    <!--                                                </u>-->
+                                    <!--                                            </b>-->
+                                    <!--                                        </center>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr dir="rtl">-->
+                                    <!--                                    <td class="text-left">د.ك (فقط-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.rent"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right" colspan="3">-->
+                                    <!--                                        <li>-->
+                                    <!--                                            <ul>اتفق الطرفان على أن القيمة الايجارية لمحل-->
+                                    <!--                                                هذا العقد-->
+                                    <!--                                            </ul>-->
+                                    <!--                                        </li>-->
+                                    <!--                                    </td>-->
+
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="3">دينار كويتي لا غير)، ويلتزم الطرف الثاني-->
+                                    <!--                                        بسداد-->
+                                    <!--                                    </td>-->
+                                    <!--                                    &lt;!&ndash;                                            <td class="text-left" colspan="2">TENANCY RENT IN ARABIC LETTERS&ndash;&gt;-->
+                                    <!--                                    &lt;!&ndash;                                            </td>&ndash;&gt;-->
+                                    <!--                                    <td class="text-left" colspan="2">-->
+                                    <!--                                        <span t-esc="o.rent_amount_in_text"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-left" colspan="3">-->
+                                    <!--                                        <span t-esc="o.rent * 3"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right" colspan="2">القيمة الإيجارية مجمعة كل ستة أشهر بواقع-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    &lt;!&ndash;                                            <td class="text-left" colspan="3">TENANCY RENT AMOUNT FOR THREE MONTHS IN&ndash;&gt;-->
+                                    <!--                                    &lt;!&ndash;                                                ARABIC LETTERS</td>&ndash;&gt;-->
+                                    <!--                                    <td class="text-left" colspan="3">-->
+                                    <!--                                        <span t-esc="o.rent_amount_in_text"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">د.ك ( فقط-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">MONTHS-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">.دينار كويتي لا غير) وذلك بأدائها للطرف-->
+                                    <!--                                        الأول في أول الشهر الميلادي-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr dir="rtl">-->
+                                    <!--                                    &lt;!&ndash;                                            <td class="text-right">AMOUNT DEPOSIT IN ARABIC LETTERS</td>&ndash;&gt;-->
+                                    <!--                                    <td class="text-right">-->
+                                    <!--                                        <span t-esc="o.rent_amount_in_text"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">د.ك ( فقط-->
+                                    <!--                                    </td>-->
+                                    <!--                                    &lt;!&ndash;                                            <td class="text-right">AMOUNT DEPOSIT</td>&ndash;&gt;-->
+                                    <!--                                    <td class="text-right">-->
+                                    <!--                                        <span t-esc="o.deposit"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right" colspan="2">-->
+                                    <!--                                        <li>-->
+                                    <!--                                            <ul>-->
+                                    <!--                                                سدد الطرف الثاني مبلغ-->
+                                    <!--                                            </ul>-->
+                                    <!--                                        </li>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">دينار كويتي لا غير) اجرة ثلاثة اشهر عن-->
+                                    <!--                                        المدة-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right">-->
+                                    <!--                                        <span>/ /</span>-->
+                                    <!--                                        <span t-esc="o.date"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-center">حتى-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">/ /-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">-->
+                                    <!--                                        <span t-esc="o.ten_date"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">من-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr dir="rtl">-->
+                                    <!--                                    <td class="text-right" colspan="5">-->
+                                    <!--                                        <li>-->
+                                    <!--                                            <ul>-->
+                                    <!--                                                .إذا تخلف الطرف الثاني عن سداد القيمة-->
+                                    <!--                                                الايجارية في الموعد المحدد، فإن هذا العقد يكون مفسوخا من تلقاء-->
+                                    <!--                                                نفسه دون-->
+                                    <!--                                                حاجة إلى إنذار أو إخطار أو حكم قضائي، ويحق للطرف الأول في هذه-->
+                                    <!--                                                الحالة-->
+                                    <!--                                                توقيع الحجز التحفظي على منقولات الطرف الثاني الموجودة بالعين محل-->
+                                    <!--                                                هذا-->
+                                    <!--                                                العقد وذلك اقتضاء للأجرة المتأخرة، ويحق للطرف الأول مطالبته-->
+                                    <!--                                                بكافة-->
+                                    <!--                                                المبالغ التي لم يتم سدادها وذلك بكافة الطرق القانونية-->
+                                    <!--                                            </ul>-->
+                                    <!--                                        </li>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr dir="rtl">-->
+                                    <!--                                    &lt;!&ndash;                                            <td class="text-left">INSURANCE AMOUNT IN ARABIC LETTERS</td>&ndash;&gt;-->
+                                    <!--                                    <td class="text-left">-->
+                                    <!--                                        <span t-esc="o.rent_amount_in_text"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right">د.ك (فقط-->
+                                    <!--                                    </td>-->
+                                    <!--                                    &lt;!&ndash;                                            <td class="text-left">Insurance Amount</td>&ndash;&gt;-->
+                                    <!--                                    <t t-set="ins" t-value="0"/>-->
+                                    <!--                                    <t t-set="date" t-value="datetime.date(1900,1,1)"/>-->
+                                    <!--                                    <t t-foreach="o.property_id.property_insurance_ids" t-as="line">-->
+                                    <!--                                        <t t-if="line.end_date > date">-->
+                                    <!--                                            <t t-set="ins" t-value="line.premium"/>-->
+                                    <!--                                            <t t-set="date" t-value="line.end_date"/>-->
+                                    <!--                                        </t>-->
+                                    <!--                                    </t>-->
+                                    <!--                                    <td style="text-align:center;">-->
+                                    <!--                                        <span t-esc="ins"/>-->
+                                    <!--                                    </td>-->
+                                    <!--                                    <td class="text-right" colspan="2">-->
+                                    <!--                                        <li>-->
+                                    <!--                                            <ul>-->
+                                    <!--                                                يلتزم الطرف الثاني بسداد مبلغ-->
+                                    <!--                                            </ul>-->
+                                    <!--                                        </li>-->
+                                    <!--                                    </td>-->
+                                    <!--                                </tr>-->
+                                    <!--                                <tr>-->
+                                    <!--                                    <td class="text-right" colspan="5">.دينار كويتي لا غير) تأمينا يؤدى للطرف-->
+                                    <!--                                        الأول، ولا يجوز له المطالبة به إلا بعد انتهاء مدة هذا العقد وتسليم العين-->
+                                    <!--                                        محل العقد للطرف الأول بالحالة التي استلمها بها، ويجوز للطرف الثاني خصم-->
+                                    <!--                                        قيمة إصلاح أي تلفيات وجدت بالعين محل العقد بعد انتهاء مدته، كما يحق-->
+                                    <!--                                        للطرف الأول سداد أية رسوم مستحقة لوزارة الكهرباء والماء والبلدية تنتج عن-->
+                                    <!--                                        استغلال الطرف الثاني للعين محل العقد-->
+                                    <!--                                    </td>-->
+
+                                    <!--                                </tr>-->
+                                    <table class="mt16" width="100%" style="margin-top:1%;text-align justify">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند السادس
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">.يلتزم الطرف الثاني باستخدام العين
+                                                    محل
+                                                    هذا العقد في الغرض والنشاط المحدد بهذا العقد، ولا يجوز له مخالفة ذلك
+                                                    بأي
+                                                    حال من الأحوال ويلتزم بمراعاة القوانين الكويتية وتعليمات الجهات
+                                                    الرسمية
+                                                    وآداب حسن الجوار أثناء استغلاله للعين المؤجرة، وفي حال عدم التزام
+                                                    الطرف
+                                                    الثاني بما تقدم فإن هذا العقد يعتبر مفسوخا من تلقاء نفسه دون حاجة
+                                                    إلى
+                                                    إنذار أو إخطار أو حكم قضائي
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>البند السابع
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            يلتزم الطرف الثاني بسداد التأمين اللازم لوزارة الكهرباء
+                                                            والماء
+                                                            فور التوقيع على هذا العقد ويلتزم بسداد قيمة استهلاكه
+                                                            للكهرباء
+                                                            والماء بشكل دوري عن فترة انتفاعه بالعين محل عقد الإيجار
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .يحق للطرف الأول قطع خدمات الكهرباء والماء عن الطرف الثاني
+                                                            بالعين محل العقد في حال عدم التزام الطرف الثاني بسداد قيمة
+                                                            استهلاكه للكهرباء والماء
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند الثامن
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .يلتزم الطرف الثاني ببذل العناية الفائقة في الحفاظ على العين
+                                                            محل
+                                                            عقد الايجار
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .يلتزم الطرف الثاني بعدم القيام بأي عمل من شأنه التعديل أو
+                                                            التغيير في العين محل العقد إلا بموافقة كتابية من الطرف
+                                                            الأول،
+                                                            وفي حالة مخالفته ذلك فإنه يكون ملزما بإعادة الحال إلى ما كان
+                                                            عليه وتعويض الطرف الأول عن الأضرار التي نشأت جراء مخالفته
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .يلتزم الطرف الثاني بعمل كافة الاصلاحات اللازمة للعين محل
+                                                            عقد
+                                                            الايجار وملحقاتها وذلك للأعطال التي تنشأ بسبب الاستخدام أو
+                                                            الناشئة بطبيعتها عن مرور الزمن ولا يجوز له مطالبة الطرف
+                                                            الأول
+                                                            بقيمة هذه الاصلاحات
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .يلتزم الطرف الثاني بتمكين الطرف الأول من القيام بكافة أعمال
+                                                            الاصلاح للأضرار الجسيمة التي تهدد العين محل العقد أو المبنى
+                                                            أو
+                                                            أية أضرار من شأنها أن تنقص من قيمة العين أو تقلل من الانتفاع
+                                                            بها
+                                                            وللطرف الأول حق الرجوع على الطرف الثاني ومطالبته بقيمة
+                                                            الاصلاحات
+                                                            التي قام بها متى كان الضرر ناشئ عن فعل الطرف الثاني
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .لا يحق للطرف الثاني مطالبة الطرف الأول بقيمة أي أعمال ديكور
+                                                            أو
+                                                            ما شابهها من أعمال أجراها بنفسه في العين محل العقد
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند التاسع
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            لا يجوز للطرف الثاني تخزين أية مواد أو منقولات من شأنها أن
+                                                            تشكل
+                                                            خطرا على حياته أو على حياة الغير أو ممنوع تخزينها من الجهات
+                                                            الرسمية - إلا بالضوابط التي أقرتها تلك الجهات - أو المواد
+                                                            التي
+                                                            تؤثر سلبا على سلامة العين والمبنى ويعتبر مسؤولا قبل الطرف
+                                                            الأول
+                                                            والغير عن أي ضرر ينتج عن مخالفته لهذا الشرط.
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            .لا يجوز للطرف الثاني استغلال مرافق المبنى (الممرات،
+                                                            السلالم) في
+                                                            غير الاغراض المعدة لهم ولا يجوز له تخزين أي شيء فيها ويكون
+                                                            الطرف
+                                                            الثاني مسؤولا عن ذلك وحده أمام الجهات الرسمية والطرف الأول
+                                                            والغير
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند العاشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">تنحصر مسؤولية الطرف الأول في تسليم
+                                                    العين
+                                                    محل هذا العقد إلى الطرف الثاني وتسليمه صورة المخطط الصادر من بلدية
+                                                    الكويت وصورة من ترخيص الإطفاء للمبنى ولا يكون الطرف الأول مسؤولا عن
+                                                    امتناع الجهات الرسمية من إصدار أية تراخيص أو شهادات أو أوراق لازمة
+                                                    للطرف
+                                                    الثاني، ولا يجوز للطرف الثاني الرجوع على الطرف الأول بأي طلبات او
+                                                    مطالبات مهما كان الحال.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>البند الحادي العاشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">لا يجوز للطرف الثاني تأجير العين محل
+                                                    هذا
+                                                    العقد من الباطن للغير ويقع باطلا كل تصرف يقوم به من شأنه أن يرتب
+                                                    حقوقا
+                                                    قانونية أو مادية على العين محل هذا العقد للغير، وفي حال مخالفة الطرف
+                                                    الثاني لذلك فإن هذا العقد يكون مفسوخا من تلقاء نفسه دون حاجة إلى
+                                                    إنذار
+                                                    أو إخطار أو حكم قضائي.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند الثاني عشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">يقر الطرف الثاني بأن الطرف الأول غير
+                                                    مسؤول عن أي تلف أو سرقة تحدث لممتلكاته الموجودة بداخل العين محل
+                                                    العقد أو
+                                                    خارجها ولا يضمن الطرف الأول التعرض الحاصل من الغير للطرف الثاني.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند الثالث عشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">يقر الطرف الثاني بأنه اتخذ من عنوان
+                                                    العين
+                                                    محل هذا العقد موطنا تتم مخاطبته فيه بكافة الكتب، والاخطارات،
+                                                    والانذارات،
+                                                    والاعلانات.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند الرابع عشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">:إذا رغب الطرف الثاني في إنهاء عقد
+                                                    الايجار قبل انتهاء مدة العقد أو إخلاء العين المؤجرة فأنه يكون ملزما
+                                                    بالآتي
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            إخطار الطرف الأول قبل شهر من الاخلاء.
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            إخلاء العين محل العقد في اليوم الخامس وعشرين من الشهر
+                                                            الميلادي
+                                                            وتسليم العين محل العقد بالحالة التي استلمها بها ويكون مسؤولا
+                                                            أمام الطرف الأول عن اي تلفيات بها.
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            يلتزم الطرف الثاني بسداد باقي الاجرة عن باقي مدة العقد ويحق
+                                                            للطرف الأول مطالبته بها بكافة الوسائل القانونية.
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr dir="rtl">
+                                                <td class="text-right" colspan="5">
+                                                    <li>
+                                                        <ul>
+                                                            يلتزم الطرف الثاني بتسليم الطرف الأول براءة ذمة من وزارة
+                                                            الكهرباء والماء عن مدة انتفاعه بالعين محل العقد.
+                                                        </ul>
+                                                    </li>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند الخامس عشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">
+                                                    كل ما لم يرد ذكره بهذا العقد يخضع لنصوص قانون الايجار الكويتي وتختص
+                                                    محاكم دولة الكويت (دائرة الإيجارات) بالفصل في أي نزاع يقوم بين
+                                                    طرفيه.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <center>
+                                                        <b>
+                                                            <u>
+                                                                البند السادس عشر
+                                                            </u>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">
+                                                    حرر هذا العقد من نسختين ووقع الطرفين على كافة أوراقه وسلمت نسخة من
+                                                    النسخ
+                                                    لكل طرف.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" colspan="5">
+                                                    <b>
+                                                        <u>:الشروط الخاصة
+                                                        </u>
+                                                    </b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <br/>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="text-align:center;" colspan="3">
+                                                    الطرف الثاني
+                                                </td>
+                                                <td style="text-align:center;" colspan="2">
+                                                    الطرف الاول
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="text-align:center;" colspan="3">
+
+                                                </td>
+                                                <td style="text-align:center;" colspan="5">
+                                                    شركة مشهن الكويتية العقارية
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <t t-call="tenancy_report.tenancy_report_footer"/>
+
                                 </div>
-                                <table class="mt16" width="100%" style="margin-top:1%;text-align justify">
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-right">في دولة الكويت - تعاقد كل من
-                                            </td>
-                                            <td class="text-center"><span t-esc="o.ten_date"/></td>
-                                            <td class="text-right"> الموافق </td>
-                                            <td class="text-center"><span t-esc="o.ten_date.strftime('%A')"/></td>
-                                            <td class="text-right">أنه في يوم</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">
-                                                <b>أولا: السادة / شركة مشهن الكويتية العقارية</b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right">برج أنور – الدور 12</td>
-                                            <td class="text-right">- 20</td>
-                                            <td class="text-right">شارع السور – قسيمة–</td>
-                                            <td class="text-right">13</td>
-                                            <td class="text-right">مقر الشركة: العاصمة – منطقة القبلة – قطعة</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right arabic" colspan="5">ويمثلها بالتوقيع السيد / ثنيان
-                                                أنور مصطفى ثنيان الغانم
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-left' colspan="5">
-                                                <b>
-                                                    (طرف أول – مؤجر)
-                                                </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-right' colspan="4"><span t-esc="o.tenant_id.name"/></td>
-                                            <td class="text-right arabic">ثانيا: السيد/</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left"><span t-esc="o.tenant_id.civil_id"/></td>
-                                            <td class="text-right arabic">:الرقم المدني</td>
-                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.nationality.name"/></td>
-                                            <td class="text-right arabic">:الجنسية</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left"><span t-esc="o.tenant_id.street"/></td>
-                                            <td class="text-right arabic">: شارع</td>
-                                            <td class="text-left">BLOCK NO.</td>
-                                            <td class="text-left">:قطعة</td>
-                                            <td class="text-right" dir="rtl">
-                                                <span>المقيم بمنطقة:</span>
-                                                <span t-esc="o.tenant_id.city"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.street"/></td>
-                                            <td class="text-right arabic" style="width:25%">:الرقم الآلي للعنوان</td>
-                                            <td class="text-left">HOUSE NO.</td>
-                                            <td class="text-right">:قسيمة</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left" colspan="2"><span t-esc="o.tenant_id.email"/></td>
-                                            <td class="text-right arabic">:البريد الالكتروني</td>
-                                            <td class="text-left"><span t-esc="o.tenant_id.mobile"/></td>
-                                            <td class="text-right">:هاتف</td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-left' colspan="5">
-                                                <b>
-                                                    (طرف ثاني – مستأجر)
-                                                </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class='text-right' colspan="5">
-                                                :وبعد أن أقر أطراف العقد بأهليتهم القانونية لإبرام هذا العقد، فقد تلاقت
-                                                إرادتهما في الاتفاق على البنود الاتية
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            التمهيد
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="2"><span t-esc="o.property_id.type_id.name"/></td>
-                                            <td class="text-right arabic" colspan="3">تقدم الطرف الثاني للطرف الأول
-                                                وأبدى رغبته في استئجار
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left"><span t-esc="o.property_id.street"/></td>
-                                            <td class="text-right arabic">شارع</td>
-                                            <td class="text-left">PROPERTY BLOCK NO.</td>
-                                            <td class="text-left">قطعة</td>
-                                            <td class="text-right">
-                                                PROPERTY’S CITY
-                                                <span>الكائنة بمنطقة</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left"><span t-esc="o.property_id.street"/></td>
-                                            <td class="text-right arabic">الرقم الآلي للعنوان:</td>
-                                            <td class="text-left"><span t-esc="o.property_id.building_no"/></td>
-                                            <td class="text-left">قسيمة</td>
-                                            <td class="text-right"><span t-esc="o.property_id.street"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="2">، وقد وافق الطرف الأول على ذلك وعليه</td>
-                                            <td class="text-left" colspan="2"><span t-esc="o.property_id.type_id.name"/></td>
-                                            <td class="text-right arabic" style="width:20%">وذلك لعمل نشاط</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">:فقد اتفقا على الاتي</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الاول
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">.التمهيد السابق جزء لا يتجزأ من هذا
-                                                العقد، بل هو شارح له مفسر لما غمض من بنوده ومكمل لما نقص منه
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الثاني
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">أجر الطرف الأول للطرف الثاني - القابل
-                                                لذلك – العين المثبت عنوانها في تمهيد هذا العقد وذلك
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="3">للطرف الثاني.</td>
-                                            <td class="text-right" colspan="2" style="width:40%">لعمل النشاط المشار اليه
-                                                في التمهيد
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الثالث
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">.يقر الطرف الثاني أنه عاين محل عقد
-                                                الايجار معاينة نافية للجهالة، وقد تأكد من جاهزيتها واستيفائها لجميع
-                                                المرافق الخدمية التي تجعلها مهيئة للغرض الذي استأجرها له، ويقر أنه
-                                                استلمها واستلم مفاتيحها قبل التوقيع على هذا العقد، وأنه أصبح مسؤولا
-                                                مسؤولية تامة عنها وعما يجري فيها أو يلحق بها
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الرابع
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left">وتنتهي في
-                                            </td>
-                                            <td class="text-left" colspan="2"><span t-esc="o.date_start"/>
-                                            </td>
-                                            <td class="text-right" colspan="2">مدة هذا العقد سنة ميلادية واحدة تبدأ في
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="3" style="width:55%">وهذه المدة قابلة
-                                                للتجديد لمدة أو لمدد
-                                                أخرى مالم يخطر أحد
-                                            </td>
-                                            <td class="text-left" colspan="2"><span t-esc="o.date"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">الطرفين الاخر برغبته في إنهاء هذا العقد،
-                                                ويلتزم الطرف الراغب في إنهاء هذا العقد بإخطار الطرف الأخر كتابيا قبل شهر
-                                                من تاريخ انتهاء مدة العقد
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الخامس
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-left">د.ك (فقط
-                                            </td>
-                                            <td class="text-left"><span t-esc="o.rent"/>
-                                            </td>
-                                            <td class="text-right" colspan="3">
-                                                <li>
-                                                    <ul>اتفق الطرفان على أن القيمة الايجارية لمحل
-                                                        هذا العقد
-                                                    </ul>
-                                                </li>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="3">دينار كويتي لا غير)، ويلتزم الطرف الثاني
-                                                بسداد
-                                            </td>
-<!--                                            <td class="text-left" colspan="2">TENANCY RENT IN ARABIC LETTERS-->
-<!--                                            </td>-->
-                                            <td class="text-left" colspan="2"><span t-esc="o.rent_amount_in_text"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-left" colspan="3"><span t-esc="o.rent * 3"/>
-                                            </td>
-                                            <td class="text-right" colspan="2">القيمة الإيجارية مجمعة كل ستة أشهر بواقع
-                                            </td>
-                                        </tr>
-                                        <tr>
-<!--                                            <td class="text-left" colspan="3">TENANCY RENT AMOUNT FOR THREE MONTHS IN-->
-<!--                                                ARABIC LETTERS</td>-->
-                                            <td class="text-left" colspan="3"><span t-esc="o.rent_amount_in_text"/>
-                                            </td>
-                                            <td class="text-right">د.ك ( فقط
-                                            </td>
-                                            <td class="text-right">MONTHS
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">.دينار كويتي لا غير) وذلك بأدائها للطرف
-                                                الأول في أول الشهر الميلادي
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-<!--                                            <td class="text-right">AMOUNT DEPOSIT IN ARABIC LETTERS</td>-->
-                                            <td class="text-right"><span t-esc="o.rent_amount_in_text"/></td>
-                                            <td class="text-right">د.ك ( فقط
-                                            </td>
-<!--                                            <td class="text-right">AMOUNT DEPOSIT</td>-->
-                                            <td class="text-right"><span t-esc="o.deposit"/></td>
-                                            <td class="text-right" colspan="2">
-                                                <li>
-                                                    <ul>
-                                                        سدد الطرف الثاني مبلغ
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">دينار كويتي لا غير) اجرة ثلاثة اشهر عن
-                                                المدة
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right">
-                                                <span>/ /</span>
-                                                <span t-esc="o.date"/>
-                                            </td>
-                                            <td class="text-center">حتى
-                                            </td>
-                                            <td class="text-right">/ /
-                                            </td>
-                                            <td class="text-right"><span t-esc="o.ten_date"/>
-                                            </td>
-                                            <td class="text-right">من
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .إذا تخلف الطرف الثاني عن سداد القيمة
-                                                        الايجارية في الموعد المحدد، فإن هذا العقد يكون مفسوخا من تلقاء
-                                                        نفسه دون
-                                                        حاجة إلى إنذار أو إخطار أو حكم قضائي، ويحق للطرف الأول في هذه
-                                                        الحالة
-                                                        توقيع الحجز التحفظي على منقولات الطرف الثاني الموجودة بالعين محل
-                                                        هذا
-                                                        العقد وذلك اقتضاء للأجرة المتأخرة، ويحق للطرف الأول مطالبته
-                                                        بكافة
-                                                        المبالغ التي لم يتم سدادها وذلك بكافة الطرق القانونية
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-<!--                                            <td class="text-left">INSURANCE AMOUNT IN ARABIC LETTERS</td>-->
-                                            <td class="text-left"><span t-esc="o.rent_amount_in_text"/></td>
-                                            <td class="text-right">د.ك (فقط
-                                            </td>
-<!--                                            <td class="text-left">Insurance Amount</td>-->
-                                           <t t-set="ins" t-value="0"/>
-                                            <t t-set="date" t-value="datetime.date(1900,1,1)"/>
-                                            <t t-foreach="o.property_id.property_insurance_ids" t-as="line">
-                                                <t t-if="line.end_date > date">
-                                                    <t t-set="ins" t-value="line.premium"/>
-                                                    <t t-set="date" t-value="line.end_date"/>
-                                                </t>
-                                            </t>
-                                            <td style="text-align:center;"><span t-esc="ins"/></td>
-                                            <td class="text-right" colspan="2">
-                                                <li>
-                                                    <ul>
-                                                        يلتزم الطرف الثاني بسداد مبلغ
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">.دينار كويتي لا غير) تأمينا يؤدى للطرف
-                                                الأول، ولا يجوز له المطالبة به إلا بعد انتهاء مدة هذا العقد وتسليم العين
-                                                محل العقد للطرف الأول بالحالة التي استلمها بها، ويجوز للطرف الثاني خصم
-                                                قيمة إصلاح أي تلفيات وجدت بالعين محل العقد بعد انتهاء مدته، كما يحق
-                                                للطرف الأول سداد أية رسوم مستحقة لوزارة الكهرباء والماء والبلدية تنتج عن
-                                                استغلال الطرف الثاني للعين محل العقد
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند السادس
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">.يلتزم الطرف الثاني باستخدام العين محل
-                                                هذا العقد في الغرض والنشاط المحدد بهذا العقد، ولا يجوز له مخالفة ذلك بأي
-                                                حال من الأحوال ويلتزم بمراعاة القوانين الكويتية وتعليمات الجهات الرسمية
-                                                وآداب حسن الجوار أثناء استغلاله للعين المؤجرة، وفي حال عدم التزام الطرف
-                                                الثاني بما تقدم فإن هذا العقد يعتبر مفسوخا من تلقاء نفسه دون حاجة إلى
-                                                إنذار أو إخطار أو حكم قضائي
-
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>البند السابع
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        يلتزم الطرف الثاني بسداد التأمين اللازم لوزارة الكهرباء والماء
-                                                        فور التوقيع على هذا العقد ويلتزم بسداد قيمة استهلاكه للكهرباء
-                                                        والماء بشكل دوري عن فترة انتفاعه بالعين محل عقد الإيجار
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .يحق للطرف الأول قطع خدمات الكهرباء والماء عن الطرف الثاني
-                                                        بالعين محل العقد في حال عدم التزام الطرف الثاني بسداد قيمة
-                                                        استهلاكه للكهرباء والماء
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الثامن
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .يلتزم الطرف الثاني ببذل العناية الفائقة في الحفاظ على العين محل
-                                                        عقد الايجار
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .يلتزم الطرف الثاني بعدم القيام بأي عمل من شأنه التعديل أو
-                                                        التغيير في العين محل العقد إلا بموافقة كتابية من الطرف الأول،
-                                                        وفي حالة مخالفته ذلك فإنه يكون ملزما بإعادة الحال إلى ما كان
-                                                        عليه وتعويض الطرف الأول عن الأضرار التي نشأت جراء مخالفته
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .يلتزم الطرف الثاني بعمل كافة الاصلاحات اللازمة للعين محل عقد
-                                                        الايجار وملحقاتها وذلك للأعطال التي تنشأ بسبب الاستخدام أو
-                                                        الناشئة بطبيعتها عن مرور الزمن ولا يجوز له مطالبة الطرف الأول
-                                                        بقيمة هذه الاصلاحات
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .يلتزم الطرف الثاني بتمكين الطرف الأول من القيام بكافة أعمال
-                                                        الاصلاح للأضرار الجسيمة التي تهدد العين محل العقد أو المبنى أو
-                                                        أية أضرار من شأنها أن تنقص من قيمة العين أو تقلل من الانتفاع بها
-                                                        وللطرف الأول حق الرجوع على الطرف الثاني ومطالبته بقيمة الاصلاحات
-                                                        التي قام بها متى كان الضرر ناشئ عن فعل الطرف الثاني
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .لا يحق للطرف الثاني مطالبة الطرف الأول بقيمة أي أعمال ديكور أو
-                                                        ما شابهها من أعمال أجراها بنفسه في العين محل العقد
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند التاسع
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        لا يجوز للطرف الثاني تخزين أية مواد أو منقولات من شأنها أن تشكل
-                                                        خطرا على حياته أو على حياة الغير أو ممنوع تخزينها من الجهات
-                                                        الرسمية - إلا بالضوابط التي أقرتها تلك الجهات - أو المواد التي
-                                                        تؤثر سلبا على سلامة العين والمبنى ويعتبر مسؤولا قبل الطرف الأول
-                                                        والغير عن أي ضرر ينتج عن مخالفته لهذا الشرط.
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        .لا يجوز للطرف الثاني استغلال مرافق المبنى (الممرات، السلالم) في
-                                                        غير الاغراض المعدة لهم ولا يجوز له تخزين أي شيء فيها ويكون الطرف
-                                                        الثاني مسؤولا عن ذلك وحده أمام الجهات الرسمية والطرف الأول
-                                                        والغير
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند العاشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">تنحصر مسؤولية الطرف الأول في تسليم العين
-                                                محل هذا العقد إلى الطرف الثاني وتسليمه صورة المخطط الصادر من بلدية
-                                                الكويت وصورة من ترخيص الإطفاء للمبنى ولا يكون الطرف الأول مسؤولا عن
-                                                امتناع الجهات الرسمية من إصدار أية تراخيص أو شهادات أو أوراق لازمة للطرف
-                                                الثاني، ولا يجوز للطرف الثاني الرجوع على الطرف الأول بأي طلبات او
-                                                مطالبات مهما كان الحال.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>البند الحادي العاشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">لا يجوز للطرف الثاني تأجير العين محل هذا
-                                                العقد من الباطن للغير ويقع باطلا كل تصرف يقوم به من شأنه أن يرتب حقوقا
-                                                قانونية أو مادية على العين محل هذا العقد للغير، وفي حال مخالفة الطرف
-                                                الثاني لذلك فإن هذا العقد يكون مفسوخا من تلقاء نفسه دون حاجة إلى إنذار
-                                                أو إخطار أو حكم قضائي.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الثاني عشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">يقر الطرف الثاني بأن الطرف الأول غير
-                                                مسؤول عن أي تلف أو سرقة تحدث لممتلكاته الموجودة بداخل العين محل العقد أو
-                                                خارجها ولا يضمن الطرف الأول التعرض الحاصل من الغير للطرف الثاني.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الثالث عشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">يقر الطرف الثاني بأنه اتخذ من عنوان العين
-                                                محل هذا العقد موطنا تتم مخاطبته فيه بكافة الكتب، والاخطارات، والانذارات،
-                                                والاعلانات.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الرابع عشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">:إذا رغب الطرف الثاني في إنهاء عقد
-                                                الايجار قبل انتهاء مدة العقد أو إخلاء العين المؤجرة فأنه يكون ملزما
-                                                بالآتي
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        إخطار الطرف الأول قبل شهر من الاخلاء.
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        إخلاء العين محل العقد في اليوم الخامس وعشرين من الشهر الميلادي
-                                                        وتسليم العين محل العقد بالحالة التي استلمها بها ويكون مسؤولا
-                                                        أمام الطرف الأول عن اي تلفيات بها.
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        يلتزم الطرف الثاني بسداد باقي الاجرة عن باقي مدة العقد ويحق
-                                                        للطرف الأول مطالبته بها بكافة الوسائل القانونية.
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr dir="rtl">
-                                            <td class="text-right" colspan="5">
-                                                <li>
-                                                    <ul>
-                                                        يلتزم الطرف الثاني بتسليم الطرف الأول براءة ذمة من وزارة
-                                                        الكهرباء والماء عن مدة انتفاعه بالعين محل العقد.
-                                                    </ul>
-                                                </li>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند الخامس عشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">
-                                                كل ما لم يرد ذكره بهذا العقد يخضع لنصوص قانون الايجار الكويتي وتختص
-                                                محاكم دولة الكويت (دائرة الإيجارات) بالفصل في أي نزاع يقوم بين طرفيه.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <center>
-                                                    <b>
-                                                        <u>
-                                                            البند السادس عشر
-                                                        </u>
-                                                    </b>
-                                                </center>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">
-                                                حرر هذا العقد من نسختين ووقع الطرفين على كافة أوراقه وسلمت نسخة من النسخ
-                                                لكل طرف.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-right" colspan="5">
-                                                <b>
-                                                    <u>:الشروط الخاصة
-                                                    </u>
-                                                </b>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5">
-                                                <br/>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:center;" colspan="3">
-                                                الطرف الثاني
-                                            </td>
-                                            <td style="text-align:center;" colspan="2">
-                                                الطرف الاول
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:center;" colspan="3">
-
-                                            </td>
-                                            <td style="text-align:center;" colspan="5">
-                                                شركة مشهن الكويتية العقارية
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <t t-call="tenancy_report.tenancy_report_footer"/>
-
                             </div>
                         </div>
                     </t>
