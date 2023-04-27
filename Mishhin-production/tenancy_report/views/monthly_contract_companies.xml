@@ -206,8 +206,7 @@
 <span t-esc="o.rent"/>
                                     <span>د.ك (فقط</span>
 <!--                                    <span class="req">TENANCY RENT IN ARABIC LETTERS</span>-->
-                                    <span t-esc="o.rent_amount_in_text"/>
-
+<span t-esc="o.convert_amount_to_arabic(o.rent)"/>
                                     <span>دينار كويتي لا غير)، ويلتزم الطرف الثاني بسداد القيمة الإيجارية وذلك بأدائها
                                         للطرف الأول في أول الشهر
                                         الميلادي.
@@ -240,8 +239,7 @@
                                     </td>
                                     <span>د.ك (فقط</span>
 <!--                                    <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>-->
-                                                                        <span t-esc="o.rent_amount_in_text"/>
-
+<span t-esc="o.convert_amount_to_arabic(ins)"/>
                                     <span>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا بعد
                                         انتهاء مدة هذا العقد وتسليم العين
                                         محل العقد

@@ -222,13 +222,10 @@
                                         <span>سدد الطرف الثاني مبلغ</span>
                                         <span t-esc="o.deposit"/>
                                         <span>د.ك ( فقط</span>
-<<<<<<< HEAD
-<!--                                        <span class="req">AMOUNT DEPOSIT IN ARABIC LETTERS</span>-->
-                                    <span t-esc="o.deposite_amount_in_text"/>
-=======
+
+
                                         <!--                                        <span class="req">AMOUNT DEPOSIT IN ARABIC LETTERS</span>-->
-                                        <span t-esc="o.rent_amount_in_text"/>
->>>>>>> c6a7e3508ab940c25fc3887e86c9f5b77fdba8ff
+<span t-esc="o.convert_amount_to_arabic(o.deposit)"/>
 
                                         <span>دينار كويتي لا غير) اجرة ثلاثة اشهر عن المدة</span>
                                         <br/>
@@ -266,7 +263,7 @@
 
                                         <span>د.ك (فقط</span>
                                         <!--                                        <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>-->
-                                        <span t-esc="o.rent_amount_in_text"/>
+<span t-esc="o.convert_amount_to_arabic(ins)"/>
                                         <span>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا
                                             بعد انتهاء مدة هذا العقد وتسليم العين
                                             محل العقد
