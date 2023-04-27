@@ -78,15 +78,15 @@
                                     <span class="bold">(طرف أول – مؤجر)</span>
                                     <br/>
                                     <span>ثانيا: السيد/</span>
-<span t-esc="o.tenant_id.name"/>
+                                    <span t-esc="o.tenant_id.name"/>
                                     <br/>
                                     <span>الجنسية:</span>
-<span t-esc="o.tenant_id.nationality.name"/>
+                                    <span t-esc="o.tenant_id.nationality.name"/>
                                     <span>الرقم المدني:</span>
-<span t-esc="o.tenant_id.civil_id"/>
+                                    <span t-esc="o.tenant_id.civil_id"/>
                                     <br/>
                                     <span>المقيم بمنطقة:</span>
-<span t-esc="o.tenant_id.city"/>
+                                    <span t-esc="o.tenant_id.city"/>
                                     <span>قطعة:</span>
                                     <span class="req">.BLOCK NO</span>
                                     <span>شارع:</span>
@@ -94,12 +94,12 @@
                                     <span>قسيمة:</span>
                                     <span class="req">.HOUSE NO</span>
                                     <span>الرقم الآلي للعنوان:</span>
-<span t-esc="o.tenant_id.street"/>
+                                    <span t-esc="o.tenant_id.street"/>
                                     <br/>
                                     <span>هاتف:</span>
-<span t-esc="o.tenant_id.mobile"/>
+                                    <span t-esc="o.tenant_id.mobile"/>
                                     <span>البريد الالكتروني:</span>
-<span t-esc="o.tenant_id.email"/>
+                                    <span t-esc="o.tenant_id.email"/>
                                     <br/>
                                     <span class="bold">(طرف ثاني – مستأجر)</span>
                                     <br/>
@@ -119,20 +119,20 @@
 
                                     </div>
                                     <span>تقدم الطرف الثاني للطرف الأول وأبدى رغبته في استئجار</span>
-<span t-esc="o.type_id.name"/>
+                                    <span t-esc="o.type_id.name"/>
                                     <br/>
                                     <span>الكائنة بمنطقة</span>
-<span t-esc="o.property_id.city"/>
+                                    <span t-esc="o.property_id.city"/>
                                     <span>قطعة</span>
                                     <span class="req">.PROPERTY BLOCK NO</span>
                                     <span>شارع</span>
                                     <span class="req">.PROPERTY STREET NO</span>
                                     <span>قسيمة</span>
-<span t-esc="o.property_id.building_no"/>
+                                    <span t-esc="o.property_id.building_no"/>
                                     <span>الرقم الآلي للعنوان:</span>
-<span t-esc="o.property_id.street"/>
+                                    <span t-esc="o.property_id.street"/>
                                     <span>وذلك لعمل نشاط</span>
-<span t-esc="o.type_id.name"/>
+                                    <span t-esc="o.type_id.name"/>
                                     <span>، وقد وافق الطرف الأول على ذلك وعليه فقد اتفقا على الاتي:</span>
                                     <div class="row">
                                         <center>
@@ -191,9 +191,9 @@
 
                                     </div>
                                     <span>مدة هذا العقد سنة ميلادية واحدة تبدأ في</span>
-<span t-esc="o.date_start"/>
+                                    <span t-esc="o.date_start"/>
                                     <span>وتنتهي في</span>
-<span t-esc="o.date"/>
+                                    <span t-esc="o.date"/>
                                     <span>وهذه المدة قابلة للتجديد لمدة أو لمدد أخرى مالم يخطر أحد الطرفين الاخر برغبته
                                         في إنهاء هذا العقد، ويلتزم الطرف
                                         الراغب في
@@ -211,10 +211,10 @@
                                     </div>
                                     <span>اتفق الطرفان على أن القيمة الايجارية لمحل هذا العقد
                                     </span>
-<span t-esc="o.rent"/>
+                                    <span t-esc="o.rent"/>
                                     <span>د.ك (فقط</span>
-<!--                                    <span class="req">TENANCY RENT IN ARABIC LETTERS</span>-->
-                                                                                                            <span t-esc="o.rent_amount_in_text"/>
+                                    <!--                                    <span class="req">TENANCY RENT IN ARABIC LETTERS</span>-->
+                                    <span t-esc="o.rent_amount_in_text"/>
 
                                     <span>دينار كويتي لا غير)، ويلتزم الطرف الثاني بسداد القيمة الإيجارية وذلك بأدائها
                                         للطرف الأول في أول الشهر
@@ -235,8 +235,8 @@
                                         الطرق
                                         القانونية.
                                     </span>
-<!--                                    <span class="req">INSURANCE AMOUNT</span>-->
-                                     <t t-set="ins" t-value="0"/>
+                                    <!--                                    <span class="req">INSURANCE AMOUNT</span>-->
+                                    <t t-set="ins" t-value="0"/>
                                     <t t-set="date" t-value="datetime.date(1900,1,1)"/>
                                     <t t-foreach="o.property_id.property_insurance_ids" t-as="line">
                                         <t t-if="line.end_date > date">
@@ -249,10 +249,9 @@
                                     </td>
 
 
-
                                     <span>د.ك (فقط</span>
-<!--                                    <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>-->
-                                                                                                            <span t-esc="o.rent_amount_in_text"/>
+                                    <!--                                    <span class="req">INSURANCE AMOUNT IN ARABIC LETTERS</span>-->
+                                    <span t-esc="o.rent_amount_in_text"/>
 
                                     <span>دينار كويتي لا غير) تأمينا يؤدى للطرف الأول، ولا يجوز له المطالبة به إلا بعد
                                         انتهاء مدة هذا العقد

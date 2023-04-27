@@ -233,7 +233,7 @@
                                                                         <span t-esc="o.deposit"/>
                                     <span>د.ك ( فقط</span>
 <!--                                    <span class="req">AMOUNT DEPOSIT IN ARABIC LETTERS</span>-->
-                                    <span t-esc="o.rent_amount_in_text"/>
+                                    <span t-esc="o.deposite_amount_in_text"/>
 
                                     <span>دينار كويتي لا غير) اجرة ثلاثة اشهر عن المدة</span>
                                     <br/>
