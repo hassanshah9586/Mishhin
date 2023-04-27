@@ -9,7 +9,7 @@ class AccountAnalyticAccount(models.Model):
     _inherit = 'account.analytic.account'
 
     def convert_amount_to_arabic(self, amm):
-        return num2words(amm, lang ='ar')
+        return num2words(amm, lang ='ar') 1git st
 
     # amount_in_arabic = fields.Char(
     #     compute='_compute_check_amount_in_arabic',
