@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <record id="account_move_inherited" model="ir.ui.view">
+            <field name="name">acount.move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/div[@class='oe_button_box']" position="inside">
+                    <button class="oe_stat_button" type="object" name="action_view_invoices" string="Invoices"
+                            icon="fa-bar-chart">
+                        <!--                        <field string="Tasks" name="task_count" widget="statinfo"/>-->
+                    </button>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

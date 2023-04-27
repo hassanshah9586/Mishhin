@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+        <record id="product_template_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="priority">2</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <page name="inventory" position="after">
+                    <page name="agreement_type" string="Agreement Type">
+                        <group>
+                            <group>
+                                <field name="partner_id"/>
+                                <field name="commission_type"/>
+                                <field name="commission_percentage"
+                                       attrs="{'readonly':[('commission_type', '=', 'fixed')]}" force_save="1"
+                                       digits="[1,3]"/>
+                                <field name="fixed_commission"
+                                       attrs="{'readonly':[('commission_type', '=', 'percentage')]}" force_save="1"
+                                       digits="[1,3]"/>
+                            </group>
+                            <group>
+                                <field name="our_commission_percentage" string="Our Invoices"
+                                       attrs="{'readonly':[('our_invoice_read', '=', True)]}" force_save="1"
+                                       digits="[1,3]"/>
+                                <field name="our_fixed_commission" string="Our Fixed Invoice"
+                                       attrs="{'readonly':[('our_fixed_invoice_read', '=', True)]}" force_save="1"
+                                       digits="[1,3]"/>
+                            </group>
+                            <group></group>
+                            <group>
+                                <field name="our_commission_percent" attrs="{'readonly':[('our_comp_read', '=', True)]}"
+                                       force_save="1" digits="[1,3]"/>
+                                <field name="our_commission_fixe"
+                                       attrs="{'readonly':[('our_fixed_comp_read', '=', True)]}" force_save="1"
+                                       digits="[1,3]"/>
+                            </group>
+                            <group invisible="1">
+                                <field name="is_our_commission_readonly"/>
+                                <field name="is_our_comm_readonly"/>
+                                <field name="our_invoice_read"/>
+                                <field name="our_fixed_invoice_read"/>
+                                <field name="our_comp_read"/>
+                                <field name="our_fixed_comp_read"/>
+                            </group>
+                        </group>
+                    </page>
+                </page>
+            </field>
+        </record>
+
+
+        <record id="account_move_inherited" model="ir.ui.view">
+            <field name="name">acount.move.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/div[@class='oe_button_box']" position="inside">
+                    <button class="oe_stat_button" type="object" name="action_view_invoices" string="Invoices"
+                            icon="fa-bar-chart">
+<!--                        <field string="Tasks" name="task_count" widget="statinfo"/>-->
+                    </button>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
